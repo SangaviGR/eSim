@@ -180,15 +180,11 @@ class DockArea(QtWidgets.QMainWindow):
             self.subcktLayout.addWidget(Subcircuit(self))
 
             self.subcktWidget.setLayout(self.subcktLayout)
-            dock[dockName +
-                str(count)] = QtWidgets.QDockWidget(dockName
-                                                    + str(count))
-            dock[dockName + str(count)] \
-                .setWidget(self.subcktWidget)
-            self.addDockWidget(QtCore.Qt.TopDockWidgetArea,
-                            dock[dockName + str(count)])
-            self.tabifyDockWidget(dock['Welcome'],
-                                dock[dockName + str(count)])
+            dock[dockName] = QtWidgets.QDockWidget(dockName)
+            dock[dockName].setWidget(self.subcktWidget)
+            self.addDockWidget(QtCore.Qt.TopDockWidgetArea, dock[dockName])
+            self.tabifyDockWidget(dock['Welcome'], dock[dockName])
+
 
             # CSS
             dock[dockName + str(count)].setStyleSheet(" \
