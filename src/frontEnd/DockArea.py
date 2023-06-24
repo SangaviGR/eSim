@@ -167,7 +167,7 @@ class DockArea(QtWidgets.QMainWindow):
         """This function creates a widget for different subcircuit options."""
         global count
 
-        dockName = 'Subcircuit-eSimConvertor'
+        dockName = 'Pspice to eSim Convertor'
 
         self.subcktWidget = QtWidgets.QWidget()
         self.subcktLayout = QtWidgets.QVBoxLayout()
