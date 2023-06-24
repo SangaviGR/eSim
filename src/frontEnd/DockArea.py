@@ -9,7 +9,7 @@ from kicadtoNgspice.KicadtoNgspice import MainWindow
 from browser.Welcome import Welcome
 from browser.UserManual import UserManual
 from ngspicetoModelica.ModelicaUI import OpenModelicaEditor
-from PyQt5.QtWidgets import QFileDialog, QLineEdit, QHBoxLayout, QVBoxLayout
+from PyQt5.QtWidgets import QFileDialog, QLineEdit, QHBoxLayout, QPushButton
 import os
 
 dockList = ['Welcome']
@@ -176,14 +176,15 @@ class DockArea(QtWidgets.QMainWindow):
         file_path_text_box = QLineEdit()
         self.eConLayout.addWidget(file_path_text_box)
         
-        browse_button = QtWidgets.QPushButton("Browse")
+        browse_button = QPushButton("Browse")
         browse_button.clicked.connect(lambda: self.browse_path(file_path_text_box))
         self.eConLayout.addWidget(browse_button)
         
-        upload_button = QtWidgets.QPushButton("Upload Pspice schematics")
+        upload_button = QPushButton("Upload Pspice schematics")
+        upload_button.clicked.connect(lambda: self.upload_file(file_path_text_box.text()))
         self.eConLayout.addWidget(upload_button)
         
-        convert_button = QtWidgets.QPushButton("Convert Pspice to eSim")
+        convert_button = QPushButton("Convert Pspice to eSim")
         self.eConLayout.addWidget(convert_button)
 
         self.eConWidget.setLayout(self.eConLayout)
@@ -209,6 +210,13 @@ class DockArea(QtWidgets.QMainWindow):
         file_path, _ = file_dialog.getOpenFileName(self, "Select File")
         if file_path:
             text_box.setText(file_path)
+
+    def upload_file(self, file_path):
+        if file_path:
+            # Perform upload logic here using the file path
+            print("Uploading file:", file_path)
+        else:
+            print("No file selected.")
 
 
     def modelEditor(self):
