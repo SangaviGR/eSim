@@ -164,26 +164,47 @@ class DockArea(QtWidgets.QMainWindow):
 
     def eSimConvertor(self):
         print("HELLO")
-        self.subcktWidget = QtWidgets.QWidget()
-        self.subcktLayout = QtWidgets.QVBoxLayout()
-        self.subcktLayout.addWidget(Subcircuit(self))
 
-        self.subcktWidget.setLayout(self.subcktLayout)
-        dock = QtWidgets.QDockWidget("eSim Convertor")
-        dock.setWidget(self.subcktWidget)
-        self.addDockWidget(QtCore.Qt.TopDockWidgetArea, dock)
-        self.tabifyDockWidget(dock['Welcome'], dock)
+        projDir = self.obj_appconfig.current_project["ProjectName"]
 
+        """ Checks projDir variable has valid value 
+        & is not None before calling os.path.basename """
 
-        # CSS
-        dock.setStyleSheet(" \
+        if projDir is not None:
+            projName = os.path.basename(projDir)
+            dockName = f'Subcircuit-{projName}'
+
+            self.subcktWidget = QtWidgets.QWidget()
+            self.subcktLayout = QtWidgets.QVBoxLayout()
+            self.subcktLayout.addWidget(Subcircuit(self))
+
+            self.subcktWidget.setLayout(self.subcktLayout)
+            dock[dockName] = QtWidgets.QDockWidget(dockName)
+            dock[dockName].setWidget(self.subcktWidget)
+            self.addDockWidget(QtCore.Qt.TopDockWidgetArea, dock[dockName])
+            self.tabifyDockWidget(dock['Welcome'], dock[dockName])
+
+            # CSS
+            dock[dockName].setStyleSheet(" \
             .QWidget { border-radius: 15px; border: 1px solid gray;\
                 padding: 5px; width: 200px; height: 150px;  } \
             ")
 
-        dock.setVisible(True)
-        dock.setFocus()
-        dock.raise_()
+            dock[dockName].setVisible(True)
+            dock[dockName].setFocus()
+            dock[dockName].raise_()
+
+        else:
+            """ when projDir is None that is clicking on subcircuit icon
+                without any project selection """
+            self.msg = QtWidgets.QErrorMessage()
+            self.msg.setModal(True)
+            self.msg.setWindowTitle("Error Message")
+            self.msg.showMessage(
+                'Please select the project first.'
+                ' You can either create a new project or open an existing project'
+            )
+            self.msg.exec_()
 
 
     def modelEditor(self):
