@@ -164,46 +164,24 @@ class DockArea(QtWidgets.QMainWindow):
 
     def eSimConvertor(self):
         print("HELLO")
+        self.subcktWidget = QtWidgets.QWidget()
+        self.subcktLayout = QtWidgets.QVBoxLayout()
+        self.subcktLayout.addWidget(Subcircuit(self))
 
-        projDir = self.obj_appconfig.current_project["ProjectName"]
+        self.subcktWidget.setLayout(self.subcktLayout)
+        dock = QtWidgets.QDockWidget()
+        dock.setWidget(self.subcktWidget)
+        self.addDockWidget(QtCore.Qt.TopDockWidgetArea, dock)
 
-        """ Checks projDir variable has valid value 
-        & is not None before calling os.path.basename """
-
-        if projDir is not None:
-            self.subcktWidget = QtWidgets.QWidget()
-            self.subcktLayout = QtWidgets.QVBoxLayout()
-            self.subcktLayout.addWidget(Subcircuit(self))
-
-            self.subcktWidget.setLayout(self.subcktLayout)
-            dock = QtWidgets.QDockWidget()
-            dock.setWidget(self.subcktWidget)
-            self.addDockWidget(QtCore.Qt.TopDockWidgetArea, dock)
-
-            # CSS
-            dock.setStyleSheet(" \
+        # CSS
+        dock.setStyleSheet(" \
             .QWidget { border-radius: 15px; border: 1px solid gray;\
                 padding: 5px; width: 200px; height: 150px;  } \
             ")
 
-            dock.setVisible(True)
-            dock.setFocus()
-            dock.raise_()
-
-        else:
-            """ when projDir is None that is clicking on subcircuit icon
-                without any project selection """
-            self.msg = QtWidgets.QErrorMessage()
-            self.msg.setModal(True)
-            self.msg.setWindowTitle("Error Message")
-            self.msg.showMessage(
-                'Please select the project first.'
-                ' You can either create a new project or open an existing project'
-            )
-            self.msg.exec_()
-
-
-
+        dock.setVisible(True)
+        dock.setFocus()
+        dock.raise_()
 
     def modelEditor(self):
         """This function defines UI for model editor."""
