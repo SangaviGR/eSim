@@ -185,7 +185,7 @@ class DockArea(QtWidgets.QMainWindow):
         self.eConLayout.addWidget(upload_button, 1, 0, 2, 1)
         
         convert_button = QPushButton("Convert Pspice to eSim")
-        self.eConLayout.addWidget(convert_button, 1, 2, 2, 1)
+        self.eConLayout.addWidget(convert_button, 1, 1, 2, 1)
 
         self.eConWidget.setLayout(self.eConLayout)
         dock[dockName + str(count)] = QtWidgets.QDockWidget(dockName + str(count))
