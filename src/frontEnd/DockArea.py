@@ -9,7 +9,7 @@ from kicadtoNgspice.KicadtoNgspice import MainWindow
 from browser.Welcome import Welcome
 from browser.UserManual import UserManual
 from ngspicetoModelica.ModelicaUI import OpenModelicaEditor
-from PyQt5.QtWidgets import QFileDialog, QLineEdit, QHBoxLayout
+from PyQt5.QtWidgets import QFileDialog, QLineEdit, QHBoxLayout, QVBoxLayout
 import os
 
 dockList = ['Welcome']
@@ -180,13 +180,22 @@ class DockArea(QtWidgets.QMainWindow):
         browse_button.clicked.connect(lambda: self.browse_path(file_path_text_box))
         self.eConLayout.addWidget(browse_button)
         
-        upload_button = QtWidgets.QPushButton("Upload")
-        self.eConLayout.addWidget(upload_button)
-        
-        convert_button = QtWidgets.QPushButton("Convert")
-        self.eConLayout.addWidget(convert_button)
-
         self.eConWidget.setLayout(self.eConLayout)
+        
+        button_layout = QVBoxLayout()
+        
+        upload_button = QtWidgets.QPushButton("Upload Pspice schematics")
+        button_layout.addWidget(upload_button)
+        
+        convert_button = QtWidgets.QPushButton("Convert Pspice to eSim")
+        button_layout.addWidget(convert_button)
+        
+        main_layout = QHBoxLayout()
+        main_layout.addLayout(self.eConLayout)
+        main_layout.addLayout(button_layout)
+        
+        self.eConWidget.setLayout(main_layout)
+        
         dock[dockName + str(count)] = QtWidgets.QDockWidget(dockName + str(count))
         dock[dockName + str(count)].setWidget(self.eConWidget)
         self.addDockWidget(QtCore.Qt.TopDockWidgetArea, dock[dockName + str(count)])
