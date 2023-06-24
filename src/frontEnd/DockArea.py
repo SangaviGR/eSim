@@ -169,16 +169,16 @@ class DockArea(QtWidgets.QMainWindow):
 
         dockName = 'Pspice to eSim Convertor-'
 
-        self.subcktWidget = QtWidgets.QWidget()
-        self.subcktLayout = QtWidgets.QVBoxLayout()
-        self.subcktLayout.addWidget(Subcircuit(self))
+        self.eConWidget = QtWidgets.QWidget()
+        self.eConLayout = QtWidgets.QVBoxLayout()
+        self.eConLayout.addWidget(Subcircuit(self))
 
-        self.subcktWidget.setLayout(self.subcktLayout)
+        self.eConWidget.setLayout(self.eConLayout)
         dock[dockName +
                 str(count)] = QtWidgets.QDockWidget(dockName
                                                     + str(count))
         dock[dockName + str(count)] \
-                .setWidget(self.subcktWidget)
+                .setWidget(self.eConWidget)
         self.addDockWidget(QtCore.Qt.TopDockWidgetArea,
                             dock[dockName + str(count)])
         self.tabifyDockWidget(dock['Welcome'],
