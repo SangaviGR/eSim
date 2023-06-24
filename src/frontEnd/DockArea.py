@@ -212,8 +212,7 @@ class DockArea(QtWidgets.QMainWindow):
 
     def upload_file(self, file_path):
         if file_path:
-            # Perform upload logic here using the file path
-            print("Uploading file:", file_path)
+            print(file_path)
         else:
             print("No file selected.")
 
