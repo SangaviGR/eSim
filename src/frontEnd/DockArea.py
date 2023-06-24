@@ -179,6 +179,12 @@ class DockArea(QtWidgets.QMainWindow):
         browse_button = QtWidgets.QPushButton("Browse")
         browse_button.clicked.connect(lambda: self.browse_path(file_path_text_box))
         self.eConLayout.addWidget(browse_button)
+        
+        upload_button = QtWidgets.QPushButton("Upload")
+        self.eConLayout.addWidget(upload_button)
+        
+        convert_button = QtWidgets.QPushButton("Convert")
+        self.eConLayout.addWidget(convert_button)
 
         self.eConWidget.setLayout(self.eConLayout)
         dock[dockName + str(count)] = QtWidgets.QDockWidget(dockName + str(count))
@@ -203,6 +209,7 @@ class DockArea(QtWidgets.QMainWindow):
         file_path, _ = file_dialog.getOpenFileName(self, "Select File")
         if file_path:
             text_box.setText(file_path)
+
 
     def modelEditor(self):
         """This function defines UI for model editor."""
