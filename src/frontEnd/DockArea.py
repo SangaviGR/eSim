@@ -174,7 +174,7 @@ class DockArea(QtWidgets.QMainWindow):
         self.eConLayout = QGridLayout()
         
         file_path_text_box = QLineEdit()
-        self.eConLayout.addWidget(file_path_text_box, 0, 0, 1, 3)
+        self.eConLayout.addWidget(file_path_text_box, 0, 0, 1, 2)
         
         browse_button = QPushButton("Browse")
         browse_button.clicked.connect(lambda: self.browse_path(file_path_text_box))
