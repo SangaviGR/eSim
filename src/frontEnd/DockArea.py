@@ -9,7 +9,7 @@ from kicadtoNgspice.KicadtoNgspice import MainWindow
 from browser.Welcome import Welcome
 from browser.UserManual import UserManual
 from ngspicetoModelica.ModelicaUI import OpenModelicaEditor
-from PyQt5.QtWidgets import QFileDialog, QLineEdit
+from PyQt5.QtWidgets import QFileDialog, QLineEdit, QHBoxLayout
 import os
 
 dockList = ['Welcome']
@@ -171,7 +171,7 @@ class DockArea(QtWidgets.QMainWindow):
         dockName = 'Pspice to eSim Convertor-'
 
         self.eConWidget = QtWidgets.QWidget()
-        self.eConLayout = QtWidgets.QVBoxLayout()
+        self.eConLayout = QHBoxLayout()
         
         file_path_text_box = QLineEdit()
         self.eConLayout.addWidget(file_path_text_box)
