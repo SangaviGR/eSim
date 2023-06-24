@@ -162,6 +162,10 @@ class DockArea(QtWidgets.QMainWindow):
             )
         count = count + 1
 
+    def eSimConvertor(self):
+        print("HELLO")
+
+
     def modelEditor(self):
         """This function defines UI for model editor."""
         print("in model editor")
