@@ -270,6 +270,7 @@ class Application(QtWidgets.QMainWindow):
         self.lefttoolbar.addAction(self.nghdl)
         self.lefttoolbar.addAction(self.omedit)
         self.lefttoolbar.addAction(self.omoptim)
+        self.lefttoolbar.addAction(self.conToeSim)
         self.lefttoolbar.setOrientation(QtCore.Qt.Vertical)
         self.lefttoolbar.setIconSize(QSize(40, 40))
 
