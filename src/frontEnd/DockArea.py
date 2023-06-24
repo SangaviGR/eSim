@@ -9,6 +9,7 @@ from kicadtoNgspice.KicadtoNgspice import MainWindow
 from browser.Welcome import Welcome
 from browser.UserManual import UserManual
 from ngspicetoModelica.ModelicaUI import OpenModelicaEditor
+from PyQt5.QtWidgets import QFileDialog, QLineEdit
 import os
 
 dockList = ['Welcome']
@@ -171,18 +172,19 @@ class DockArea(QtWidgets.QMainWindow):
 
         self.eConWidget = QtWidgets.QWidget()
         self.eConLayout = QtWidgets.QVBoxLayout()
-        self.eConLayout.addWidget(Subcircuit(self))
+        
+        file_path_text_box = QLineEdit()
+        self.eConLayout.addWidget(file_path_text_box)
+        
+        browse_button = QtWidgets.QPushButton("Browse")
+        browse_button.clicked.connect(lambda: self.browse_path(file_path_text_box))
+        self.eConLayout.addWidget(browse_button)
 
         self.eConWidget.setLayout(self.eConLayout)
-        dock[dockName +
-                str(count)] = QtWidgets.QDockWidget(dockName
-                                                    + str(count))
-        dock[dockName + str(count)] \
-                .setWidget(self.eConWidget)
-        self.addDockWidget(QtCore.Qt.TopDockWidgetArea,
-                            dock[dockName + str(count)])
-        self.tabifyDockWidget(dock['Welcome'],
-                                dock[dockName + str(count)])
+        dock[dockName + str(count)] = QtWidgets.QDockWidget(dockName + str(count))
+        dock[dockName + str(count)].setWidget(self.eConWidget)
+        self.addDockWidget(QtCore.Qt.TopDockWidgetArea, dock[dockName + str(count)])
+        self.tabifyDockWidget(dock['Welcome'], dock[dockName + str(count)])
 
         # CSS
         dock[dockName + str(count)].setStyleSheet(" \
@@ -195,6 +197,12 @@ class DockArea(QtWidgets.QMainWindow):
         dock[dockName + str(count)].raise_()
 
         count = count + 1
+
+    def browse_path(self, text_box):
+        file_dialog = QFileDialog()
+        file_path, _ = file_dialog.getOpenFileName(self, "Select File")
+        if file_path:
+            text_box.setText(file_path)
 
     def modelEditor(self):
         """This function defines UI for model editor."""
