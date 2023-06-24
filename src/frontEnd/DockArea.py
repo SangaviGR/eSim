@@ -179,7 +179,6 @@ class DockArea(QtWidgets.QMainWindow):
             dock = QtWidgets.QDockWidget()
             dock.setWidget(self.subcktWidget)
             self.addDockWidget(QtCore.Qt.TopDockWidgetArea, dock)
-            #self.tabifyDockWidget(dock['Welcome'], dock)
 
             # CSS
             dock.setStyleSheet(" \
@@ -202,6 +201,7 @@ class DockArea(QtWidgets.QMainWindow):
                 ' You can either create a new project or open an existing project'
             )
             self.msg.exec_()
+
 
 
 
