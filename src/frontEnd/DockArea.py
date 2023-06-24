@@ -164,24 +164,37 @@ class DockArea(QtWidgets.QMainWindow):
 
     def eSimConvertor(self):
         print("HELLO")
+        """This function creates a widget for different subcircuit options."""
+        global count
+
+        dockName = 'Subcircuit-eSimConvertor'
+
         self.subcktWidget = QtWidgets.QWidget()
         self.subcktLayout = QtWidgets.QVBoxLayout()
         self.subcktLayout.addWidget(Subcircuit(self))
 
         self.subcktWidget.setLayout(self.subcktLayout)
-        dock = QtWidgets.QDockWidget()
-        dock.setWidget(self.subcktWidget)
-        self.addDockWidget(QtCore.Qt.TopDockWidgetArea, dock)
+        dock[dockName +
+                str(count)] = QtWidgets.QDockWidget(dockName
+                                                    + str(count))
+        dock[dockName + str(count)] \
+                .setWidget(self.subcktWidget)
+        self.addDockWidget(QtCore.Qt.TopDockWidgetArea,
+                            dock[dockName + str(count)])
+        self.tabifyDockWidget(dock['Welcome'],
+                                dock[dockName + str(count)])
 
         # CSS
-        dock.setStyleSheet(" \
+        dock[dockName + str(count)].setStyleSheet(" \
             .QWidget { border-radius: 15px; border: 1px solid gray;\
                 padding: 5px; width: 200px; height: 150px;  } \
             ")
 
-        dock.setVisible(True)
-        dock.setFocus()
-        dock.raise_()
+        dock[dockName + str(count)].setVisible(True)
+        dock[dockName + str(count)].setFocus()
+        dock[dockName + str(count)].raise_()
+
+        count = count + 1
 
     def modelEditor(self):
         """This function defines UI for model editor."""
