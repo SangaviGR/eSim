@@ -9,7 +9,7 @@ from kicadtoNgspice.KicadtoNgspice import MainWindow
 from browser.Welcome import Welcome
 from browser.UserManual import UserManual
 from ngspicetoModelica.ModelicaUI import OpenModelicaEditor
-from PyQt5.QtWidgets import QFileDialog, QLineEdit, QHBoxLayout, QPushButton
+from PyQt5.QtWidgets import QFileDialog, QLineEdit, QGridLayout, QPushButton
 import os
 
 dockList = ['Welcome']
@@ -171,21 +171,21 @@ class DockArea(QtWidgets.QMainWindow):
         dockName = 'Pspice to eSim Convertor-'
 
         self.eConWidget = QtWidgets.QWidget()
-        self.eConLayout = QHBoxLayout()
+        self.eConLayout = QGridLayout()
         
         file_path_text_box = QLineEdit()
-        self.eConLayout.addWidget(file_path_text_box)
+        self.eConLayout.addWidget(file_path_text_box, 0, 0, 1, 2)
         
         browse_button = QPushButton("Browse")
         browse_button.clicked.connect(lambda: self.browse_path(file_path_text_box))
-        self.eConLayout.addWidget(browse_button)
+        self.eConLayout.addWidget(browse_button, 1, 0)
         
         upload_button = QPushButton("Upload Pspice schematics")
         upload_button.clicked.connect(lambda: self.upload_file(file_path_text_box.text()))
-        self.eConLayout.addWidget(upload_button)
+        self.eConLayout.addWidget(upload_button, 1, 1)
         
         convert_button = QPushButton("Convert Pspice to eSim")
-        self.eConLayout.addWidget(convert_button)
+        self.eConLayout.addWidget(convert_button, 2, 0, 1, 2)
 
         self.eConWidget.setLayout(self.eConLayout)
         dock[dockName + str(count)] = QtWidgets.QDockWidget(dockName + str(count))
@@ -217,6 +217,7 @@ class DockArea(QtWidgets.QMainWindow):
             print("Uploading file:", file_path)
         else:
             print("No file selected.")
+
 
 
     def modelEditor(self):
