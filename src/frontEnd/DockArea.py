@@ -174,11 +174,11 @@ class DockArea(QtWidgets.QMainWindow):
         self.eConLayout = QGridLayout()
         
         file_path_text_box = QLineEdit()
-        self.eConLayout.addWidget(file_path_text_box, 0, 0, 1, 2)
+        self.eConLayout.addWidget(file_path_text_box, 0, 0, 1, 3)
         
         browse_button = QPushButton("Browse")
         browse_button.clicked.connect(lambda: self.browse_path(file_path_text_box))
-        self.eConLayout.addWidget(browse_button, 1, 0)
+        self.eConLayout.addWidget(browse_button, 0, 3, 1, 2)
         
         upload_button = QPushButton("Upload Pspice schematics")
         upload_button.clicked.connect(lambda: self.upload_file(file_path_text_box.text()))
