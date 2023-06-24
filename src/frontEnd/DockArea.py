@@ -175,7 +175,7 @@ class DockArea(QtWidgets.QMainWindow):
             self.subcktLayout = QtWidgets.QVBoxLayout()
             self.subcktLayout.addWidget(Subcircuit(self))
 
-            self.subcktWidget.setLayout(self.subcktLayout)
+            #self.subcktWidget.setLayout(self.subcktLayout)
             dock = QtWidgets.QDockWidget()
             dock.setWidget(self.subcktWidget)
             self.addDockWidget(QtCore.Qt.TopDockWidgetArea, dock)
