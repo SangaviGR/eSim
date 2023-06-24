@@ -241,7 +241,7 @@ class DockArea(QtWidgets.QMainWindow):
             self.obj_appconfig.dock_dict[temp].append(
                 dock[dockName + str(count)]
             )
-        count = count + 1 #----------------
+        count = count + 1 
 
     def subcircuiteditor(self):
         """This function creates a widget for different subcircuit options."""

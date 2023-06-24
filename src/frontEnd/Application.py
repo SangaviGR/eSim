@@ -252,6 +252,12 @@ class Application(QtWidgets.QMainWindow):
         )
         self.omoptim.triggered.connect(self.open_OMoptim)
 
+        self.conToeSim = QtWidgets.QAction(
+            QtGui.QIcon(init_path + 'images/esim_text.png'),
+            '<b>Convert Pspice to eSim</b>', self
+        )
+        self.conToeSim.triggered.connect(self.open_conToeSim)
+
         # Adding Action Widget to tool bar
         self.lefttoolbar = QtWidgets.QToolBar('Left ToolBar')
         self.addToolBar(QtCore.Qt.LeftToolBarArea, self.lefttoolbar)
@@ -806,6 +812,9 @@ class Application(QtWidgets.QMainWindow):
             self.msg.setWindowTitle("Error Message")
             self.obj_appconfig.print_info(self.msgContent)
             self.msg.exec_()
+
+    def open_conToeSim(self):
+        print("HI")
 
 
 # This class initialize the Main View of Application
