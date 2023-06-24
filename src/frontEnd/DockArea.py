@@ -171,28 +171,25 @@ class DockArea(QtWidgets.QMainWindow):
         & is not None before calling os.path.basename """
 
         if projDir is not None:
-            projName = os.path.basename(projDir)
-            dockName = f'Subcircuit-{projName}'
-
             self.subcktWidget = QtWidgets.QWidget()
             self.subcktLayout = QtWidgets.QVBoxLayout()
             self.subcktLayout.addWidget(Subcircuit(self))
 
             self.subcktWidget.setLayout(self.subcktLayout)
-            dock[dockName] = QtWidgets.QDockWidget(dockName)
-            dock[dockName].setWidget(self.subcktWidget)
-            self.addDockWidget(QtCore.Qt.TopDockWidgetArea, dock[dockName])
-            self.tabifyDockWidget(dock['Welcome'], dock[dockName])
+            dock = QtWidgets.QDockWidget()
+            dock.setWidget(self.subcktWidget)
+            self.addDockWidget(QtCore.Qt.TopDockWidgetArea, dock)
+            self.tabifyDockWidget(dock['Welcome'], dock)
 
             # CSS
-            dock[dockName].setStyleSheet(" \
+            dock.setStyleSheet(" \
             .QWidget { border-radius: 15px; border: 1px solid gray;\
                 padding: 5px; width: 200px; height: 150px;  } \
             ")
 
-            dock[dockName].setVisible(True)
-            dock[dockName].setFocus()
-            dock[dockName].raise_()
+            dock.setVisible(True)
+            dock.setFocus()
+            dock.raise_()
 
         else:
             """ when projDir is None that is clicking on subcircuit icon
@@ -205,6 +202,7 @@ class DockArea(QtWidgets.QMainWindow):
                 ' You can either create a new project or open an existing project'
             )
             self.msg.exec_()
+
 
 
     def modelEditor(self):
