@@ -164,8 +164,7 @@ class DockArea(QtWidgets.QMainWindow):
         count = count + 1
 
     def eSimConvertor(self):
-        print("HELLO")
-        """This function creates a widget for different subcircuit options."""
+        """This function creates a widget for eSimConvertor."""
         global count
 
         dockName = 'Pspice to eSim Convertor-'

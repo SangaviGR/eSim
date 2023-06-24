@@ -815,7 +815,6 @@ class Application(QtWidgets.QMainWindow):
             self.msg.exec_()
 
     def open_conToeSim(self):
-        print("HI")
         print("Function : Pspice to eSim convertor")
         self.obj_appconfig.print_info('Pspice to eSim convertor is called')
         self.obj_Mainview.obj_dockarea.eSimConvertor()
