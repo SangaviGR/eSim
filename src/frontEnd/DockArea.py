@@ -179,7 +179,7 @@ class DockArea(QtWidgets.QMainWindow):
             dock = QtWidgets.QDockWidget()
             dock.setWidget(self.subcktWidget)
             self.addDockWidget(QtCore.Qt.TopDockWidgetArea, dock)
-            self.tabifyDockWidget(dock['Welcome'], dock)
+            #self.tabifyDockWidget(dock['Welcome'], dock)
 
             # CSS
             dock.setStyleSheet(" \
