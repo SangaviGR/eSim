@@ -176,9 +176,10 @@ class DockArea(QtWidgets.QMainWindow):
         self.eConLayout.addWidget(file_path_text_box, 0, 0, 1, 2)
         
         browse_button = QPushButton("Browse")
+        browse_button.setFixedSize(100, 30) 
         browse_button.clicked.connect(lambda: self.browse_path(file_path_text_box))
         self.eConLayout.addWidget(browse_button, 0, 2, 1, 1)
-        
+
         upload_button = QPushButton("Upload schematics")
         upload_button.clicked.connect(lambda: self.upload_file(file_path_text_box.text()))
         self.eConLayout.addWidget(upload_button, 1, 0, 2, 1)
