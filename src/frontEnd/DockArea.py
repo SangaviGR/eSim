@@ -174,7 +174,7 @@ class DockArea(QtWidgets.QMainWindow):
         
         file_path_text_box = QLineEdit()
         file_path_text_box.setFixedHeight(30)  
-        file_path_text_box.setFixedWidth(900)
+        file_path_text_box.setFixedWidth(850)
         self.eConLayout.addWidget(file_path_text_box, 0, 0, 1, 2)
         
         browse_button = QPushButton("Browse")
@@ -214,12 +214,10 @@ class DockArea(QtWidgets.QMainWindow):
         count = count + 1
 
     def browse_path(self, text_box):
-        file_dialog = QFileDialog()
-        file_dialog.setNameFilter("Schematic Files (*.sch)")
-        file_path, _ = file_dialog.getOpenFileName(self, "Select .sch File")
+        file_dialog = QFileDialog()  # a dialog that allows the user to select files or directories
+        file_path, _ = file_dialog.getOpenFileName(self, "Select File")
         if file_path:
             text_box.setText(file_path)
-
 
     def upload_file(self, file_path):
         if file_path:
