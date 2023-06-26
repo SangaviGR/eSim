@@ -187,9 +187,13 @@ class DockArea(QtWidgets.QMainWindow):
         upload_button.clicked.connect(lambda: self.upload_file(file_path_text_box.text()))
         self.eConLayout.addWidget(upload_button, 1, 0, 1, 1)
         
+        self.eConLayout.addSpacing(10) 
+
         convert_button = QPushButton("Convert Pspice to eSim")
         convert_button.setFixedSize(170, 30) 
         self.eConLayout.addWidget(convert_button, 1, 1, 1, 1)
+
+        self.eConLayout.addSpacing(10) 
 
         convert_button1 = QPushButton("Convert LTspice to eSim")
         convert_button1.setFixedSize(170, 30) 
