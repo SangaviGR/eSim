@@ -173,7 +173,7 @@ class DockArea(QtWidgets.QMainWindow):
         self.eConLayout = QGridLayout()
         
         file_path_text_box = QLineEdit()
-        self.eConLayout.addWidget(file_path_text_box, 0, 0, 1, 3)
+        self.eConLayout.addWidget(file_path_text_box, 0, 0, 1, 2)
         
         browse_button = QPushButton("Browse")
         browse_button.setFixedSize(100, 30) 
@@ -182,13 +182,13 @@ class DockArea(QtWidgets.QMainWindow):
 
         upload_button = QPushButton("Upload schematics")
         upload_button.clicked.connect(lambda: self.upload_file(file_path_text_box.text()))
-        self.eConLayout.addWidget(upload_button, 1, 0, 2, 1)
+        self.eConLayout.addWidget(upload_button, 1, 0, 1, 1)
         
         convert_button = QPushButton("Convert Pspice to eSim")
-        self.eConLayout.addWidget(convert_button, 1, 1, 2, 1)
+        self.eConLayout.addWidget(convert_button, 1, 1, 1, 1)
 
         convert_button = QPushButton("Convert LTspice to eSim")
-        self.eConLayout.addWidget(convert_button, 1, 2, 2, 1)
+        self.eConLayout.addWidget(convert_button, 1, 2, 1, 1)
 
         self.eConWidget.setLayout(self.eConLayout)
         dock[dockName + str(count)] = QtWidgets.QDockWidget(dockName + str(count))
