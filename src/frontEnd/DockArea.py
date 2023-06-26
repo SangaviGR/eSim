@@ -167,7 +167,7 @@ class DockArea(QtWidgets.QMainWindow):
         """This function creates a widget for eSimConvertor."""
         global count
 
-        dockName = 'Pspice to eSim Convertor-'
+        dockName = 'Schematics Convertor-'
 
         self.eConWidget = QtWidgets.QWidget()
         self.eConLayout = QGridLayout()
