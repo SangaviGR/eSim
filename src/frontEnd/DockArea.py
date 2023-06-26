@@ -186,14 +186,14 @@ class DockArea(QtWidgets.QMainWindow):
         upload_button.setFixedSize(170, 30) 
         self.eConLayout.addWidget(upload_button, 1, 0, 1, 1)
 
-        spacer = QSpacerItem(20, 10, QSizePolicy.Expanding, QSizePolicy.Fixed)
+        spacer = QSpacerItem(5, 10, QSizePolicy.Expanding, QSizePolicy.Fixed)
         self.eConLayout.addItem(spacer, 1, 1)
 
         convert_button = QPushButton("Convert Pspice to eSim")
         convert_button.setFixedSize(170, 30) 
         self.eConLayout.addWidget(convert_button, 1, 2, 1, 1)
 
-        spacer = QSpacerItem(20, 10, QSizePolicy.Expanding, QSizePolicy.Fixed)
+        spacer = QSpacerItem(5, 10, QSizePolicy.Expanding, QSizePolicy.Fixed)
         self.eConLayout.addItem(spacer, 1, 3)
 
         convert_button1 = QPushButton("Convert LTspice to eSim")
