@@ -254,7 +254,7 @@ class Application(QtWidgets.QMainWindow):
 
         self.conToeSim = QtWidgets.QAction(
             QtGui.QIcon(init_path + 'images/esim_text.png'),
-            '<b>Convert Pspice to eSim</b>', self
+            '<b>Schematics convertor</b>', self
         )
         self.conToeSim.triggered.connect(self.open_conToeSim)
 
@@ -815,8 +815,8 @@ class Application(QtWidgets.QMainWindow):
             self.msg.exec_()
 
     def open_conToeSim(self):
-        print("Function : Pspice to eSim convertor")
-        self.obj_appconfig.print_info('Pspice to eSim convertor is called')
+        print("Function : Schematics convertor")
+        self.obj_appconfig.print_info('Schematics convertor is called')
         self.obj_Mainview.obj_dockarea.eSimConvertor()
 
 
