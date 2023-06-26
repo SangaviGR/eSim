@@ -179,12 +179,15 @@ class DockArea(QtWidgets.QMainWindow):
         browse_button.clicked.connect(lambda: self.browse_path(file_path_text_box))
         self.eConLayout.addWidget(browse_button, 0, 2, 1, 1)
         
-        upload_button = QPushButton("Upload Pspice schematics")
+        upload_button = QPushButton("Upload schematics")
         upload_button.clicked.connect(lambda: self.upload_file(file_path_text_box.text()))
         self.eConLayout.addWidget(upload_button, 1, 0, 2, 1)
         
         convert_button = QPushButton("Convert Pspice to eSim")
         self.eConLayout.addWidget(convert_button, 1, 1, 2, 1)
+
+        convert_button = QPushButton("Convert LTspice to eSim")
+        self.eConLayout.addWidget(convert_button, 1, 2, 2, 1)
 
         self.eConWidget.setLayout(self.eConLayout)
         dock[dockName + str(count)] = QtWidgets.QDockWidget(dockName + str(count))
