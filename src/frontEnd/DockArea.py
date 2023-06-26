@@ -187,7 +187,7 @@ class DockArea(QtWidgets.QMainWindow):
         self.eConLayout.addWidget(upload_button, 1, 0, 1, 1)
 
         spacer_label = QLabel()
-        spacer_label.setFixedWidth(20)  # Set the desired width of the spacer
+        spacer_label.setFixedWidth(5)  # Set the desired width of the spacer
         self.eConLayout.addWidget(spacer_label, 1, 1, 1, 1)
 
         convert_button = QPushButton("Convert Pspice to eSim")
@@ -195,7 +195,7 @@ class DockArea(QtWidgets.QMainWindow):
         self.eConLayout.addWidget(convert_button, 1, 2, 1, 1)
 
         spacer_label = QLabel()
-        spacer_label.setFixedWidth(20)  # Set the desired width of the spacer
+        spacer_label.setFixedWidth(5)  # Set the desired width of the spacer
         self.eConLayout.addWidget(spacer_label, 1, 3, 1, 1)
 
         convert_button1 = QPushButton("Convert LTspice to eSim")
