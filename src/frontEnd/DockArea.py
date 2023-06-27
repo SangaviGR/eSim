@@ -197,6 +197,10 @@ class DockArea(QtWidgets.QMainWindow):
 
         self.eConLayout.setColumnStretch(0, 1) 
         self.eConLayout.setColumnStretch(1, 0) 
+        self.eConLayout.setColumnStretch(2, 1)  # Set a stretch factor of 1 for column 2
+
+        self.eConLayout.setHorizontalSpacing(20)  # Set horizontal spacing between columns
+
 
         self.eConWidget.setLayout(self.eConLayout)
         dock[dockName + str(count)] = QtWidgets.QDockWidget(dockName + str(count))
