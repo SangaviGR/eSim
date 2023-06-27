@@ -12,6 +12,7 @@ from ngspicetoModelica.ModelicaUI import OpenModelicaEditor
 from PyQt5.QtWidgets import QFileDialog, QLineEdit, QGridLayout, QPushButton
 from PyQt5.QtCore import Qt
 import os
+import subprocess
 
 dockList = ['Welcome']
 count = 1
@@ -188,9 +189,10 @@ class DockArea(QtWidgets.QMainWindow):
         upload_button.clicked.connect(lambda: self.upload_file(file_path_text_box.text()))
         self.eConLayout.addWidget(upload_button, 1, 0, 1, 1)
         
-        convert_button = QPushButton("Convert Pspice to eSim")
-        convert_button.setFixedSize(170, 30) 
-        self.eConLayout.addWidget(convert_button, 1, 1, 1, 1)
+        convertPs_button = QPushButton("Convert Pspice to eSim")
+        convertPs_button.setFixedSize(170, 30) 
+        convertPs_button.clicked.connect(lambda: self.convert_Pspice(file_path_text_box.text()))
+        self.eConLayout.addWidget(convertPs_button, 1, 1, 1, 1)
 
         convert_button1 = QPushButton("Convert LTspice to eSim")
         convert_button1.setFixedSize(170, 30) 
@@ -201,7 +203,7 @@ class DockArea(QtWidgets.QMainWindow):
         self.eConLayout.setColumnStretch(2, 1)  # Set a stretch factor of 1 for column 2
 
         # Set alignment for button2 to center horizontally within the layout cell
-        self.eConLayout.setAlignment(convert_button, Qt.AlignHCenter)
+        self.eConLayout.setAlignment(convertPs_button, Qt.AlignHCenter)
 
         self.eConWidget.setLayout(self.eConLayout)
         dock[dockName + str(count)] = QtWidgets.QDockWidget(dockName + str(count))
@@ -220,6 +222,20 @@ class DockArea(QtWidgets.QMainWindow):
         dock[dockName + str(count)].raise_()
 
         count = count + 1
+
+    def convert_Pspice(self, file_path):
+
+        command = f"cd /home/ubuntus/eSim/schematic_converters/lib/PythonLib && python3 parser.py {file_path} /home/ubuntus"
+
+        try:
+            subprocess.run(command, shell=True, check=True)
+            # Process finished successfully
+            # Add any further actions you want to perform after the command execution
+        except subprocess.CalledProcessError as e:
+            # Handle any errors that occurred during command execution
+            print("Error:", e)
+
+
 
 
     def browse_path(self, text_box):
