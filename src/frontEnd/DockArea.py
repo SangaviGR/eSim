@@ -9,7 +9,7 @@ from kicadtoNgspice.KicadtoNgspice import MainWindow
 from browser.Welcome import Welcome
 from browser.UserManual import UserManual
 from ngspicetoModelica.ModelicaUI import OpenModelicaEditor
-from PyQt5.QtWidgets import QFileDialog, QLineEdit, QGridLayout, QPushButton, QLabel
+from PyQt5.QtWidgets import QFileDialog, QLineEdit, QGridLayout, QPushButton
 import os
 
 dockList = ['Welcome']
@@ -185,10 +185,6 @@ class DockArea(QtWidgets.QMainWindow):
         upload_button = QPushButton("Upload schematics")
         upload_button.setFixedSize(170, 30)
         self.eConLayout.addWidget(upload_button, 1, 0, 1, 1)
-
-        spacer_label = QLabel()
-        spacer_label.setFixedWidth(5)  # Set the desired width of the spacer
-        self.eConLayout.addWidget(spacer_label, 1, 1, 1, 1)
 
         convert_button = QPushButton("Convert Pspice to eSim")
         convert_button.setFixedSize(180, 30)
