@@ -227,7 +227,7 @@ class DockArea(QtWidgets.QMainWindow):
 
         # Get the base name of the file without the extension
         filename = os.path.splitext(os.path.basename(file_path))[0]
-        command = f"cd /home/ubuntus/eSim/schematic_converters/lib/PythonLib && python3 parser.py {file_path} /home/ubuntus"
+        command = f"cd /home/ubuntus/eSim/schematic_converters/lib/PythonLib && python3 parser.py {file_path} /home/ubuntus/{filename}"
 
         try:
             subprocess.run(command, shell=True, check=True)
