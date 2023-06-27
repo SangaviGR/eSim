@@ -10,6 +10,7 @@ from browser.Welcome import Welcome
 from browser.UserManual import UserManual
 from ngspicetoModelica.ModelicaUI import OpenModelicaEditor
 from PyQt5.QtWidgets import QFileDialog, QLineEdit, QGridLayout, QPushButton
+from PyQt5.QtCore import Qt
 import os
 
 dockList = ['Welcome']
@@ -201,6 +202,8 @@ class DockArea(QtWidgets.QMainWindow):
 
         #self.eConLayout.setHorizontalSpacing(20)  # Set horizontal spacing between columns
 
+        # Set alignment for button2 to center horizontally within the layout cell
+        self.eConLayout.setAlignment(convert_button, Qt.AlignHCenter)
 
         self.eConWidget.setLayout(self.eConLayout)
         dock[dockName + str(count)] = QtWidgets.QDockWidget(dockName + str(count))
