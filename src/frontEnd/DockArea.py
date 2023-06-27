@@ -171,28 +171,29 @@ class DockArea(QtWidgets.QMainWindow):
 
         self.eConWidget = QtWidgets.QWidget()
         self.eConLayout = QGridLayout()
-
+        
         file_path_text_box = QLineEdit()
-        # file_path_text_box.setFixedHeight(30)
-        # file_path_text_box.setFixedWidth(800)
+        file_path_text_box.setFixedHeight(30)  
+        file_path_text_box.setFixedWidth(800)
         self.eConLayout.addWidget(file_path_text_box, 0, 0, 1, 2)
-
+        
         browse_button = QPushButton("Browse")
-        #browse_button.setFixedSize(100, 30)
+        browse_button.setFixedSize(100, 30) 
         browse_button.clicked.connect(lambda: self.browse_path(file_path_text_box))
         self.eConLayout.addWidget(browse_button, 0, 2, 1, 1)
 
         upload_button = QPushButton("Upload schematics")
-        #upload_button.setFixedSize(170, 30)
+        upload_button.setFixedSize(170, 30) 
+        upload_button.clicked.connect(lambda: self.upload_file(file_path_text_box.text()))
         self.eConLayout.addWidget(upload_button, 1, 0, 1, 1)
-
+        
         convert_button = QPushButton("Convert Pspice to eSim")
-        #convert_button.setFixedSize(180, 30)
-        self.eConLayout.addWidget(convert_button, 1, 2, 1, 1)
+        convert_button.setFixedSize(170, 30) 
+        self.eConLayout.addWidget(convert_button, 1, 1, 1, 1)
 
         convert_button1 = QPushButton("Convert LTspice to eSim")
-        #convert_button1.setFixedSize(180, 30)
-        self.eConLayout.addWidget(convert_button1, 1, 4, 1, 1)
+        convert_button1.setFixedSize(170, 30) 
+        self.eConLayout.addWidget(convert_button1, 1, 2, 1, 1)  
 
         self.eConWidget.setLayout(self.eConLayout)
         dock[dockName + str(count)] = QtWidgets.QDockWidget(dockName + str(count))
