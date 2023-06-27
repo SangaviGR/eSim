@@ -196,6 +196,7 @@ class DockArea(QtWidgets.QMainWindow):
         self.eConLayout.addWidget(convert_button1, 1, 2, 1, 1)  
 
         self.eConLayout.setColumnStretch(0, 1) 
+        self.eConLayout.setColumnStretch(1, 0) 
 
         self.eConWidget.setLayout(self.eConLayout)
         dock[dockName + str(count)] = QtWidgets.QDockWidget(dockName + str(count))
