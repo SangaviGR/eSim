@@ -224,8 +224,8 @@ class DockArea(QtWidgets.QMainWindow):
 
     def browse_path(self, text_box):
         file_dialog = QFileDialog()  # a dialog that allows the user to select files or directories
-        file_dialog.setFileMode(QFileDialog.ExistingFile)  # Set the file mode to select existing files
-        file_dialog.setNameFilter("Schematic Files (*.sch)")  # Set the file filter
+        file_dialog.setFileMode(QFileDialog.ExistingFile)
+        file_dialog.setNameFilter("Schematic Files (*.sch)")
         file_dialog.exec_()  # Execute the dialog
         selected_files = file_dialog.selectedFiles()  # Get the selected file(s)
         if selected_files:
