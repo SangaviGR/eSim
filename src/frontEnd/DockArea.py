@@ -196,11 +196,9 @@ class DockArea(QtWidgets.QMainWindow):
         convert_button1.setFixedSize(170, 30) 
         self.eConLayout.addWidget(convert_button1, 1, 2, 1, 1)  
 
-        self.eConLayout.setColumnStretch(0, 1) 
-        self.eConLayout.setColumnStretch(1, 0) 
+        self.eConLayout.setColumnStretch(0, 1)  # Set a stretch factor of 1 for column 0
+        self.eConLayout.setColumnStretch(1, 0)  # Set a stretch factor of 0 for column 1
         self.eConLayout.setColumnStretch(2, 1)  # Set a stretch factor of 1 for column 2
-
-        #self.eConLayout.setHorizontalSpacing(20)  # Set horizontal spacing between columns
 
         # Set alignment for button2 to center horizontally within the layout cell
         self.eConLayout.setAlignment(convert_button, Qt.AlignHCenter)
@@ -226,6 +224,7 @@ class DockArea(QtWidgets.QMainWindow):
 
     def browse_path(self, text_box):
         file_dialog = QFileDialog()  # a dialog that allows the user to select files or directories
+        file_dialog.setNameFilter("Schematic Files (*.sch)")  # Set the file filter
         file_path, _ = file_dialog.getOpenFileName(self, "Select File")
         if file_path:
             text_box.setText(file_path)
