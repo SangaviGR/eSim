@@ -254,7 +254,7 @@ class Application(QtWidgets.QMainWindow):
 
         self.conToeSim = QtWidgets.QAction(
             QtGui.QIcon(init_path + 'images/esim_text.png'),
-            '<b>Schematics convertor</b>', self
+            '<b>Schematics converter</b>', self
         )
         self.conToeSim.triggered.connect(self.open_conToeSim)
 
@@ -815,9 +815,9 @@ class Application(QtWidgets.QMainWindow):
             self.msg.exec_()
 
     def open_conToeSim(self):
-        print("Function : Schematics convertor")
-        self.obj_appconfig.print_info('Schematics convertor is called')
-        self.obj_Mainview.obj_dockarea.eSimConvertor()
+        print("Function : Schematics converter")
+        self.obj_appconfig.print_info('Schematics converter is called')
+        self.obj_Mainview.obj_dockarea.eSimConverter()
 
 
 # This class initialize the Main View of Application
