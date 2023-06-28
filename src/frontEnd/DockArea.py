@@ -240,6 +240,7 @@ class DockArea(QtWidgets.QMainWindow):
             msg_box.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
             msg_box.setDefaultButton(QMessageBox.Yes)
             result = msg_box.exec_()
+            print("Conversion of Pspice to eSim schematic Successful")
         except subprocess.CalledProcessError as e:
             # Handle any errors that occurred during command execution
             print("Error:", e)
