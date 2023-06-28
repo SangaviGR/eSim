@@ -9,7 +9,7 @@ from kicadtoNgspice.KicadtoNgspice import MainWindow
 from browser.Welcome import Welcome
 from browser.UserManual import UserManual
 from ngspicetoModelica.ModelicaUI import OpenModelicaEditor
-from PyQt5.QtWidgets import QFileDialog, QLineEdit, QGridLayout, QPushButton
+from PyQt5.QtWidgets import QFileDialog, QLineEdit, QGridLayout, QPushButton, QMessageBox
 from PyQt5.QtCore import Qt
 import os
 import subprocess
@@ -232,8 +232,14 @@ class DockArea(QtWidgets.QMainWindow):
 
         try:
             subprocess.run(command, shell=True, check=True)
-            # Process finished successfully
-            # Add any further actions you want to perform after the command execution
+            # Show a message box with the conversion success message
+            msg_box = QMessageBox()
+            msg_box.setIcon(QMessageBox.Information)
+            msg_box.setWindowTitle("Conversion Successful")
+            msg_box.setText("The file has been converted successfully.")
+            msg_box.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
+            msg_box.setDefaultButton(QMessageBox.Yes)
+            result = msg_box.exec_()
         except subprocess.CalledProcessError as e:
             # Handle any errors that occurred during command execution
             print("Error:", e)
