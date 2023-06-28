@@ -236,7 +236,7 @@ class DockArea(QtWidgets.QMainWindow):
             msg_box = QMessageBox()
             msg_box.setIcon(QMessageBox.Information)
             msg_box.setWindowTitle("Conversion Successful")
-            msg_box.setText("The file has been converted successfully.")
+            msg_box.setText("The file has been converted successfully./n Do you want to include it under the project explorer")
             msg_box.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
             msg_box.setDefaultButton(QMessageBox.Yes)
             result = msg_box.exec_()
