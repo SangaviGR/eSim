@@ -165,11 +165,11 @@ class DockArea(QtWidgets.QMainWindow):
             )
         count = count + 1
 
-    def eSimConvertor(self):
-        """This function creates a widget for eSimConvertor."""
+    def eSimConverter(self):
+        """This function creates a widget for eSimConverter."""
         global count
 
-        dockName = 'Schematics Convertor-'
+        dockName = 'Schematics Converter-'
 
         self.eConWidget = QtWidgets.QWidget()
         self.eConLayout = QGridLayout()
