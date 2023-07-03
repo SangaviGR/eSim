@@ -248,7 +248,8 @@ class DockArea(QtWidgets.QMainWindow):
                 # Your code to add the file goes here
                 newFile = str(conPath + "/" + filename)
                 print(newFile)
-                self.obj_Mainview.obj_projectExplorer.addTreeNode(conPath, [filename])
+                self.app = Application()
+                self.app.obj_Mainview.obj_projectExplorer.addTreeNode(conPath, [filename])
                 print("File added under the project explorer.")
             else:
                 # User chose not to add the file
