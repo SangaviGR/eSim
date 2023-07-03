@@ -245,6 +245,7 @@ class DockArea(QtWidgets.QMainWindow):
             if result == QMessageBox.Yes:
                 # Add the converted file under the project explorer
                 # Your code to add the file goes here
+                print({conPath}/{filename})
                 print("File added under the project explorer.")
             else:
                 # User chose not to add the file
