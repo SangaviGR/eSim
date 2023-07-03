@@ -13,6 +13,7 @@ from PyQt5.QtWidgets import QFileDialog, QLineEdit, QGridLayout, QPushButton, QM
 from PyQt5.QtCore import Qt
 import os
 import subprocess
+from projManagement.newProject import NewProjectInfo
 
 dockList = ['Welcome']
 count = 1
@@ -247,6 +248,7 @@ class DockArea(QtWidgets.QMainWindow):
                 # Your code to add the file goes here
                 newFile = str(conPath + "/" + filename)
                 print(newFile)
+                self.add_convertedPspice(filename)
                 print("File added under the project explorer.")
             else:
                 # User chose not to add the file
@@ -256,6 +258,31 @@ class DockArea(QtWidgets.QMainWindow):
             print("Error:", e)
 
 
+    def add_convertedPspice(self,projname):
+        """This function call New Project Info class."""
+        
+        updated = False
+
+        self.projname = projname
+        self.project = NewProjectInfo()
+        directory, filelist = self.project.createProject(self.projname)
+
+        if directory and filelist:
+            self.obj_Mainview.obj_projectExplorer.addTreeNode(
+                    directory, filelist
+            )
+            updated = True
+
+        if not updated:
+            print("No new project created")
+            self.obj_appconfig.print_info('No new project created')
+            try:
+                self.obj_appconfig.print_info(
+                    'Current project is : ' +
+                    self.obj_appconfig.current_project["ProjectName"]
+                )
+            except BaseException:
+                pass
 
 
     def browse_path(self, text_box):
