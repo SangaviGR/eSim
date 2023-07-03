@@ -246,7 +246,7 @@ class DockArea(QtWidgets.QMainWindow):
                 # Add the converted file under the project explorer
                 # Your code to add the file goes here
                 newFile = str(conPath + "/" + filename)
-                print(type(newFile))
+                print(newFile)
                 print("File added under the project explorer.")
             else:
                 # User chose not to add the file
