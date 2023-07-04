@@ -13,7 +13,7 @@ from PyQt5.QtWidgets import QFileDialog, QLineEdit, QGridLayout, QPushButton, QM
 from PyQt5.QtCore import Qt
 import os
 import subprocess
-from ProjectExplorer import ProjectExplorer
+from Application import Application
 
 dockList = ['Welcome']
 count = 1
@@ -247,9 +247,8 @@ class DockArea(QtWidgets.QMainWindow):
                 # Add the converted file under the project explorer
                 newFile = str(conPath + "/" + filename)
                 print(newFile)
-
-                self.app = ProjectExplorer()
-                self.app.addTreeNode(newFile, [newFile])
+                self.app = Application()
+                self.app.obj_Mainview.obj_projectExplorer.addTreeNode(newFile, [newFile])
                 print("File added under the project explorer.")
             else:
                 # User chose not to add the file
