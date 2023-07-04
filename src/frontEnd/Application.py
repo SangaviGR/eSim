@@ -356,11 +356,21 @@ class Application(QtWidgets.QMainWindow):
                 pass
             
     def add_project(self, newFile):
+
+        self.projname = newFile
+        self.project = NewProjectInfo()
+        directory, filelist = self.project.createProject(self.projname)
+
+        if directory and filelist:
+            self.obj_Mainview.obj_projectExplorer.addTreeNode(newFile, [newFile])
         
-        self.obj_Mainview.obj_projectExplorer.addTreeNode(newFile, [newFile])
-        self.obj_appconfig.print_info('Current project is : ' + 
-                                      self.obj_appconfig.current_project["ProjectName"])
-            
+        try:
+                self.obj_appconfig.print_info(
+                    'Current project is : ' +
+                    self.obj_appconfig.current_project["ProjectName"]
+                )
+        except BaseException:
+                pass
 
     def open_project(self):
         """This project call Open Project Info class."""
