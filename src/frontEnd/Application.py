@@ -354,19 +354,7 @@ class Application(QtWidgets.QMainWindow):
                 )
             except BaseException:
                 pass
-
-    def add_project(self, newFile):
-        
-        self.obj_Mainview.obj_projectExplorer.addTreeNode(newFile, [newFile])
-        
-        try:
-            self.obj_appconfig.print_info(
-                    'Current project is : ' +
-                    self.obj_appconfig.current_project["ProjectName"]
-                )
-        except BaseException:
-            pass
-
+            
 
     def open_project(self):
         """This project call Open Project Info class."""
