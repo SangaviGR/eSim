@@ -14,6 +14,7 @@ from PyQt5.QtCore import Qt
 import os
 import subprocess
 from Application import Application
+import shutil
 
 dockList = ['Welcome']
 count = 1
@@ -249,6 +250,7 @@ class DockArea(QtWidgets.QMainWindow):
                 print(newFile)
                 self.app = Application()
                 self.app.obj_Mainview.obj_projectExplorer.addTreeNode(newFile, [newFile])
+                shutil.copy(newFile, f"/home/ubuntus/eSim-Workspace/{filename}") 
                 print("File added under the project explorer.")
             else:
                 # User chose not to add the file
