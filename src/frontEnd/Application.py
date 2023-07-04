@@ -354,7 +354,6 @@ class Application(QtWidgets.QMainWindow):
                 )
             except BaseException:
                 pass
-
             
 
     def open_project(self):
