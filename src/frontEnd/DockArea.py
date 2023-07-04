@@ -14,6 +14,7 @@ from PyQt5.QtCore import Qt
 import os
 import subprocess
 from Application import Application,MainView
+from ProjectExplorer import ProjectExplorer
 
 dockList = ['Welcome']
 count = 1
@@ -248,7 +249,7 @@ class DockArea(QtWidgets.QMainWindow):
                 newFile = str(conPath + "/" + filename)
                 print(newFile)
                 self.obj_Mainview = MainView()
-                
+                self.obj_projectExplorer = ProjectExplorer.ProjectExplorer()
                 self.obj_Mainview.obj_projectExplorer.addTreeNode(newFile, [newFile])
                 print("File added under the project explorer.")
             else:
