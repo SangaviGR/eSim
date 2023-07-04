@@ -245,11 +245,10 @@ class DockArea(QtWidgets.QMainWindow):
 
             if result == QMessageBox.Yes:
                 # Add the converted file under the project explorer
-                # Your code to add the file goes here
                 newFile = str(conPath + "/" + filename)
                 print(newFile)
                 self.app = Application()
-                self.app.obj_Mainview.obj_projectExplorer.addTreeNode(newFile, [newFile])
+                self.app.add_project(newFile)
                 print("File added under the project explorer.")
             else:
                 # User chose not to add the file
