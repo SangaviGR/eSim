@@ -229,6 +229,17 @@ class DockArea(QtWidgets.QMainWindow):
         # Get the base name of the file without the extension
         filename = os.path.splitext(os.path.basename(file_path))[0]
         conPath = os.path.dirname(file_path)
+
+        # Check if the file path contains spaces
+        if ' ' in file_path:
+            # Show a message box indicating that spaces are not allowed
+            msg_box = QMessageBox()
+            msg_box.setIcon(QMessageBox.Warning)
+            msg_box.setWindowTitle("Invalid File Path")
+            msg_box.setText("Spaces are not allowed in the file path.")
+            msg_box.setStandardButtons(QMessageBox.Ok)
+            msg_box.exec_()
+            return
         
         # Check if the file is not empty
         if os.path.getsize(file_path) > 0:
@@ -271,29 +282,14 @@ class DockArea(QtWidgets.QMainWindow):
             msg_box.exec_()
 
 
-
-
     def browse_path(self, text_box):
         file_dialog = QFileDialog()  # a dialog that allows the user to select files or directories
         file_dialog.setFileMode(QFileDialog.ExistingFile)
         file_dialog.setNameFilter("Schematic Files (*.sch)")
         file_dialog.exec_()  # Execute the dialog
         selected_files = file_dialog.selectedFiles()  # Get the selected file(s)
-        
         if selected_files:
-            file_path = selected_files[0]
-
-            if ' ' in file_path:
-                # Show a message box indicating that spaces are not allowed
-                msg_box = QMessageBox()
-                msg_box.setIcon(QMessageBox.Warning)
-                msg_box.setWindowTitle("Invalid File Path")
-                msg_box.setText("Spaces are not allowed in the file path.")
-                msg_box.setStandardButtons(QMessageBox.Ok)
-                msg_box.exec_()
-            else:
-                text_box.setText(file_path)
-
+            text_box.setText(selected_files[0])
 
     def upload_file(self, file_path):
         if file_path:
