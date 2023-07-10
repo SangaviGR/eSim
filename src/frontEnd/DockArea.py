@@ -242,69 +242,55 @@ class DockArea(QtWidgets.QMainWindow):
             msg_box.exec_()
             return
         
-        # Check if a file has been uploaded
-        if self.convertPs_button.isEnabled():
-            # Check if the file is not empty
-            if os.path.getsize(file_path) > 0:
-                command = f"cd /home/ubuntus/eSim/schematic_converters/lib/PythonLib && python3 parser.py {file_path} {conPath}/{filename}"
-                
-                try:
-                    subprocess.run(command, shell=True, check=True)
-                    # Show a message box with the conversion success message
-                    msg_box = QMessageBox()
-                    msg_box.setIcon(QMessageBox.Information)
-                    msg_box.setWindowTitle("Conversion Successful")
-                    msg_box.setText("The file has been converted successfully. Do you want to include it under the project explorer?")
-                    msg_box.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
-                    msg_box.setDefaultButton(QMessageBox.Yes)
-                    result = msg_box.exec_()
-                    print("Conversion of Pspice to eSim schematic Successful")
-
-                    if result == QMessageBox.Yes:
-                        # Add the converted file under the project explorer
-                        newFile = str(conPath + "/" + filename)
-                        print(newFile)
-                        self.app = Application()
-                        self.app.obj_Mainview.obj_projectExplorer.addTreeNode(newFile, [newFile])
-                        shutil.copytree(newFile, f"/home/ubuntus/eSim-Workspace/{filename}") 
-                        print("File added under the project explorer.")
-                    else:
-                        # User chose not to add the file
-                        print("File not added under the project explorer.")
-                except subprocess.CalledProcessError as e:
-                    # Handle any errors that occurred during command execution
-                    print("Error:", e)
-            else:
-                print("File is empty. Cannot perform conversion.")
-                # A message box indicating that the file is empty
+        # Check if the file is not empty
+        if os.path.getsize(file_path) > 0:
+            command = f"cd /home/ubuntus/eSim/schematic_converters/lib/PythonLib && python3 parser.py {file_path} {conPath}/{filename}"
+            
+            try:
+                subprocess.run(command, shell=True, check=True)
+                # Show a message box with the conversion success message
                 msg_box = QMessageBox()
-                msg_box.setIcon(QMessageBox.Warning)
-                msg_box.setWindowTitle("Empty File")
-                msg_box.setText("The selected file is empty. Conversion cannot be performed.")
-                msg_box.setStandardButtons(QMessageBox.Ok)
-                msg_box.exec_()
+                msg_box.setIcon(QMessageBox.Information)
+                msg_box.setWindowTitle("Conversion Successful")
+                msg_box.setText("The file has been converted successfully. Do you want to include it under the project explorer?")
+                msg_box.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
+                msg_box.setDefaultButton(QMessageBox.Yes)
+                result = msg_box.exec_()
+                print("Conversion of Pspice to eSim schematic Successful")
+
+                if result == QMessageBox.Yes:
+                    # Add the converted file under the project explorer
+                    newFile = str(conPath + "/" + filename)
+                    print(newFile)
+                    self.app = Application()
+                    self.app.obj_Mainview.obj_projectExplorer.addTreeNode(newFile, [newFile])
+                    shutil.copytree(newFile, f"/home/ubuntus/eSim-Workspace/{filename}") 
+                    print("File added under the project explorer.")
+                else:
+                    # User chose not to add the file
+                    print("File not added under the project explorer.")
+            except subprocess.CalledProcessError as e:
+                # Handle any errors that occurred during command execution
+                print("Error:", e)
         else:
-            print("No file uploaded. Please upload a file first.")
-            # A message box indicating that no file has been uploaded
+            print("File is empty. Cannot perform conversion.")
+            # A message box indicating that the file is empty
             msg_box = QMessageBox()
             msg_box.setIcon(QMessageBox.Warning)
-            msg_box.setWindowTitle("No File Uploaded")
-            msg_box.setText("Please upload a file before performing the conversion.")
+            msg_box.setWindowTitle("Empty File")
+            msg_box.setText("The selected file is empty. Conversion cannot be performed.")
             msg_box.setStandardButtons(QMessageBox.Ok)
             msg_box.exec_()
 
+
     def browse_path(self, text_box):
-        file_dialog = QFileDialog()
+        file_dialog = QFileDialog()  # a dialog that allows the user to select files or directories
         file_dialog.setFileMode(QFileDialog.ExistingFile)
         file_dialog.setNameFilter("Schematic Files (*.sch)")
-        file_dialog.exec_()
-
-        selected_files = file_dialog.selectedFiles()
+        file_dialog.exec_()  # Execute the dialog
+        selected_files = file_dialog.selectedFiles()  # Get the selected file(s)
         if selected_files:
-            file_path = selected_files[0]
-            text_box.setText(file_path)
-            self.convertPs_button.setEnabled(True)
-
+            text_box.setText(selected_files[0])
 
     def upload_file(self, file_path):
         if file_path:
