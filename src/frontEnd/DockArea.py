@@ -279,8 +279,21 @@ class DockArea(QtWidgets.QMainWindow):
         file_dialog.setNameFilter("Schematic Files (*.sch)")
         file_dialog.exec_()  # Execute the dialog
         selected_files = file_dialog.selectedFiles()  # Get the selected file(s)
+        
         if selected_files:
-            text_box.setText(selected_files[0])
+            file_path = selected_files[0]
+
+            if ' ' in file_path:
+                # Show a message box indicating that spaces are not allowed
+                msg_box = QMessageBox()
+                msg_box.setIcon(QMessageBox.Warning)
+                msg_box.setWindowTitle("Invalid File Path")
+                msg_box.setText("Spaces are not allowed in the file path.")
+                msg_box.setStandardButtons(QMessageBox.Ok)
+                msg_box.exec_()
+            else:
+                text_box.setText(file_path)
+
 
     def upload_file(self, file_path):
         if file_path:
