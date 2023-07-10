@@ -178,7 +178,7 @@ class DockArea(QtWidgets.QMainWindow):
         
         file_path_text_box = QLineEdit()
         file_path_text_box.setFixedHeight(30)  
-        file_path_text_box.setFixedWidth(800)
+        file_path_text_box.setFixedWidth(900)
         self.eConLayout.addWidget(file_path_text_box, 0, 1, 1, 2)
         
         browse_button = QPushButton("Browse")
@@ -198,11 +198,11 @@ class DockArea(QtWidgets.QMainWindow):
 
         convert_button1 = QPushButton("Convert LTspice to eSim")
         convert_button1.setFixedSize(170, 30) 
-        self.eConLayout.addWidget(convert_button1, 1, 4, 1, 1)  
+        self.eConLayout.addWidget(convert_button1, 1, 2, 1, 1)  
 
         self.eConLayout.setColumnStretch(0, 1)  # Set a stretch factor of 1 for column 0
         self.eConLayout.setColumnStretch(1, 0)  # Set a stretch factor of 0 for column 1
-        self.eConLayout.setColumnStretch(4, 1)  # Set a stretch factor of 1 for column 2
+        self.eConLayout.setColumnStretch(2, 1)  # Set a stretch factor of 1 for column 2
 
         # Set alignment for button2 to center horizontally within the layout cell
         self.eConLayout.setAlignment(convertPs_button, Qt.AlignHCenter)
