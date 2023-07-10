@@ -1,0 +1,519 @@
+	<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!--[if IE]><![endif]-->
+<meta charset="utf-8" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="/downloads" />
+<link rel="shortlink" href="/node/2" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<link rel="shortcut icon" href="https://esim.fossee.in/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon" />
+<title>Downloads | eSim</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9HJP5WV709"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9HJP5WV709');
+</script>
+<style type="text/css" media="all">
+@import url("/modules/system/system.base.css?rxcznk");
+@import url("/modules/system/system.menus.css?rxcznk");
+@import url("/modules/system/system.messages.css?rxcznk");
+@import url("/modules/system/system.theme.css?rxcznk");
+</style>
+<style type="text/css" media="all">
+@import url("/misc/ui/jquery.ui.core.css?rxcznk");
+@import url("/misc/ui/jquery.ui.theme.css?rxcznk");
+@import url("/misc/ui/jquery.ui.button.css?rxcznk");
+@import url("/misc/ui/jquery.ui.resizable.css?rxcznk");
+@import url("/misc/ui/jquery.ui.dialog.css?rxcznk");
+</style>
+<style type="text/css" media="all">
+@import url("/modules/comment/comment.css?rxcznk");
+@import url("/modules/field/theme/field.css?rxcznk");
+@import url("/modules/node/node.css?rxcznk");
+@import url("/modules/search/search.css?rxcznk");
+@import url("/modules/user/user.css?rxcznk");
+@import url("/modules/forum/forum.css?rxcznk");
+@import url("/sites/all/modules/views/css/views.css?rxcznk");
+@import url("/sites/all/modules/ckeditor/css/ckeditor.css?rxcznk");
+</style>
+<style type="text/css" media="all">
+@import url("/sites/all/modules/colorbox/styles/default/colorbox_style.css?rxcznk");
+@import url("/sites/all/modules/ctools/css/ctools.css?rxcznk");
+</style>
+<style type="text/css" media="all">
+@import url("/sites/all/themes/impact_theme/style.css?rxcznk");
+</style>
+<script type="text/javascript" src="/misc/jquery.js?v=1.4.4"></script>
+<script type="text/javascript" src="/misc/jquery-extend-3.4.0.js?v=1.4.4"></script>
+<script type="text/javascript" src="/misc/jquery-html-prefilter-3.5.0-backport.js?v=1.4.4"></script>
+<script type="text/javascript" src="/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="/misc/drupal.js?rxcznk"></script>
+<script type="text/javascript" src="/misc/ui/jquery.ui.core.min.js?v=1.8.7"></script>
+<script type="text/javascript" src="/misc/ui/jquery.ui.widget.min.js?v=1.8.7"></script>
+<script type="text/javascript" src="/misc/ui/jquery.ui.button.min.js?v=1.8.7"></script>
+<script type="text/javascript" src="/misc/ui/jquery.ui.mouse.min.js?v=1.8.7"></script>
+<script type="text/javascript" src="/misc/ui/jquery.ui.draggable.min.js?v=1.8.7"></script>
+<script type="text/javascript" src="/misc/ui/jquery.ui.position.min.js?v=1.8.7"></script>
+<script type="text/javascript" src="/misc/ui/jquery.ui.position-1.13.0-backport.js?v=1.8.7"></script>
+<script type="text/javascript" src="/misc/ui/jquery.ui.resizable.min.js?v=1.8.7"></script>
+<script type="text/javascript" src="/misc/ui/jquery.ui.dialog.min.js?v=1.8.7"></script>
+<script type="text/javascript" src="/misc/ui/jquery.ui.dialog-1.13.0-backport.js?v=1.8.7"></script>
+<script type="text/javascript" src="/sites/all/modules/views/js/jquery.ui.dialog.patch.js?v=1.8.7"></script>
+<script type="text/javascript" src="/misc/ajax.js?v=7.98"></script>
+<script type="text/javascript" src="/sites/all/libraries/colorbox/jquery.colorbox-min.js?rxcznk"></script>
+<script type="text/javascript" src="/sites/all/modules/colorbox/js/colorbox.js?rxcznk"></script>
+<script type="text/javascript" src="/sites/all/modules/colorbox/styles/default/colorbox_style.js?rxcznk"></script>
+<script type="text/javascript" src="/sites/all/modules/colorbox/js/colorbox_load.js?rxcznk"></script>
+<script type="text/javascript" src="/sites/all/modules/colorbox/js/colorbox_inline.js?rxcznk"></script>
+<script type="text/javascript" src="/sites/all/modules/google_analytics/googleanalytics.js?rxcznk"></script>
+<script type="text/javascript" async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-82999923-6"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag("js", new Date());gtag("set", "developer_id.dMDhkMT", true);gtag("config", "UA-82999923-6", {"groups":"default","anonymize_ip":true});ga('create', 'UA-60190813-1', 'auto' , 'clientTracker');
+ga('clientTracker.send', 'pageview');
+//--><!]]>
+</script>
+<script type="text/javascript" src="/misc/progress.js?v=7.98"></script>
+<script type="text/javascript" src="/sites/all/modules/autodialog/autodialog.js?rxcznk"></script>
+<script type="text/javascript" src="/sites/all/themes/impact_theme/js/main-menu.js?rxcznk"></script>
+<script type="text/javascript" src="/sites/all/themes/impact_theme/js/pngfix.min.js?rxcznk"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"impact_theme","theme_token":"-w8uyFSYBkckLwByQGxHF_BrjvwnuXpUnExIUjFfChM","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.button.css":1,"misc\/ui\/jquery.ui.resizable.css":1,"misc\/ui\/jquery.ui.dialog.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"modules\/forum\/forum.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/themes\/impact_theme\/style.css":1},"js":{"misc\/jquery.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"misc\/ui\/jquery.ui.core.min.js":1,"misc\/ui\/jquery.ui.widget.min.js":1,"misc\/ui\/jquery.ui.button.min.js":1,"misc\/ui\/jquery.ui.mouse.min.js":1,"misc\/ui\/jquery.ui.draggable.min.js":1,"misc\/ui\/jquery.ui.position.min.js":1,"misc\/ui\/jquery.ui.position-1.13.0-backport.js":1,"misc\/ui\/jquery.ui.resizable.min.js":1,"misc\/ui\/jquery.ui.dialog.min.js":1,"misc\/ui\/jquery.ui.dialog-1.13.0-backport.js":1,"sites\/all\/modules\/views\/js\/jquery.ui.dialog.patch.js":1,"misc\/ajax.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox_load.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox_inline.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"https:\/\/www.googletagmanager.com\/gtag\/js?id=UA-82999923-6":1,"misc\/progress.js":1,"sites\/all\/modules\/autodialog\/autodialog.js":1,"sites\/all\/themes\/impact_theme\/js\/main-menu.js":1,"sites\/all\/themes\/impact_theme\/js\/pngfix.min.js":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px","file_public_path":"\/sites\/default\/files","specificPagesDefaultValue":"admin*\nimagebrowser*\nimg_assist*\nimce*\nnode\/add\/*\nnode\/*\/edit\nprint\/*\nprintpdf\/*\nsystem\/ajax\nsystem\/ajax\/*"},"googleanalytics":{"account":["UA-82999923-6"],"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackColorbox":1}});
+//--><!]]>
+</script>
+<!--[if lt IE 9]><script src="/sites/all/themes/impact_theme/js/html5.js"></script><![endif]-->
+</head>
+<body class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node- page-node-2 node-type-page">
+    <!--	  <link rel="stylesheet" type="text/css" href="https://fossee.in/data/banner/css/nice-bar.css" />
+	   <script type="text/javascript" src="https://fossee.in/data/banner/js/nice-bar.js"></script>
+	   	  <link rel="stylesheet" type="text/css" href="https://fossee.in/data/banner/css/lightbox.css" />
+	   <script type="text/javascript" src="https://fossee.in/data/banner/js/lightbox.min.js"></script>
+	 <div class="nice-bar">
+	 <center>
+	      <p class="nice-text">One day workshop on Drupal at IIT Bombay, 28 August, 2016.&nbsp;&nbsp;To register <a style="color:white;background-color:#FF3333;padding:3px;border-radius:6px;" target="_blank" href="http://spoken-tutorial.org/workshop/drupal" >Click Here</a>
+</a>      </p>-->
+
+	   <!--     <p class="nice-text"><a href="https://fossee.in/workshop/osdag2016/" target="_blank">  <img src="https://fossee.in/data/banner/images/promo_bnr_1.png" style="position: relative; top: -2px;"> </a>        </p>
+-->
+	</center>
+	</div>
+<style type="text/css">
+.button {
+  font-size: 1em;
+  padding: 10px;
+ float: right;
+ margin-right: 20px;
+ margin-top: -8px;
+  color: #000;
+  border: 2px solid #CFCFCF;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  background: #DE7F23;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #F4E784;
+}
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalDialog > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    left: 25%;
+    top:25%;
+    color:#3E3C3C;
+    background: -moz-linear-gradient(#fff, #C6C1C1);
+    background: -webkit-linear-gradient(#fff, #C6C1C1);
+    background: -o-linear-gradient(#fff, #C6C1C1);
+}
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+    background: #00d9ff;
+}
+
+</style>
+
+	<!--<center><a href="https://fossee.in/conference/cfd-symposium/" target="_blank">  <img src="https://fossee.in/data/cfd_banner.png" style=" position: relative; top: -2px;"> </a></center>
+-->
+<div class="region region-user-menu"><center></center></div>
+<div id="wrapper">
+  <header id="header" class="clearfix">
+          <img src="https://esim.fossee.in/sites/default/esim_logo.png" width="100">
+      <img src="https://esim.fossee.in/sites/default/esim_text.png" width="250" style="">
+               
+    <nav id="navigation" role="navigation">
+<!--<a href="https://esim.fossee.in/pspice-to-kicad" class="button">Pspice to Kicad</a>
+  <img  src="/sites/all/themes/impact_theme/images/new1.gif" style="widht:60px;margin-right: -15px;float:right;margin-top:-22px"/>
+-->
+<div id="openModal" class="modalDialog">
+    <div> <a href="#close" title="Close" class="close">X</a>
+
+          <h2>Projects</h2>
+
+        <p>   Do you have any ideas for your B.E, B.Tech or M.Tech projects? We shall help you to explore using the eSim tool for your project. <strong>
+        </br>Please write to us at  : </strong><a href="mailto:contact-esim@fossee.in" target="_blank">contact-esim (at) fossee(dot)in . </a></p>
+
+    </div>
+</div>
+      <div id="main-menu">
+        <ul class="menu"><li class="first leaf"><a href="/home" title="Home">Home</a></li>
+<li class="expanded"><a href="/resources">Resources</a><ul class="menu"><li class="first last leaf"><a href="/source-code">Source Code</a></li>
+</ul></li>
+<li class="leaf active-trail"><a href="/downloads" title="" class="active-trail active">Downloads</a></li>
+<li class="leaf"><a href="/forum">Forum</a></li>
+<li class="leaf"><a href="/testimonials" title="">Testimonials</a></li>
+<li class="leaf"><a href="https://esim.fossee.in/fellowship/2023" title="">Fellowship 2023</a></li>
+<li class="expanded"><a href="/pspice-to-kicad">PSPICE to KICAD Convertor</a><ul class="menu"><li class="first last leaf"><a href="/pspice-to-kicad/list" title="">Converted Files</a></li>
+</ul></li>
+<li class="expanded"><a href="/news-events" title="">News &amp; Events</a><ul class="menu"><li class="first leaf"><a href="/news" title="">News</a></li>
+<li class="last leaf"><a href="/events" title="">Events</a></li>
+</ul></li>
+<li class="leaf"><a href="/contact-us" title="Contact us">Contact us</a></li>
+<li class="last leaf"><a href="/user/login" title="">Login</a></li>
+</ul>      </div>
+    </nav>
+  </header>
+
+  
+  <div id="main" class="clearfix">
+    <div id="primary">
+             <aside id="sidebar" role="complementary">
+       <div class="region region-sidebar-first">
+  <div id="block-block-8" class="block block-block">
+
+      
+  <div class="content">
+    <marquee>NOTE: This website will be offline for maintenance and updates from 04:00 AM to 04:30 AM IST. This maintenance happens everyday at the same time.
+</marquee>  </div>
+  
+</div> <!-- /.block -->
+<div id="block-menu-menu-hackathon-submission" class="block block-menu">
+
+        <h2 >eSim MARATHON</h2>
+    
+  <div class="content">
+    <ul class="menu"><li class="first collapsed"><a href="/mixed-signal-soc-design-marathon" title="">Mixed Signal SoC design Marathon using eSim &amp; SKY130</a></li>
+<li class="collapsed"><a href="/mixed-signal-design-marathon" title="">Mixed Signal Circuit Design and Simulation Marathon</a></li>
+<li class="last collapsed"><a href="/circuit-design-simulation-marathon" title="">Circuit Design and Simulation Marathon using eSim</a></li>
+</ul>  </div>
+  
+</div> <!-- /.block -->
+<div id="block-menu-menu-circuit-simulation-project" class="block block-menu">
+
+        <h2 >CIRCUIT SIMULATION PROJECT</h2>
+    
+  <div class="content">
+    <ul class="menu"><li class="first last collapsed"><a href="/circuit-simulation-project" title="">Circuit Simulation Project</a></li>
+</ul>  </div>
+  
+</div> <!-- /.block -->
+<div id="block-menu-menu-tbc" class="block block-menu">
+
+        <h2 >TEXTBOOK COMPANION PROJECT</h2>
+    
+  <div class="content">
+    <ul class="menu"><li class="first last collapsed"><a href="/textbook-companion-project" title="">Textbook Companion Project</a></li>
+</ul>  </div>
+  
+</div> <!-- /.block -->
+<div id="block-menu-menu-labmigration" class="block block-menu">
+
+        <h2 >LAB MIGRATION PROJECT</h2>
+    
+  <div class="content">
+    <ul class="menu"><li class="first last collapsed"><a href="/lab-migration-project" title="">Lab Migration Project</a></li>
+</ul>  </div>
+  
+</div> <!-- /.block -->
+<div id="block-menu-menu-spoken-tutorial" class="block block-menu">
+
+        <h2 >SPOKEN TUTORIAL</h2>
+    
+  <div class="content">
+    <ul class="menu"><li class="first last leaf"><a href="/downloads/tutorials" title="">Spoken Tutorial</a></li>
+</ul>  </div>
+  
+</div> <!-- /.block -->
+<div id="block-block-2" class="block block-block">
+
+      
+  <div class="content">
+    <!--<div><img src="https://scilab.in/data/stats-logo-black.png" style="float:left; width:25px" /> <strong>0 </strong>page loads.<br />
+<a href="https://www.dwsim.fossee.in/awstats/awstats.pl?config=dwsim" target="_blank">Click here to view stats </a></div>-->
+
+<p>&nbsp;</p>
+<center>
+<div><a href="https://fossee.in" target="_blank"><img src="https://fossee.in/sites/all/themes/fossee/logo.png" style="width:150px;margin-left: -55px;margin-bottom:10px"/> </a></div>
+<div><a href="http://iitb.ac.in" target="_blank"><img src="https://fossee.in/sites/all/themes/fossee/img/iitb-logo.png" style="margin-left: -55px;margin-bottom:10px;"/> </a></div>
+<div><a href="https://mhrd.gov.in/ict-initiatives" target="_blank"><img src="https://fossee.in/sites/all/themes/fossee/img/nmeict-logo.png" style="width:150px;margin-left: -55px;"/> </a></div>
+</center>
+<br>
+<div style="padding:10px;">
+<span><b>2282090 </b>page loads.</span>
+<br><a href="https://stats.fossee.in/awstats/awstats.pl?config=esim.fossee.in" target="_blank">
+Click here to view stats</a>
+</div>  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+      </aside> 
+          <section id="content" role="main">
+        
+        <div id="breadcrumbs"><h2 class="element-invisible">You are here</h2><nav class="breadcrumb"><a href="/">Home</a> » Downloads</nav></div>                        <div id="content-wrap">
+                    <h1 class="page-title">Downloads</h1>                                                  <div class="region region-content">
+  <div id="block-system-main" class="block block-system">
+
+      
+  <div class="content">
+                          
+      
+    
+  <div class="content">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p><strong><span style="color:#800000">The latest version of eSim (v2.3) launched on 19<sup>th</sup> September 2022</span></strong></p>
+<p><strong><span style="color:#FF0000">NOTE for Ubuntu users:</span></strong><span style="color:#000000"> Please check <strong><a href="https://docs.google.com/document/d/1bTh_FQYfnV2618KYGV7nUjRzSdleUb81D1sH3wROqTY/edit?usp=sharing">THIS</a> </strong>for Kicad installation.</span></p>
+<p><span style="font-size:14px"><strong><span style="color:#000000">Source Code:</span></strong></span><span style="font-size:14px"><strong><span style="color:#000000">    <a href="https://github.com/FOSSEE/eSim" target="_blank">eSim</a> |</span></strong></span><span style="font-size:14px"><strong><span style="color:#000000"> </span></strong></span><span style="font-size:14px"><strong><span style="color:#000000"><a href="https://github.com/FOSSEE/nghdl/">NGHDL</a> |</span></strong></span><span style="font-size:14px"><strong><span style="color:#000000"> <a href="https://github.com/FOSSEE/KiCad-eSim/">KiCad (for eSim)</a> | <a href="https://github.com/FOSSEE/eSim-IP-Library/">eSim IP Library</a></span></strong></span></p>
+<p> </p>
+<p><span style="font-size:20px"><span style="color:#008000"><strong>eSim 2.3 </strong></span></span><span style="color:#800080"><span style="font-size:16px"><strong>(Special Release for SkyWater SKY130 PDK) </strong></span><span style="font-size:20px"><strong>:</strong></span></span><span style="font-size:20px"><span style="color:#000000"><strong> </strong></span></span><span style="color:#800080"><span style="font-size:16px"><strong> </strong></span></span><span style="font-size:14px"><strong>[ Release: 19/09/2022 ]</strong></span></p>
+<ul><!-- <li><strong><span style="color:#000000">Installation instructions :</span> <a href="https://static.fossee.in/esim/installation-files/Install_eSim_on_Windows.pdf" target="_blank">Windows OS</a> <span style="font-size:18px"><span style="color:#000000">|</span></span> <a href="http://github.com/FOSSEE/eSim/blob/master/INSTALL" target="_blank">Ubuntu OS</a></strong></li> --><li><strong><a href="https://github.com/FOSSEE/eSim/blob/sky130-dev/INSTALL" target="_blank">Installation Instructions</a> <span style="font-size:18px"><span style="color:#000000">|</span></span> <a href="https://static.fossee.in/esim/manuals/eSim_Manual_2.3.pdf" target="_blank">User Manual</a> <span style="font-size:18px"><span style="color:#000000">|</span></span> <a href="https://github.com/FOSSEE/eSim/releases/tag/v2.3" target="_blank">Release Notes</a></strong><strong> </strong></li>
+<li><span style="color:#000000"><strong>Installers: </strong></span></li>
+</ul><div style="width: 92%; margin-left: 4%; word-wrap: break-word;">
+<table style="table-layout:fixed; text-align:center"><tbody><tr><td><span style="color:#000000"><strong>Ubuntu 18.04 and 20.04 LTS (including <a href="https://ubuntu.com/download/flavours">Flavours</a>): </strong></span> </td>
+<td>
+<p><span style="color:#000000"><strong><strong>Windows 8, 10, and 11 (64-bit)</strong></strong></span><strong>:</strong></p>
+<p><span style="color:#000000"><strong>[ Release for Windows 11 is experimental ]</strong></span></p>
+</td>
+</tr><tr><td style="text-align:center; vertical-align:middle">
+<div><span style="font-size:8px"><img dir="ltr" src="/sites/default/files/linux.png" style="float:left; height:30px; margin-left:40px; margin-right:40px; width:30px" /><span style="color:#FFFFFF">extra space</span></span></div>
+<p><strong><a href="https://static.fossee.in/esim/installation-files/eSim-2.3.zip" target="_blank">eSim-2.3.zip</a> : </strong><span style="color:#000000">73.7 MB          </span></p>
+</td>
+<td>
+<div><span style="font-size:8px"><img dir="ltr" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/512px-Windows_logo_-_2012.svg.png" style="float:left; height:30px; margin-left:40px; margin-right:40px; width:30px" /><span style="color:#FFFFFF">extra space</span></span></div>
+<p><strong><a href="https://static.fossee.in/esim/installation-files/eSim-2.3_installer.exe" target="_blank">eSim-2.3_installer.exe</a> :</strong><span style="color:#000000"> 369 MB </span></p>
+</td>
+</tr><tr><td style="text-align:left; vertical-align:middle; width:100%">
+<p><strong><span style="color:#006400">SHA256SUM</span> : </strong></p>
+<p><span style="color:#000000">102922dc8b4b42e198b175baee819665ec72efa979ed5013778229516233e019</span></p>
+</td>
+<td>
+<p><strong><span style="color:#006400">SHA256SUM</span> :  </strong></p>
+<p><span style="color:#000000">26008af9d487d5939fcf1a6dfc90d78c32979afc5a8f627da11c95ab4c3814d9</span></p>
+</td>
+</tr></tbody></table></div>
+<p><span style="font-size:20px"><span style="color:#008000"><strong>eSim 2.2 :</strong></span><span style="color:#000000"><strong> </strong></span></span><span style="font-size:14px"><strong>[ Release: 25/02/2022 ]</strong></span></p>
+<ul><!-- <li><strong><span style="color:#000000">Installation instructions :</span> <a href="https://static.fossee.in/esim/installation-files/Install_eSim_on_Windows.pdf" target="_blank">Windows OS</a> <span style="font-size:18px"><span style="color:#000000">|</span></span> <a href="http://github.com/FOSSEE/eSim/blob/master/INSTALL" target="_blank">Ubuntu OS</a></strong></li> --><li><strong><a href="http://github.com/FOSSEE/eSim/blob/master/INSTALL" target="_blank">Installation Instructions</a> <span style="font-size:18px"><span style="color:#000000">|</span></span> <a href="https://static.fossee.in/esim/manuals/eSim_Manual_2.2.pdf" target="_blank">User Manual</a> <span style="font-size:18px"><span style="color:#000000">|</span></span> <a href="https://github.com/FOSSEE/eSim/releases/tag/v2.2" target="_blank">Release Notes</a></strong><strong> </strong></li>
+<li><span style="color:#000000"><strong>Installers: </strong></span></li>
+</ul><div style="width: 92%; margin-left: 4%; word-wrap: break-word;">
+<table style="table-layout:fixed; text-align:center"><tbody><tr><td><span style="color:#000000"><strong>Ubuntu 18.04 and 20.04 LTS (including <a href="https://ubuntu.com/download/flavours">Flavours</a>): </strong></span> </td>
+<td>
+<p><span style="color:#000000"><strong><strong>Windows 8 and 10 (64-bit)</strong></strong></span><strong>:</strong></p>
+</td>
+</tr><tr><td style="text-align:center; vertical-align:middle">
+<div><span style="font-size:8px"><img dir="ltr" src="/sites/default/files/linux.png" style="float:left; height:30px; margin-left:40px; margin-right:40px; width:30px" /><span style="color:#FFFFFF">extra space</span></span></div>
+<p><strong><a href="https://static.fossee.in/esim/installation-files/eSim-2.2.zip" target="_blank">eSim-2.2.zip</a> : </strong><span style="color:#000000">21 MB          </span></p>
+</td>
+<td>
+<div><span style="font-size:8px"><img dir="ltr" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/512px-Windows_logo_-_2012.svg.png" style="float:left; height:30px; margin-left:40px; margin-right:40px; width:30px" /><span style="color:#FFFFFF">extra space</span></span></div>
+<p><strong><a href="https://static.fossee.in/esim/installation-files/eSim-2.2_installer.exe" target="_blank">eSim-2.2_installer.exe</a> :</strong><span style="color:#000000"> 312 MB </span></p>
+</td>
+</tr><tr><td style="text-align:left; vertical-align:middle; width:100%">
+<p><strong><span style="color:#006400">SHA256SUM</span> : </strong></p>
+<p><span style="color:#000000">3b0bc609c22d4e5e8f75fd940b344260cf605e8dc6262516a2bb330fc6e35f9f</span></p>
+</td>
+<td>
+<p><strong><span style="color:#006400">SHA256SUM</span> :  </strong></p>
+<p><span style="color:#000000">8c4aa8f563535e9dbbd608042063ffe963157fe9d562e493b2f81111b07d0c8b</span></p>
+</td>
+</tr></tbody></table></div>
+<p> </p>
+<hr /><h2><span style="color:#696969"><strong>Old Releases :</strong></span></h2>
+<p> </p>
+<p><span style="font-size:20px"><span style="color:#008000"><strong>eSim 2.2</strong></span><span style="color:#FF8C00"><strong><span style="color:#008000"><strong> </strong></span></strong></span></span><span style="color:#ff6600"><span style="font-size:18px"><strong>(Pre-release) :</strong></span><span style="font-size:20px"><strong> </strong></span></span><span style="font-size:14px"><strong>[ Release: 10/02/2022 ]</strong></span></p>
+<div><img src="/sites/default/files/linux.png" style="float:left; height:68px; margin-bottom:5px; margin-top:5px; width:69px" />     <strong>-    <a href="http://static.fossee.in/esim/installation-files/eSim-2.2_pre-release.zip">Installer - Ubuntu 18.04 and 20.04 LTS</a></strong> : <span style="color:#000000"> 20.9 MB</span></div>
+<div><strong>     -    </strong><a href="https://github.com/FOSSEE/eSim/blob/30cecf651a7e9d5faf692bff709b4d87e6f9239f/INSTALL" target="_blank"><strong>Installation instructions</strong></a> <strong><span style="font-size:18px"><span style="color:#000000">| </span></span><a href="https://static.fossee.in/esim/manuals/eSim_Manual_2.2_pre-release.pdf" target="_blank">User Manual</a></strong> <strong><span style="font-size:18px"><span style="color:#000000">| </span></span><a href="https://github.com/FOSSEE/eSim/releases/tag/v2.2_pre-release" target="_blank">Release Notes</a></strong></div>
+<p><a href="http://github.com/FOSSEE/eSim/blob/master/INSTALL"><strong>     </strong></a><strong>-    <span style="color:#006400">SHA256SUM</span> : </strong><span style="color:#000000">49dbf75394e1a233b10c6ac450d58b1692cd435905836223c240d739e6de1269</span></p>
+<p> </p>
+<p><span style="font-size:20px"><span style="color:#008000"><strong>eSim 2.1 :</strong></span><span style="color:#000000"><strong> </strong></span></span><span style="font-size:14px"><strong>[ Release: 06/01/2021 ]</strong></span></p>
+<ul><li><strong><span style="color:#000000">Installation Instructions :</span> <a href="https://static.fossee.in/esim/installation-files/Install_eSim_on_Windows.pdf" target="_blank">Windows OS</a> <span style="font-size:18px"><span style="color:#000000">|</span></span> <a href="https://github.com/FOSSEE/eSim/blob/8173e49d1a2d01d706dc8159aff507f7fc021964/INSTALL" target="_blank">Ubuntu OS</a></strong></li>
+<li><strong><a href="https://static.fossee.in/esim/manuals/eSim_Manual_2020_August.pdf" target="_blank">User Manual</a></strong> <strong><span style="font-size:18px"><span style="color:#000000">| </span></span></strong><strong><a href="https://github.com/FOSSEE/eSim/releases/tag/v2.1" target="_blank">Release Notes</a></strong><strong> </strong></li>
+<li><span style="color:#000000"><strong>Installers : </strong></span></li>
+</ul><div style="width: 92%; margin-left: 4%; word-wrap: break-word;">
+<table style="table-layout:fixed; text-align:center"><tbody><tr><td><span style="color:#000000"><strong>Ubuntu 16.04 OS and above LTS versions: </strong></span> </td>
+<td>
+<p><span style="color:#000000"><strong><strong>Windows 10 (64-bit PC)</strong></strong></span><strong>:</strong></p>
+<p><span style="color:#000000"><strong>[ <span style="background-color:#FFFF00">Recommended version is Windows 10</span>, it may not work as intended for Windows 8 or below. Please see Release Notes for the reason behind size reduction ]</strong></span></p>
+</td>
+</tr><tr><td style="text-align:center; vertical-align:middle">
+<div><span style="font-size:8px"><img dir="ltr" src="/sites/default/files/linux.png" style="float:left; height:30px; margin-left:40px; margin-right:40px; width:30px" /><span style="color:#FFFFFF">extra space</span></span></div>
+<p><strong><a href="https://static.fossee.in/esim/installation-files/eSim-2.1.zip" target="_blank">eSim-2.1.zip</a> : </strong><span style="color:#000000">19 MB          </span></p>
+</td>
+<td>
+<div><span style="font-size:8px"><img dir="ltr" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/512px-Windows_logo_-_2012.svg.png" style="float:left; height:30px; margin-left:40px; margin-right:40px; width:30px" /><span style="color:#FFFFFF">extra space</span></span></div>
+<p><strong><a href="https://static.fossee.in/esim/installation-files/eSim-2.1_installer.exe" target="_blank">eSim-2.1_install.exe</a> :</strong><span style="color:#000000"> 253 MB </span></p>
+</td>
+</tr><tr><td style="text-align:left; vertical-align:middle; width:100%">
+<p><strong><span style="color:#006400">SHA256SUM</span> : </strong></p>
+<p><span style="color:#000000">9623f6004240e82f20418e769a29b166b2448603b0da457e285b26c7024a9ffe</span></p>
+</td>
+<td>
+<p><strong><span style="color:#006400">SHA256SUM</span> :  </strong></p>
+<p><span style="color:#000000">ca65ecad31f4b31c9eb9361d943672fca9297fd0741e8d00fcb685d64d084583</span></p>
+</td>
+</tr></tbody></table></div>
+<p><span style="font-size:20px"><span style="color:#008000"><strong>eSim 2.0 :</strong></span><span style="color:#000000"><strong> </strong></span></span><span style="font-size:14px"><strong>[ Release: 24/03/2020 ]</strong></span></p>
+<ul><li><strong><a href="https://github.com/FOSSEE/eSim/blob/30020f042558fe758c4ecbc89280d932e4ca55e8/INSTALL" target="_blank">Installation Instructions</a> <span style="font-size:18px"><span style="color:#000000">| </span></span><a href="https://static.fossee.in/esim/installation-files/eSim_Manual_2.0.pdf" target="_blank">User Manual</a> <span style="font-size:18px"><span style="color:#000000">| </span></span></strong><strong><a href="https://github.com/FOSSEE/eSim/releases/tag/v2.0" target="_blank">Release Notes</a></strong></li>
+<li><span style="color:#000000"><strong>Installers : </strong></span> </li>
+</ul><div style="width: 92%; margin-left: 4%; word-wrap: break-word;">
+<table style="table-layout:fixed; text-align:center"><tbody><tr><td><span style="color:#000000"><strong>Ubuntu 16.04: </strong></span> </td>
+<td><span style="color:#000000"><strong><strong>Windows 7 and above (64 bit PC)</strong></strong></span><strong>:</strong></td>
+</tr><tr><td style="text-align:center; vertical-align:middle">
+<div><span style="font-size:8px"><img dir="ltr" src="/sites/default/files/linux.png" style="float:left; height:30px; margin-left:40px; margin-right:40px; width:30px" /><span style="color:#FFFFFF">extra space</span></span></div>
+<p><a href="https://static.fossee.in/esim/installation-files/eSim-2.0.zip" target="_blank"><strong>eSim-2.0.zip </strong></a><strong>: </strong><span style="color:#000000">101 MB          </span></p>
+</td>
+<td>
+<div><span style="font-size:8px"><img dir="ltr" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/512px-Windows_logo_-_2012.svg.png" style="float:left; height:30px; margin-left:40px; margin-right:40px; width:30px" /><span style="color:#FFFFFF">extra space</span></span></div>
+<p><a href="https://static.fossee.in/esim/installation-files/eSim-2.0_install.exe" target="_blank"><strong>eSim-2.0_install.exe </strong></a><strong>:</strong><span style="color:#000000"> 747 MB </span></p>
+</td>
+</tr><tr><td style="text-align:left; vertical-align:middle; width:100%">
+<p><strong><span style="color:#006400">SHA256SUM</span> : </strong></p>
+<p><span style="color:#000000">df1f53cc722ed131c57c5bfe038cd2ab2a548bbd33b418384e9d50a39fdab0a1</span></p>
+</td>
+<td>
+<p><strong><span style="color:#006400">SHA256SUM</span> :  </strong></p>
+<p><span style="color:#000000">5255336b17f3950806b000f5a547512a5df182e8870610808099b53b14a54c25</span></p>
+</td>
+</tr></tbody></table></div>
+<ul></ul><h2><strong><span style="color:#008000"><span style="font-size:20px">eSim 1.1.2</span> :</span></strong><strong> <span style="font-size:14px">[ Release : 30/08/2019 ]</span></strong></h2>
+<ul><li><a href="https://static.fossee.in/esim/manuals/eSim_Manual_2019_Dec_31.pdf" target="_blank"><strong>User Manual</strong></a></li>
+<li><span style="color:#000000"><strong>Installers :</strong></span></li>
+</ul><div style="width: 92%; margin-left: 4%; word-wrap: break-word;">
+<table style="table-layout:fixed; text-align:center"><tbody><tr><td><span style="color:#000000"><strong>Ubuntu 14.04 and 16.04:</strong></span></td>
+<td><span style="color:#000000"><strong><strong>Windows 7 and above:</strong></strong></span></td>
+</tr><tr><td>
+<p><img dir="ltr" src="/sites/default/files/linux.png" style="float:left; height:30px; margin-left:40px; margin-right:40px; width:30px" /><a href="https://static.fossee.in/esim/installation-files/eSim-Windows-Installer.zip"><strong>- </strong></a><a href="https://static.fossee.in/esim/installation-files/eSim-1.1.2.zip"><strong>eSim-1.1.2.zip : </strong></a><span style="color:#000000">9 MB</span><br /><strong><a href="http://esim.fossee.in/on_ubuntu" target="_blank">- Installation instructions</a></strong><br /><strong><a href="https://static.fossee.in/esim/videos/Getting-started-with-eSim-Linux-installation-English.ogv" target="_blank">- Installation video</a></strong></p>
+</td>
+<td>
+<div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/512px-Windows_logo_-_2012.svg.png" style="float:left; height:30px; margin-left:40px; margin-right:40px; width:30px" /><a href="https://static.fossee.in/esim/installation-files/eSim-Windows-Installer.zip"><strong>- eSim-Installer.zip :</strong></a><strong> </strong><span style="color:#000000">756 MB</span><br /><strong><a href="https://static.fossee.in/esim/installation-files/How_to_install_eSim_on_Windows_OS_.pdf" target="_blank">- Installation instructions</a></strong><br /><strong><a href="https://static.fossee.in/esim/videos/Getting-started-with-eSim-Windows-installation-English.ogv" target="_blank">- Installation video</a></strong></div>
+</td>
+</tr></tbody></table></div>
+<p> </p>
+<hr /><h2><span style="color:#8B4513"><strong>Legacy Releases :</strong></span></h2>
+<p> </p>
+<p><span style="font-size:20px"><span style="color:#008000"><strong>1. Ubuntu 14.04 and 16.04</strong></span></span><span style="color:#000000"><strong> : <span style="font-size:14px">32-bit and 64-bit </span></strong></span><span style="font-size:14px"><strong>[ Release : 9/06/2016 ]</strong></span></p>
+<div><img src="/sites/default/files/linux.png" style="float:left; height:50px; margin-bottom:20px; margin-top:20px; width:50px" /><a href="https://static.fossee.in/esim/installation-files/esim/eSim-1.1.2.zip">      </a></div>
+<div><a href="https://static.fossee.in/esim/installation-files/esim/eSim-1.1.2.zip">          <strong>- eSim Installer - Linux</strong></a>        <span style="color:#000000">     7.2 MB</span> <a href="http://esim.fossee.in/on_ubuntu" target="_blank"> </a></div>
+<div><a href="http://esim.fossee.in/on_ubuntu" target="_blank">          <strong>- Installation instructions for Ubuntu</strong></a></div>
+<div> </div>
+<div> </div>
+<div><span style="color:#008000"><strong><strong><span style="font-size:20px">2. Windows 7 and above :</span></strong></strong></span><span style="color:#000000"><strong><strong> <span style="font-size:14px">32-bit and 64-bit </span></strong></strong></span><span style="font-size:14px"><strong>[ Release : 9/06/2016 ]</strong></span></div>
+<div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABHNCSVQICAgIfAhkiAAAIABJREFUeF7t3U2PJMeZGODI6iZFUSKHFIS1RUoUyaFG4swCPtgnn7xXwwcLtuWj4dMefTGwR+tXGNiLddcCogksdFqAWKyPuwcv4IN9WF0MGIYsDlta8WNmusKR1R/TNd2VVZVVmRkR+dRqVpqu/HjjeXM634rKiGiCFwECBAgQIFCHwC/j18Lnn34QFicPwyK8H+Ly/RAW6b/T//7bez8IP22WVw09raPFWkGAAAECBGYi8PP4cjg5+25qbbqxx0fhJD68vsl/dfZeODlpVhKx/X+LC5SLn6wBKQDWOPyFAAECBAhkIPCn8aXw7bPvpUjef/5JvnkUQpNu9mffD004uYiyvbNf3t3vuMl3tUQB0KXjPQIECBAgMKTAx79+Kzx7ab27fpE+1cezB+m0z+/RzeUn+SPGogA4IqZDESBAgACBWwJ//tmb4elld3247K5v0t9D/DAsm1eveunD1U0+7vlR/tYJd/uBAmA3J1sRIECAAIHNAtc3+asu+/QpftVdHx+km/9rqx2bG931Fz/YfLwR3lEAjIDsFAQIECBQgcBHj99Id/H7qyfqr56wj+338uEP003+3qqF7T1+9fDd1af4cT7N99FVAPRRsw8BAgQI1CnQDqP74uztNHzuUThdPFwbRtc+kNe+rm/y6Xv5fO/vW/OjANhKZAMCBAgQqEqgaxjdl2fvpk/36c6e/rNlGF3pJgqA0jMofgIECBC4LfBJPA2fnr2T3hhsGN3tk5b1EwVAWfkSLQECBAjcFGgfvnuSuuubG9317RP2jx8/CovFK9ebXj1hT+9aQAHgYiBAgACBvAU2D6P7UXr47hvXw+du3uTd8LfmVAGwlcgGBAgQIDC4QIHD6AY3GfgECoCBgR2eAAECBC4F7hpGd7FQTTuM7h+utipoGF3peVUAlJ5B8RMgQCAnge5hdO+tbvE3h9G1sRc8lC4n+n1jUQDsK2Z7AgQIzF3gxYVqztsV6dKsd+0EOTMaRlf6ZaAAKD2D4idAgMAQAncOo0vryrcL1SzPfpg+tV+uRpdOfrn6rE/yQyRiuGMqAIazdWQCBAjkL7BxGN1naYW65uvXDbh6qr5dqEaXff553SFCBcAOSDYhQIBA0QI3n7CP6RN8k7rrL1aj6xhG5y5fdM53CF4BsAOSTQgQIJC9wKZhdDH+ID1h//oq/vaevlqR7urlJn8DY3b/UwEwu5RrMAECxQr87FevhNdevx8WJ6l7Pj1wF5dpcZr0vXz7qf5p+M6qXddP2F/e3Ndu+MW2XOADCCgABkB1SAIECPQW6FqopgnvpeNe3NnXFqrxSb6394x3VADMOPmaToDARAJdw+hCWo2uaZeia1+rPvvn/3OicJ22TgEFQJ151SoCBHIQ+PjXb4VnL61317fD6OLZgxTe89+/htHlkK3ZxaAAmF3KNZgAgaMKbBpGF+KHYdm8evVZ/nrBmnYYnReBDAQUABkkQQgECGQusGkYXYw/TA/fffPO1egMls88qcJTALgGCBAg0ArcGkaXnrCPzaP0TrtQzb0V0uor+Ruf4D1h79opWEABUHDyhE6AwJ4C7UI1n3/6we1hdGlI3dP0p3219/erJ+z11u8JbPOSBBQAJWVLrAQIbBfoGkb31dl74eTyibu1YXTbD2sLArUJKABqy6j2EJiDwIvD6FYT4rTd9WmK23D2/fQp/nKhGsPo5nA5aGM/AQVAPzd7ESAwhsCuw+iuFqoZIybnIFCJgAKgkkRqBoFiBa4fvkvj40NMn+DT1LYXC9UYRldsUgVegoACoIQsiZFA6QK3nrBvb/Ztd318kB6+e23VvNUT9TefuvMEXulpF3/eAgqAvPMjOgLlCHz0+I10A7+fnqB//3qhmruG0a0evru6ubvJl5NgkdYmoACoLaPaQ2BIgXYY3Rdnb6dV6B6F08XD56vRrYbQGUY3pL1jEziygALgyKAOR6B4ga5hdF+mhWoW7eS26T+G0RWfag2Yt4ACYN751/q5CnwST8OnZ++k5j/vrjeMbq5Xg3bPVEABMNPEa/ZMBDYtVPP48aOwWLxyrWAY3UwuCM0k8FxAAeBqIFC6wOZhdD9KT9h/486FatzwS8+6+AkcLKAAOJjQAQiMIGAY3QjITkFgXgIKgHnlW2tLE/izx/8snIaP0if5NMQuva4XqjGMrrRUipdAbgLpUV4vAgSyFTiJ30x3/Yubf7ZBCowAgRIFFAAlZk3MBAgQIEDgQAEFwIGAdp+xwMe/vpjCdsYEmk6AQLkCngEoN3ciH1rgziVnrxeqeRDO03fzIfy7ocNwfAIECAwhoAAYQtUxyxH42a9eCa+/+dbdU9veXFc+NWlt6Nz103jltFWkBAgQuCGgAHA51C9wawjdMs1Znz7Jt4vWrJadbV+mtq3/QtBCAgRuCigAXA/lC3R11cf4wzSELj1Jn17XH9ovH32xEF35udcCAgR6CygAetPZcVSBtqv+tdfvh8XJw+ulZq8+xYeOrvrVGvNeBAgQIPCigALgRRF/n05gp676FJ5V6KbLkTMTIFCNgAKgmlQW0JCby8wu0nfv8fK7+PZ7eF31BSRQiAQI1CSgAKgpmzm0petTvK76HDIkBgIECKwEFAAuhP0FNt7k46P0wN13VgecwwN3zaqVXgQIEChSQAFQZNoGDrqrqz7EiyVm2xBu3eTdDwfOjMMTIEDgaAIKgKNRFnagjZ/i23HxHU/V+9BbWKKFS4AAgbsFFAB3u9Tx07tu8rF5lO7hbVf9C8vLGhtfR9K1ggABArsJKAB2c8pzqz5d9Xrp88ylqAgQIDCygAJgZPC9T3fXp/jnE+C8mz7NP1/R8dZc9XufzQ4ECBAgMBMBBUAOib51k09P04fmYZrx5r6u+hwSJAYCBAjUJ6AAGCOn3V31H6ab/KurMK6fqr/qp9dfP0Z6nIMAAQJzFFAAHCvrtz7F31hxLpzpqj+Ws+MQIECAwFEEFAD7MF7f5Nsu+pi66NOSsqvlZHXV78NY0ba6aCpKpqYQmJuAAuBmxn8Zvxa+OHs7/ej9tRXnLm7yN7rq29/7N3/3uw/M7R+O9hIgQKB0gfkVAF1d9V+mrvqFp+pLv6jFT4AAAQLbBeosANqb/JNlmvBm8fCFFec+SA/c3VuxXD9wZwKc7ZeJLQgQIECgNoEyC4CurvqYvpt/Gr6ebv4Xubo5Nr7RVV/bBaw9BAgQINBPIN8CoG9XvZt8vyvBXgQIECAwK4FpC4CPf/1WePbSw1sP3MWoq35Wl6HGEiBAgMDYAsMWANu66pfN168fudNVP3bunY8AAQIEZixweAHQ1VX/1dl76Qb//It3N/kZX2qaToAAAQI5CWwvAD6Jp+HTs3dS0LfHxsf4g/TA3eurBnmqPqe8imUMgbg2GcQYZ3QOAgQIHE3gogDY1FW/SDPefXb2IH2Kf14o+BR/NHwHIkCAAAECUwmchl989n/DV2d/cGP6m/Rp/nIIXTRsbqrEOC8BAgQIEBhSoP2G/g+GPIFjEyBAgAABAvkJXH7Uzy8wEREgQIAAAQLDCSgAhrN1ZAIECBAgkK1AWwDEbKMTGAECBAgQIDCIgB6AQVgdlAABAgQI5C2gAMg7P6LLWaCx8ETO6REbAQLdAgqAbh/vEiBAgACBKgUW6QkAzwBUmVqNIkCAAAECmwX0AGy28Q4BAgQIEKhWQAFQbWo1jAABAgQIbBYwDHCzjXcIECBAgEC1AnoAqk2thhEgQIAAgc0CCoDNNt4hQIAAAQLVCigAqk2thhEgQIAAgc0C7WqAhgFu9vEOgS4B62V36XiPAIGsBfQAZJ0ewREgQIAAgWEEFADDuDoqAQIECBDIWsBMgFmnR3AECBAgQGAYAT0Aw7g6KgECBAgQyFpAAZB1egRHgAABAgSGEVAADOPqqAQIECBAIGuBtgAwDDDrFAmOAAECBAgcX0APwPFNHZEAAQIECGQvoADIPkUCzFYgpmm0vAgQIFCogJkAC02csAkQIECAwCECegAO0bMvAQIECBAoVEABUGjihE2AAAECBA4RUAAcomdfAgQIECBQqECaCnhpGGChyRM2AQIECBDoK6AHoK+c/QgQIECAQMECCoCCkyd0AgQIECDQVyAVAI2vAPrq2W/eAs3SPADzvgK0nkDRAnoAik6f4AkQIECAQD8BBUA/N3sRIECAAIGiBRQARadP8AQIECBAoJ+AqYD7udmLAAECBAgULaAHoOj0CZ4AAQIECPQTUAD0c7MXAQIECBAoWkABUHT6BE+AAAECBPoJtAWAeQD62dmLAAECBAgUK6AHoNjUCTwDARMBZZAEIRAg0E9AAdDPzV4ECBAgQKBogbQaoK8Ais6g4AkQIECAQA8BPQA90OxCgAABAgRKF1AAlJ5B8RMgQIAAgR4CCoAeaHYhQIAAAQKlC5gKuPQMip8AAQIECPQQ0APQA80uBAgQIECgdAEFQOkZFD8BAgQIEOghYBhgDzS7EFgJxIWJgFwKBAgUK6AHoNjUCZwAAQIECPQXUAD0t7MnAQIECBAoVkABUGzqBE6AAAECBPoLtAWA1QD7+9mTAAECBAgUKaAHoMi0CZoAAQIECBwmoAA4zM/eBAgQIECgSAEzARaZNkETIECAAIHDBPQAHOZn71kLRPMAzDr/Gk+gbAEFQNn5Ez0BAgQIEOgloADoxWYnAgQIECBQtkAqABrDAMvOoegJECBAgMDeAnoA9iazAwECBAgQKF9AAVB+DrWAAAECBAjsLWA1wL3J7ECAAAECBMoX0ANQfg61gAABAgQI7C2gANibzA4ECBAgQKB8AQVA+TnUgqkEmmAioKnsnZcAgYMF2gLAMMCDGR2AAAECBAiUJaAHoKx8iZYAAQIECBxFQAFwFEYHIUCAAAECZQlYDbCsfImWAAECBAgcRUAPwFEYHYQAAQIECJQloAAoK1+iJUCAAAECRxFQAByF0UEIECBAgEBZAqYCLitfoiVAgAABAkcR0ANwFEYHmaVANBHQLPOu0QQqEVAAVJJIzSBAgAABAvsImAlwHy3bEiBAgACBSgT0AFSSSM0gQIAAAQL7CCgA9tGyLQECBAgQqERAAVBJIjWDAAECBAjsI2Aq4H20bEuAAAECBCoR0ANQSSI1gwABAgQI7COgANhHy7YECBAgQKASATMBVpJIzZhEoJnkrE5KgACBIwjoATgCokMQIECAAIHSBBQApWVMvAQIECBA4AgCCoAjIDoEAQIECBAoTSAVADGWFrR4CRAgQIAAgcME9AAc5mdvAgQIECBQpIACoMi0CZoAAQIECBwmoAA4zM/eBAgQIECgSAFTAReZNkFnIdAE8wBkkQhBECDQR0APQB81+xAgQIAAgcIFFACFJ1D4BAgQIECgj4CpgPuo2YcAAQIECBQuoAeg8AQKnwABAgQI9BFQAPRRsw8BAgQIEChcQAFQeAKFT4AAAQIE+gi0BYCpgPvI2YcAAQIECBQsoAeg4OQJnQABAgQI9BVQAPSVsx+BaCIgFwEBAuUKmAmw3NyJnAABAgQI9BbQA9Cbzo4ECBAgQKBcAQVAubkTOQECBAgQ6C2gAOhNZ0cCBAgQIFCugGGA5eZO5AQIECBAoLeAHoDedHYkQIAAAQLlCigAys2dyAkQIECAQG8BqwH2prMjAQIECBAoV0APQLm5E/n0As30IYiAAAEC/QQUAP3c7EWAAAECBIoWUAAUnT7BEyBAgACBfgKmAu7nZi8CBAgQIFC0gB6AotMneAIECBAg0E9AAdDPzV4ECBAgQKBoATMBFp0+wRMgQIAAgX4CegD6udmLAAECBAgULaAAKDp9gp9UoAnmAZg0AU5OgMAhAgqAQ/TsS4AAAQIEChVIUwE3sdDYhU2AAAECBAj0FNAD0BPObgQIECBAoGQBBUDJ2RM7AQIECBDoKWAYYE84uxEgQIAAgZIF9ACUnD2xEyBAgACBngIKgJ5wdiNAgAABAiULKABKzp7YCRAgQIBATwGrAfaEsxuBEE0E5CogQKBcAT0A5eZO5AQIECBAoLeAAqA3nR0JECBAgEC5AmkmwPR/XgQIECBAgMCsBPQAzCrdGkuAAAECBC4EFACuBAIECBAgMEMBBcAMk67JBAgQIECgLQA8A+A6IECAAAECMxPQAzCzhGsuAQIECBBoBRQArgMC/QWa/rvakwABAtMKLMJi6SuAaXPg7AQIECBAYHQBPQCjkzshAQIECBCYXkABMH0ORECAAAECBEYXUACMTu6EBAgQIEBgeoFFWC48AzB9HkRAgAABAgRGFdADMCq3kxEgQIAAgTwEFAB55EEUBAgQIEBgVAEFwKjcTkaAAAECBPIQaAsAzwDkkQtRlCbQNCYCKi1n4iVA4FpAD4CLgQABAgQIzFBAATDDpGsyAQIECBBIUwFHXwG4DggQIECAwMwE9ADMLOGaS4AAAQIEWgEFgOuAAAECBAjMUEABMMOkazIBAgQIEEhTARsG6DIgQIAAAQJzE9ADMLeMa+/xBGIwD8DxNB2JAIGRBRQAI4M7HQECBAgQyEHATIA5ZEEMBAgQIEBgZAE9ACODOx0BAgQIEMhBQAGQQxbEQIAAAQIERhZQAIwM7nQECBAgQCAHAc8A5JAFMRAgQIAAgZEF9ACMDO50BAgQIEAgBwEFQA5ZEAMBAgQIEBhZwFcAI4M7XVUCJgKqKp0aQ2BeAnoA5pVvrSVAgAABAisBBYALgQABAgQIzFBAATDDpGsyAQIECBDwDIBrgAABAgQIzFBAD8AMk67JBAgQIEDgNBFEDAQI9BBolkYB9GCzC4EqBGL8IjTNlxvbEsMyvXe28f3VG/Hv0zGebtwmhidp0fHfb3x/dYj4WQhNx328jTNexPmf0v3+p8+P1hYAXgQI9BGIi45/dH0OaJ8qBOLyy9AsvtjYltj+Mm42v9/uuEjbxI5t2mM0He+3x9h2ntVNId0cul7n6Qa36NgmpvdPOuJ4ls7R9f4ucS63eLbHaLZsc36evE42t/X0aYrzpc3vt+f463tn4adNe1Ov5qUAqCaVGjK6wBg9AOfpE8Rp+Jvrtm37xR9XPXrpE0HXq/3UETd/6jhPn0gWaZuuV5Piahabfxlu+8W/S5zL5e/TOZ5sDGMZn4XT5ncb32/fOH/y29C8fL5xm/NnX4VXTz/f+P7TGMOP39ziuXFvbxDIWuA0dS/4FBPDeXL47c6ZiuGrtO3mXxq3DrSlm+fW9uHx7R9t+EkMz9I73b8E13a90R204ZDrP06/YGP6RbvLa7H6RLz7L8tlTN1bTXf31s3zni8/D4tFa7/b6/z8LCxONt+k1o4Sz8Oi2eMaWH4V4vlvdgvkgK3+zbf+Ku39Tw44gl0JECBwp8BpiMs/CeHkjTvfXaZfiE36xbjLa5kKidM9fvk3yyfhfLHHL/8nn4dXX979l3+F3TW7pME2BAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIHAt0IT/+pvvhSdxGV49/Xyry+fLZfjJt862bmcDAgQIECBAIGuBJvzis/8ZmvBglCjj8svQLL7Yeq4Yvwyh2b7dIm0Xd9iuPWF7zGaHbXc9d9PGGLfH2J77vPkyLHbYNqbtTnaI8Vk69y7b7dqWNsbljrlpdtzu/Dx5n+zmc/o0teel7dt+fu+34SfN+dbrxwYECBAgsFVg3AJgazg2ILCnwK5FZSrDQgy/3e3o8bNULMat2y6X/yX8q2/9563b2YAAAQIZCpxmGJOQCOwu0CxeSRu3f7a/mvDt7Ru1WzS7bvYXu214wFZ/9pt/Gk5O3j7gCDd2jakIanYsgo5zxr2Psjz/PJyefLX3fmPtsExlZAifjXW6XufZtUet18GPtNNf3zsLP22WRzqaw/QUUAD0hLMbgVQn7FgpHGB1sviP6Sw/PuAIN3ZN4Q4f8WGhLk4O23/ovRdDn+AIx1++lL7SO8JxhjzEP0qPkn2UcR0Vw5P0b+X3QxIcfuz4u1TQP9vrOE38x+HHb17DKwD20rMxgRsCcfVp0IsAgdoEmvByalL7J+NX8+beBf3TxVoJW0I9m3EChEZgcAFFxuDETkBgngIKgHnmXauPITDGVwDHiNMxCBAgcIeAAuAOFD8ikI1A42uGbHIhEAKVCSgAKkuo5hAgQIAAgV0EFAC7KNmGwFQCHjScSt55CVQvoACoPsUaSIAAAQIEbgsoAG6b+AmB3QRGeQhwhxkJd4vWVgQIEFgTUAC4IAgQIECAwAwFFAAzTLomFyTQLM0DUFC6hEqgJAEFQEnZEisBAgQIEDiSgALgSJAOM0OBZ3tPxNkHSQ9AHzX7ECCwVUABsJXIBgQIECBAoD4BBUB9OdWimgTiQg9ATfnUFgJTCrwa136fKACmTIZzEyBAgACBiQQUABPBOy0BAgQIEJhSQAEwpb5zly1w0jSDN8BiQIMTOwGBuQooAOaaee0mQIAAgVkLKABmnX6NL0DAQ4AFJEmIBEoUUACUmDUxEyBAgACBAwUUAAcC2p3AoAJxfdjOoOdycAIEZiWgAJhVujX2yALDPwR45IAdjgABAlcCCgDXAoGcBYwCyDk7YiNQtIACoOj0CZ4AAQIECPQTUAD0c7MXgbEEjAIYS9p5CMxMQAEws4RrLgECBAgQaAUUAK4DAn0FzkdYDjgGPQB982M/AgQ6BRQAnTzeJECAAAEClQg8tRpgJZnUjFkIGAUwizRrJIEpBPQATKHunAQIECBAYGIBBcDECXB6AlsEPAOwBcjbBAj0E1AA9HOzF4EQTkZ4CJAzAQIEBhJQAAwE67AEjiJgFMBRGB2EAIHbAgqA2yZ+QoAAAQIEqhdQAFSfYg0sWsAogKLTJ3gCOQsoAHLOjtgIECBAgMBAAgqAgWAddhYCYywHbBTALC4ljSQwvoACYHxzZyRAgAABApMLKAAmT4EACHQIGAXQgeMtAgQOEVAAHKJnXwIECBAgUKiAAqDQxAl7LgLri3fMpdXaSYDA8AIKgOGNnaFWgTGWA67VTrsIEBhfwGqA45s7I4HeAuYB6E1nRwIEugX0AHT7eJcAAQIECFQpoACoMq0aVY2AUQDVpFJDCOQmoADILSPiIUCAAAECIwgoAEZAdopKBUZZDnhhJsBKLx/NIjC1gAJg6gw4PwECBAgQmEBAATABulMS2FnAMwA7U9mQAIH9BBQA+3nZmgABAgQIVCGgAKgijRpRrcAieAag2uRqGIFpBRQA0/o7e8kCyzDGcsAlC4mdAIGMBRQAGSdHaATCubUAXAUECAwjoAAYxtVRCRAgQIBA1gKLsFj6jjHrFAlu1gLWAph1+jWewJACegCG1HXsugWiZwDqTrDWEahM4Mn6V4oKgMryqzmVCRgFUFlCNYdAPgIKgHxyIRICBAgQIDCagAJgNGonItBD4Nw8AD3U7EKAwA4CCoAdkGxCgAABAgRqE1AA1JZR7RlP4KQZfiKgEz0A4yXUmQjMS0ABMK98ay0BAgQIEFgJKABcCATyFjBPR975ER2BYgUUAMWmTuAECBAgQKC/gAKgv509CRAgQIBAsQIKgGJTJ/DJBcZYDdAwwMnTLAACtQooAGrNrHYRIECAAIEOAQVAB463CEwuYBjg5CkQAIFaBRQAtWZWuwgQIECAQIeAAqADx1sEMhAwDDCDJAiBQBUCry3Xfp8oAKrIqkZMItBYDngSdyclQOAoAgqAozA6CIGBBM7X1+8e6CwOS4DADAUUADNMuiYTIECAAAEFgGuAQM4CpxYDyjk9YiNQsoACoOTsiZ0AAQIECPQUUAD0hLMbgRCWwy8HHPUAuNIIEBhGQAEwjKujEiBAgACBrAUUAFmnR3CzF9ADMPtLAACBoQQUAEPJOi4BAgQIEMhYQAGQcXKERiAsFmYCdBkQIDCIgAJgEFYHnYWAmQBnkWaNJFCrgAKg1sxqVx0C50YB1JFIrSCQn4ACIL+ciIgAAQIECAwuoAAYnNgJCBwg0OgBOEDPrgQIdAgoADpwvEWAAAECBKoR+Gp9cTEFQDWZ1ZDRBeIIywEv9ACMnlcnJDATAQXATBKtmQQIECBA4KaAAsD1QCBngfP1LrucQxUbAQJlCSgAysqXaAkQIECAwFEEFABHYXQQAgMJeAZgIFiHJUBAAeAaINBboBl+OeDesdmRAAEC3QIKgG4f7xKYVsA8ANP6OzuBigUUABUnV9MIECBAgMAmAQXAJhk/J5CDgLUAcsiCGAhUKaAAqDKtGkWAAAECBLoFFADdPt4lsFnAcsCbbbxDgED2AgqA7FMkwFkLGAY46/RrPIEhBRQAQ+o6NgECBAgQyFRAAZBpYoRFYCXgIUAXAgECxxL4chlvHkoBcCxYx5mjgImA5ph1bSZQiYACoJJEakalAiYCqjSxmkVgegEFwPQ5EAEBAgQIEBhdQAEwOrkTEthDwCiAPbBsSoDAPgIKgH20bEuAAAECBCoRUABUkkjNmEAghuEfAjyPa0/tTtBKpyRAoFIBBUClidUsAgQIECDQJaAA6NLxHoGpBYwCmDoDzk+gWgEFQLWp1TACBAgQILBZQAGw2cY7BKYXMApg+hyIgEClAgqAShOrWSMIWA1wBGSnIEBgKAEFwFCyjkvgGALWAjiGomMQIHCHgALgDhQ/IkCAAAECtQsswnJhnHHtWda+cgVO/fssN3kiJ5CZwJtWA8wsI8IhQIAAAQLjC/gKYHxzZ6xHYPiZAOux0hICBDITUABklhDhEFgT8BCgC4IAgYEEFAADwTosAQIECBDIWUABkHNIAaS0AAAMx0lEQVR2xEYgBg/pugoIEBhEQAEwCKuDEiBAgACBvAUUAHnnR3Q5C4yxHPCpHoCcLwGxEShZQAFQcvbEToAAAQIEegooAHrC2Y3AKALn0TMAo0A7CYH5CSgA5pdzLSZAgAABAkEB4CIgkLOAUQA5Z0dsBIoWUAAUnT7BTypgOeBJ+Z2cAIHDBBQAh/nZm8CwAgujAIYFdnQC8xVQAMw391pOgAABAnMS+OJ87aFiBcCckq+t5Ql4BqC8nImYQCECCoBCEiVMAgQIECBwTAEFwDE1HWtuAsMvB6wHYG7XlPYSGE1AATAatRMRIECAAIF8BBQA+eRCJARuCxgFcNvETwgQOIqAAuAojA5CgAABAgTKElAAlJUv0c5NwDMAc8u49hIYTUABMBq1E1UnMMZywNWhaRABArkIKAByyYQ4CNwlEK0GeBeLnxEgcLiAAuBwQ0cgQIAAAQLFCSgAikuZgGclYBTArNKtsQTGFFAAjKntXAQIECBAIBMBBUAmiRBGgQJNYybAAtMmZAIELgQUAK4EAgQIECAwB4HfP7Ma4BzyrI2VCJgHoJJEagaB/AT0AOSXExERIECAAIHBBRQAgxM7QcUCwz8DYBRAxZePphGYVkABMK2/sxMgQIAAgUkEFACTsDspgR0FPAOwI5TNCBDYV0ABsK+Y7QkQIECAQAUCCoAKkqgJFQssFmvDdipuqaYRIDCygAJgZHCnq0jAaoAVJVNTCMxPQAEwv5xrcUkCngEoKVtiJVCUgAKgqHQJlgABAgQIHEdAAXAcR0chMIyAHoBhXB2VAIGgAHARECBAgACBGQooAGaYdE0+kkCzHH4mwBCMAjhSuhyGAIF1AQWAK4IAAQIECMxB4B+8azXAOeRZGysRiFEPQCWp1AwCuQnoAcgtI+IhQIAAAQIjCCgARkB2CgK9BawG2JvOjgQIdAsoALp9vEugS2CMhwC7zu89AgQI9BZQAPSmsyOBEQTMAzACslMQmKeAAmCeeddqAgQIEJi5gAJg5heA5mcuoAcg8wQJj0C5AgqAcnMncgIECBAg0FtAAdCbzo6zF4gLDwHO/iIAQKBcAQVAubkT+RwEDAOcQ5a1kcAkAgqASdidlAABAgQITCugAJjW39kJdAt4CLDbx7sECPQWUAD0prMjAQIECBAoV0ABUG7uRD65QBz+IUCLAU2eZQEQqEbg79eXFz8Ny+W/DU38MITmflikPzHcT429H5rm7fTfw/+Cq0ZWQwgMIOAhwAFQHZLATAW+uX5PPw3/+lt/myjaP+uvn8eXw8nZd9MP3w+L9Ccu3w9h8X7aPf33qmB49cVd/J0AAQIECBDIVOBWD8CmOH/SPElv/d3ln9tb/flnb4Yny0ehWTxcKw5i/EHqPXj99g5+QoAAAQIECOQicNo7kH/xxuO073+7/LN+mLY4eNr2GrzQe9D+vQnvpY19tdAb3o6zEmhHAfjXMquUayyBsQT6FwBdEV4UB3+TNmn/rL9+9qtXwutvvpV+mAqE+CicxIerrxba4iCE76dfdicv7uLvBLIUaNyas8yLoAgQ2ElgmAKg69T//r0v09tXXy38xdqmfxpfCt8++1762V3PHfwodRx8o+vQ3iNQnYB5AKpLqQYRyEVg/AKgq+V/3DxNb3c/d/DiVwuxSc8hhEepOHij69DeI0CAAAECBJ4L5FUAbMtM11cLXc8dhPBuKhLMebDN1/v5CRgGmF9ORESgEoGyCoAu9K7i4Jfxa+GLs3Zeg9tfLcTVSIZXug7tPQIECBAgUJtAPQVAV2b+efNVevvurxY+iafh07N30vu3i4MQH6SvFl7rOrT3ZiwwxvP57UyARgHM+CLTdALDCcyjAOjy+6PmWXr77uKg3a/rq4XVpEheBAgQIECgPAEFwLacdX210A5pfO31NIXyycO12RINadym6v1dBYwC2FXKdgQI7CmgANgTbG3ziyGN/yP9rP2z/jKV8osi/k6AAAECGQkoAIZKxi5TKa+GNKbJkMLlZEjtVwoxfpCmUr43VFiOW5jA4iQWFrFwCRAoREABMFWiur5a6H7uwFTKU+Xs9nk9nnfbxE8IEMhV4PGLywHnGuic4+oqDl4c0njeTqfcpAWZTKVc5SVjLYAq06pRBHIQ0AOQQxb2iaFrSGPXVMox/jB9tfDNfU5lWwIECBCoV0ABUFNuTaVcUzYv2mIUQH051SICmQgoADJJxChhdH210PXcgamU706P1QDvdvFTAgSKEFAAFJGmEYLsKg5efO4gLtMESGkJ59WoBVMpD5qdRZoJ0FSAgxI7OIG5CigA5pr5fdrd9dyBqZT3kbQtAQIEshFQAGSTikIDMZXysIkzCmBYX0cnMGMBBcCMkz9K07u+WjCV8igpcBICBAjcJaAAuEvFz8YRKH0q5THW6TMKYJxr0VkIzFBAATDDpBfRZFMpF5EmQRIgUK6AAqDc3M078q6vFrqGNDahrKmUF+tTd8476VpPgMAxBRQAx9R0rDwEuoqDF4c03pxKuQnvpAb4N5FHFkVBgMDAAn7ZDQzs8JkJdA1pzHEqZaMAMruAhEOgHgEFQD251JJDBbqmUo6xCb/49O3QLO6HZbgfFs39dLr/d+gpt+4fTQS01cgGBAj0ElAA9GKz0+wEmibNyBf+9+Wfv5xd+zWYAIHyBR6sP1O0KL9FWkCAAAECBAjsK6AA2FfM9gTGFIjhsxDj/xnzlM5FgEClAv9rfWGRptJmahaBugRujl6I8VE4iQ9XCzLFtCCT1RrryrXWEBhK4I17L4WL6dtXZ1AADAXtuATGEvh5fDmcnH03ne79sFit0JiKguZR+pOKhPD99K/8ZKxQnIcAgYwFFAAZJ0doBI4tsGlo4yL1IsTmQTqdB4GPbe54BHIVUADkmhlxERhZYFNx0LS9COkrhqb5+sgROR0BAkMKKACG1HVsAhUJfPzrt8Kzlx4+/1ohPXPQFgch/ih9vfCNilqqKQTmIaAAmEeetZLAoALtegtPlo/SxEgPL545uCwOYvxh6jn45qDndnACBPoJKAD6udmLAIEdBW4uxtSOWGjSw4gXPQfpmYPmtR2PYjMCBI4toAA4tqjjESCws8CtlRpTgdCOVojxg1Qo3Nv5ODYkQGB/AQXA/mb2IEBgBIFbxUE7nLGd62DVi/CdESJwCgJ1CygA6s6v1hGoUmBjcZAeSlx9veBFgMBWAQXAViIbECBQksBHj99IXyPcX82KeD0R0uUsiU14LzXFhGcl5VOswwk8vXcaftKcX53AP4zhqB2ZAIGpBa6mUI5pxMLpjRELplCeOjPOP4WAAmAKdeckQCA7gZvrK7Q9B+ftGgvtA4mrrxRMoZxdwgR0sIAC4GBCByBAoHYB6yvUnuF5tk8BMM+8azUBAkcS6JxCeTU50itHOpPDEDiugALguJ6ORoAAgWuBT+Jp+PTsnfT39QcSLyZC+jA9j/gqLQKTCSgAJqN3YgIE5i5gfYW5XwHTtl8BMK2/sxMgQOBOgeu5DtrZEdNqjO0kSBcrM1pf4U4wP9xbQAGwN5kdCBAgMK3ApvUVYvxBmiXx9WmDc/ZiBBQAxaRKoAQIENgucNcsibFJvQjhD62vsJ1vVlsoAGaVbo0lQGDOAncVB9ZXmO8VoQCYb+61nAABAtcCG4uD1foKplCu8VJRANSYVW0iQIDAEQV+9qtXwmuv3w+Lk4fWVzii69SHUgBMnQHnJ0CAQMEC1lcoN3kKgHJzJ3ICBAhkLfDiFMrWV8grXf/93kn4abO8Cuo0r+hEQ4AAAQLFCvykeZJi/7vLP+vNeLE4iMu06FI7WiEtwNSEdvZE96OREw98ZHCnI0CAwCwFuooD6ytMckkoACZhd1ICBAgQuBb44+Zp+t939xxYX2GwC0UBMBitAxMgQIDAwQJ/1DxLx7i7OGgP3g5nfLJahfFhWH2tcDmFcog/Sl8vfOPg81d8gKbitmkaAQIECMxZYNP6CiE+SMXBa7OjeeEhQAXA7K4ADSZAgACBVc/B0zTpUbxaurldhCk9kFjz+goKABc+AQIECBDoELhVHKSvFtr1FZrQFglvdOyZ91sKgLzzIzoCBAgQyFjgruJgtb7Cagrl9AxCxi8FQMbJERoBAgQIlCvQXRxMv76CAqDca0vkBAgQIFCoQNf6CiG8m3oPFoO3TAEwOLETECBAgACB3QWu1lcI7UOJ6WHEk/hwNZyx/VrhmMWBAmD3nNiSAAECBAhMKvDiFMqHrK9gLYBJU+nkBAgQIEBgd4E+UygvUi9CbNJcB93rK5gHYPc02JIAAQIECJQh0PYcnP7u3bB89kFYNB+kZww+CP/yjf8QmiaW0QBREiBAgAABAgQIECBAgAABAscR+P+MDoZ4uz4dAQAAAABJRU5ErkJggg==" style="float:left; height:50px; margin-bottom:10px; margin-top:10px; width:50px" /></div>
+<div>
+<p><a href="https://static.fossee.in/esim/installation-files/eSim-Windows-Installer-Old.zip" target="_blank">         </a></p>
+<p><a href="https://static.fossee.in/esim/installation-files/eSim-Windows-Installer-Old.zip" target="_blank">          <strong>- eSim Installer - Windows</strong></a>       <span style="color:#000000">306 MB</span></p>
+</div>
+<div>
+<div>
+<p> </p>
+<p><span style="color:#008000"><strong><span style="font-size:20px">3. OSCAD installer : </span></strong></span><span style="font-size:14px"><span style="color:#000000"><strong>[ Old deprecated version, we recommend you to use eSim ]</strong></span></span></p>
+<p><span style="color:#000000"><strong>Ubuntu 12.04 </strong> </span><strong>[ Release : 12/03/2014 ]</strong></p>
+<div><img src="/sites/default/files/linux.png" style="float:left; height:50px; margin-bottom:10px; margin-top:10px; width:50px" /></div>
+<div><a href="http://static.fossee.in/esim/installation-files/Oscad_Installer.zip">          </a></div>
+<div><a href="http://static.fossee.in/esim/installation-files/Oscad_Installer.zip">          <strong>- OSCAD Installer - Linux</strong></a>        <span style="color:#000000">3.7 MB</span></div>
+</div>
+<!-- <div><p><strong>Windows 7,8 and 10</strong></p>
+<div><img src="/sites/default/files/windows.png" style="height:50px; width:50px" /></div>
+<div><a href="http://static.fossee.in/esim/installation-files/oscad_windows_installer.zip">OSCAD Installer - Windows </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;151 MB<br />
+Download, unzip and view the <strong>INSTALL.txt</strong> file for installation instructions.</div>
+</div>
+</div>
+<p> --></div>
+</div></div></div>  </div>
+
+      <footer>
+          </footer>
+  
+    </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+        </div>
+      </section> <!-- /#main -->
+    </div>
+
+ 
+  </div>
+
+  <footer id="footer-bottom">
+    <div id="footer-area" class="clearfix">
+            
+      <div class="region region-footer">
+  <div id="block-block-3" class="block block-block">
+
+      
+  <div class="content">
+    <p style="text-align:center; ">This work is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License.</a><br /><a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license" target="_blank"><img src="https://licensebuttons.net/l/by-sa/4.0/88x31.png" /></a></p>
+  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+    </div>
+
+    
+  </footer>
+
+</div>
+
+
+
+
+
+
+  </body>
+</html>
