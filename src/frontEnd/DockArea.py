@@ -301,6 +301,14 @@ class DockArea(QtWidgets.QMainWindow):
             print("No file selected.")
             self.convertPs_button.setEnabled(False)
 
+            # Message box indicating that no file is selected
+            msg_box = QMessageBox()
+            msg_box.setIcon(QMessageBox.Warning)
+            msg_box.setWindowTitle("No File Selected")
+            msg_box.setText("Please select a file before uploading.")
+            msg_box.setStandardButtons(QMessageBox.Ok)
+            msg_box.exec_()
+
 
 
     def modelEditor(self):
