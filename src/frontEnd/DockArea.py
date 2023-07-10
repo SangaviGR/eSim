@@ -9,7 +9,7 @@ from kicadtoNgspice.KicadtoNgspice import MainWindow
 from browser.Welcome import Welcome
 from browser.UserManual import UserManual
 from ngspicetoModelica.ModelicaUI import OpenModelicaEditor
-from PyQt5.QtWidgets import QFileDialog, QLineEdit, QGridLayout, QPushButton, QMessageBox, QSpacerItem, QSizePolicy
+from PyQt5.QtWidgets import QFileDialog, QLineEdit, QGridLayout, QPushButton, QMessageBox
 from PyQt5.QtCore import Qt
 import os
 import subprocess
@@ -184,13 +184,7 @@ class DockArea(QtWidgets.QMainWindow):
         browse_button = QPushButton("Browse")
         browse_button.setFixedSize(100, 30) 
         browse_button.clicked.connect(lambda: self.browse_path(file_path_text_box))
-        self.eConLayout.addWidget(browse_button, 0, 0, 1, 1)  # Add the button to the leftmost column
-
-        spacer_item = QSpacerItem(0, 0, QSizePolicy.Expanding, QSizePolicy.Preferred)
-        self.eConLayout.addItem(spacer_item, 0, 1)  # Add a spacer item to expand the space between the columns
-
-        self.eConLayout.addWidget(browse_button, 0, 2, 1, 1)  # Add the button to the rightmost column
-
+        self.eConLayout.addWidget(browse_button, 0, 4, 1, 1)
 
         upload_button = QPushButton("Upload schematics")
         upload_button.setFixedSize(170, 30) 
