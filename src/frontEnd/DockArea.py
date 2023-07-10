@@ -178,8 +178,8 @@ class DockArea(QtWidgets.QMainWindow):
         
         file_path_text_box = QLineEdit()
         file_path_text_box.setFixedHeight(30)  
-        file_path_text_box.setFixedWidth(825)
-        self.eConLayout.addWidget(file_path_text_box, 0, 1, 1, 2)
+        file_path_text_box.setFixedWidth(800)
+        self.eConLayout.addWidget(file_path_text_box, 0, 1, 1, 3)
         
         browse_button = QPushButton("Browse")
         browse_button.setFixedSize(100, 30) 
