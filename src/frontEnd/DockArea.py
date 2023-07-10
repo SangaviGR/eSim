@@ -193,7 +193,6 @@ class DockArea(QtWidgets.QMainWindow):
         
         self.convertPs_button = QPushButton("Convert Pspice to eSim")
         self.convertPs_button.setFixedSize(170, 30) 
-        self.convertPs_button.setEnabled(False)
         self.convertPs_button.clicked.connect(lambda: self.convert_Pspice(file_path_text_box.text()))
         self.eConLayout.addWidget(self.convertPs_button, 1, 2, 1, 1)
 
@@ -299,6 +298,7 @@ class DockArea(QtWidgets.QMainWindow):
             #button2.setEnabled(True)
         else:
             print("No file selected.")
+            self.convertPs_button.setEnabled(False)
 
 
 
