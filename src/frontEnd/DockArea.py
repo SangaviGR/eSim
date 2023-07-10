@@ -189,20 +189,20 @@ class DockArea(QtWidgets.QMainWindow):
         upload_button = QPushButton("Upload schematics")
         upload_button.setFixedSize(170, 30) 
         upload_button.clicked.connect(lambda: self.upload_file(file_path_text_box.text()))
-        self.eConLayout.addWidget(upload_button, 1, 0, 1, 1)
+        self.eConLayout.addWidget(upload_button, 1, 1, 1, 1)
         
         convertPs_button = QPushButton("Convert Pspice to eSim")
         convertPs_button.setFixedSize(170, 30) 
         convertPs_button.clicked.connect(lambda: self.convert_Pspice(file_path_text_box.text()))
-        self.eConLayout.addWidget(convertPs_button, 1, 1, 1, 1)
+        self.eConLayout.addWidget(convertPs_button, 1, 2, 1, 1)
 
         convert_button1 = QPushButton("Convert LTspice to eSim")
         convert_button1.setFixedSize(170, 30) 
         self.eConLayout.addWidget(convert_button1, 1, 3, 1, 1)  
 
-        self.eConLayout.setColumnStretch(0, 1)  # Set a stretch factor of 1 for column 0
-        self.eConLayout.setColumnStretch(1, 0)  # Set a stretch factor of 0 for column 1
-        self.eConLayout.setColumnStretch(3, 1)  # Set a stretch factor of 1 for column 2
+        self.eConLayout.setColumnStretch(1, 1)  # Set a stretch factor of 1 for column 1
+        self.eConLayout.setColumnStretch(2, 0)  # Set a stretch factor of 0 for column 2
+        self.eConLayout.setColumnStretch(3, 1)  # Set a stretch factor of 1 for column 3
 
         # Set alignment for button2 to center horizontally within the layout cell
         self.eConLayout.setAlignment(convertPs_button, Qt.AlignHCenter)
@@ -262,6 +262,13 @@ class DockArea(QtWidgets.QMainWindow):
                 print("Error:", e)
         else:
             print("File is empty. Cannot perform conversion.")
+            # A message box indicating that the file is empty
+            msg_box = QMessageBox()
+            msg_box.setIcon(QMessageBox.Warning)
+            msg_box.setWindowTitle("Empty File")
+            msg_box.setText("The selected file is empty. Conversion cannot be performed.")
+            msg_box.setStandardButtons(QMessageBox.Ok)
+            msg_box.exec_()
 
 
 
