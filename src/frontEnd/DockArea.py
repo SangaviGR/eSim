@@ -251,8 +251,8 @@ class DockArea(QtWidgets.QMainWindow):
                     # Add the converted file under the project explorer
                     newFile = str(conPath + "/" + filename)
                     print(newFile)
-                    project_explorer = self.parent().parent().obj_Mainview.obj_projectExplorer
-                    project_explorer.addTreeNode(newFile, [newFile])
+                    self.app = QApplication.instance()
+                    self.app.obj_Mainview.obj_projectExplorer.addTreeNode(newFile, [newFile])
                     shutil.copytree(newFile, f"/home/ubuntus/eSim-Workspace/{filename}") 
                     print("File added under the project explorer.")
                 else:
@@ -270,7 +270,6 @@ class DockArea(QtWidgets.QMainWindow):
             msg_box.setText("The selected file is empty. Conversion cannot be performed.")
             msg_box.setStandardButtons(QMessageBox.Ok)
             msg_box.exec_()
-
 
     def browse_path(self, text_box):
         file_dialog = QFileDialog()  # a dialog that allows the user to select files or directories
