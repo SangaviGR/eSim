@@ -9,11 +9,10 @@ from kicadtoNgspice.KicadtoNgspice import MainWindow
 from browser.Welcome import Welcome
 from browser.UserManual import UserManual
 from ngspicetoModelica.ModelicaUI import OpenModelicaEditor
-from PyQt5.QtWidgets import QFileDialog, QLineEdit, QGridLayout, QPushButton, QMessageBox
+from PyQt5.QtWidgets import QFileDialog, QLineEdit, QGridLayout, QPushButton, QMessageBox, QApplication
 from PyQt5.QtCore import Qt
 import os
 import subprocess
-from Application import Application
 import shutil
 
 dockList = ['Welcome']
@@ -252,7 +251,7 @@ class DockArea(QtWidgets.QMainWindow):
                     # Add the converted file under the project explorer
                     newFile = str(conPath + "/" + filename)
                     print(newFile)
-                    self.app = Application()
+                    self.app = QApplication.instance()
                     self.app.obj_Mainview.obj_projectExplorer.addTreeNode(newFile, [newFile])
                     shutil.copytree(newFile, f"/home/ubuntus/eSim-Workspace/{filename}") 
                     print("File added under the project explorer.")
@@ -272,7 +271,6 @@ class DockArea(QtWidgets.QMainWindow):
             msg_box.setStandardButtons(QMessageBox.Ok)
             msg_box.exec_()
 
-
     def browse_path(self, text_box):
         file_dialog = QFileDialog()  # a dialog that allows the user to select files or directories
         file_dialog.setFileMode(QFileDialog.ExistingFile)
@@ -281,6 +279,7 @@ class DockArea(QtWidgets.QMainWindow):
         selected_files = file_dialog.selectedFiles()  # Get the selected file(s)
         if selected_files:
             text_box.setText(selected_files[0])
+            self.convertPs_button.setEnabled(True)
 
     def upload_file(self, file_path):
         if file_path:
@@ -296,7 +295,6 @@ class DockArea(QtWidgets.QMainWindow):
                 return
             print(file_path)
             self.convertPs_button.setEnabled(True)
-            #button2.setEnabled(True)
         else:
             print("No file selected.")
             self.convertPs_button.setEnabled(False)
@@ -308,6 +306,7 @@ class DockArea(QtWidgets.QMainWindow):
             msg_box.setText("Please select a file before uploading.")
             msg_box.setStandardButtons(QMessageBox.Ok)
             msg_box.exec_()
+
 
 
 
