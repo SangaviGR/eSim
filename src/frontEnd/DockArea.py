@@ -198,7 +198,7 @@ class DockArea(QtWidgets.QMainWindow):
 
         convert_button1 = QPushButton("Convert LTspice to eSim")
         convert_button1.setFixedSize(170, 30) 
-        self.eConLayout.addWidget(convert_button1, 1, 4, 1, 1)  
+        self.eConLayout.addWidget(convert_button1, 1, 3, 1, 1)  
 
         self.eConLayout.setColumnStretch(0, 1)  # Set a stretch factor of 1 for column 0
         self.eConLayout.setColumnStretch(1, 0)  # Set a stretch factor of 0 for column 1
