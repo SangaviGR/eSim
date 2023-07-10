@@ -186,16 +186,16 @@ class DockArea(QtWidgets.QMainWindow):
         browse_button.clicked.connect(lambda: self.browse_path(file_path_text_box))
         self.eConLayout.addWidget(browse_button, 0, 4, 1, 1)
 
-        self.upload_button = QPushButton("Upload schematics")
-        self.upload_button.setFixedSize(170, 30) 
-        self.upload_button.setEnabled(False)
-        self.upload_button.clicked.connect(lambda: self.upload_file(file_path_text_box.text()))
-        self.eConLayout.addWidget(self.upload_button, 1, 1, 1, 1)
+        upload_button = QPushButton("Upload schematics")
+        upload_button.setFixedSize(170, 30) 
+        upload_button.clicked.connect(lambda: self.upload_file(file_path_text_box.text()))
+        self.eConLayout.addWidget(upload_button, 1, 1, 1, 1)
         
-        convertPs_button = QPushButton("Convert Pspice to eSim")
-        convertPs_button.setFixedSize(170, 30) 
-        convertPs_button.clicked.connect(lambda: self.convert_Pspice(file_path_text_box.text()))
-        self.eConLayout.addWidget(convertPs_button, 1, 2, 1, 1)
+        self.convertPs_button = QPushButton("Convert Pspice to eSim")
+        self.convertPs_button.setFixedSize(170, 30) 
+        self.convertPs_button.setEnabled(False)
+        self.convertPs_button.clicked.connect(lambda: self.convert_Pspice(file_path_text_box.text()))
+        self.eConLayout.addWidget(self.convertPs_button, 1, 2, 1, 1)
 
         convert_button1 = QPushButton("Convert LTspice to eSim")
         convert_button1.setFixedSize(170, 30) 
@@ -295,7 +295,7 @@ class DockArea(QtWidgets.QMainWindow):
     def upload_file(self, file_path):
         if file_path:
             print(file_path)
-            self.upload_button.setEnabled(True)
+            self.convertPs_button.setEnabled(True)
             #button2.setEnabled(True)
         else:
             print("No file selected.")
