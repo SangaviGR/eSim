@@ -206,7 +206,7 @@ class DockArea(QtWidgets.QMainWindow):
         self.eConLayout.setColumnStretch(3, 1)  # Set a stretch factor of 1 for column 3
 
         # Set alignment for button2 to center horizontally within the layout cell
-        self.eConLayout.setAlignment(convertPs_button, Qt.AlignHCenter)
+        self.eConLayout.setAlignment(self.convertPs_button, Qt.AlignHCenter)
 
         self.eConWidget.setLayout(self.eConLayout)
         dock[dockName + str(count)] = QtWidgets.QDockWidget(dockName + str(count))
