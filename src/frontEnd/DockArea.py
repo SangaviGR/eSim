@@ -9,7 +9,7 @@ from kicadtoNgspice.KicadtoNgspice import MainWindow
 from browser.Welcome import Welcome
 from browser.UserManual import UserManual
 from ngspicetoModelica.ModelicaUI import OpenModelicaEditor
-from PyQt5.QtWidgets import QFileDialog, QLineEdit, QGridLayout, QPushButton, QMessageBox, QVBoxLayout, QHBoxLayout
+from PyQt5.QtWidgets import QFileDialog, QLineEdit, QTextEdit, QPushButton, QMessageBox, QVBoxLayout, QHBoxLayout
 from PyQt5.QtCore import Qt
 import os
 import subprocess
@@ -213,7 +213,11 @@ class DockArea(QtWidgets.QMainWindow):
         self.convert_LT.setEnabled(False)
         button_layout.addWidget(self.convert_LT)
 
-        self.eConLayout.addLayout(button_layout)  
+        self.eConLayout.addLayout(button_layout)
+
+        text_edit = QTextEdit()
+        text_edit.setFixedHeight(100)
+        self.eConLayout.addWidget(text_edit)  # Add QTextEdit widget to main layout
 
         self.eConWidget.setLayout(self.eConLayout)
         dock[dockName + str(count)] = QtWidgets.QDockWidget(dockName + str(count))
@@ -232,8 +236,6 @@ class DockArea(QtWidgets.QMainWindow):
         dock[dockName + str(count)].raise_()
 
         count = count + 1
-
-
 
     def convert_Pspice(self, file_path):
         # Get the base name of the file without the extension
