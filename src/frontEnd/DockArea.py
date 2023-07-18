@@ -202,11 +202,10 @@ class DockArea(QtWidgets.QMainWindow):
         upload_button.clicked.connect(lambda: self.upload_file(file_path_text_box.text()))
         button_layout.addWidget(upload_button)
 
-        self.convertPs_button = QPushButton("Convert Schematics to eSim")
-        self.convertPs_button.setFixedSize(190, 30)
-        self.convertPs_button.setEnabled(False)
-        self.convertPs_button.clicked.connect(lambda: self.convert_Pspice(file_path_text_box.text()))
-        button_layout.addWidget(self.convertPs_button)
+        self.convert_button = QPushButton("Convert Schematics to eSim")
+        self.convert_button.setFixedSize(190, 30)
+        self.convert_button.setEnabled(False)
+        button_layout.addWidget(self.convert_button)
 
         
 
@@ -359,11 +358,11 @@ class DockArea(QtWidgets.QMainWindow):
             
             # Enable the corresponding conversion button based on the file type
             if "Pspice" in self.sender().text():
-                self.convertPs_button.setEnabled(True)
-                self.convertPs_button.clicked.connect(lambda: self.convert_Pspice(file_path))
+                self.convert_button.setEnabled(True)
+                self.convert_button.clicked.connect(lambda: self.convert_Pspice(file_path))
             elif "LTspice" in self.sender().text():
-                self.convert_LT.setEnabled(True)
-                self.convert_LT.clicked.connect(lambda: self.convert_LTspice(file_path))
+                self.convert_button.setEnabled(True)
+                self.convert_button.clicked.connect(lambda: self.convert_LTspice(file_path))
         else:
             print("No file selected.")
             self.convertPs_button.setEnabled(False)
