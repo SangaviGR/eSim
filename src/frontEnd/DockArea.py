@@ -220,7 +220,7 @@ class DockArea(QtWidgets.QMainWindow):
         text_edit.setText("Pspice to eSim will convert the PSpice Schematic and Library files to KiCad "
                         "Schematic and Library files respectively with proper mapping of the components "
                         "and the wiring. By this way one will be able to simulate their schematics in PSpice "
-                        "and get the PCB layout in KiCad."
+                        "and get the PCB layout in KiCad.\n"
                         "LTspice to eSim will convert symbols and schematics from LTspice to Kicad.The goal is to design and"
                         " simulate under LTspice and to automatically transfer the circuit under Kicad to draw the PCB.")
         self.eConLayout.addWidget(text_edit)  # Add QTextEdit widget to main layout
