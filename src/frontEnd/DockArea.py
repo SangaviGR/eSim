@@ -363,11 +363,9 @@ class DockArea(QtWidgets.QMainWindow):
             # Enable the corresponding conversion button based on the file type
             if "Pspice" in self.sender().text():
                 self.convert_button.setEnabled(True)
-                self.convert_button.clicked.disconnect()  # Disconnect any previous connections
                 self.convert_button.clicked.connect(lambda: self.convert_Pspice(file_path))
             elif "LTspice" in self.sender().text():
                 self.convert_button.setEnabled(True)
-                self.convert_button.clicked.disconnect()  # Disconnect any previous connections
                 self.convert_button.clicked.connect(lambda: self.convert_LTspice(file_path))
         else:
             print("No file selected.")
@@ -380,6 +378,7 @@ class DockArea(QtWidgets.QMainWindow):
             msg_box.setText("Please select a file before uploading.")
             msg_box.setStandardButtons(QMessageBox.Ok)
             msg_box.exec_()
+
 
     def modelEditor(self):
         """This function defines UI for model editor."""
