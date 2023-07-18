@@ -366,7 +366,6 @@ class DockArea(QtWidgets.QMainWindow):
         else:
             print("No file selected.")
             self.convert_button.setEnabled(False)
-            self.convert_LT.setEnabled(False)
 
             # Message box indicating that no file is selected
             msg_box = QMessageBox()
