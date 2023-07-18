@@ -268,7 +268,7 @@ class DockArea(QtWidgets.QMainWindow):
                     print(newFile)
                     self.app = Application(self)
                     self.app.obj_Mainview.obj_projectExplorer.addTreeNode(newFile, [newFile])
-                    shutil.copytree(newFile, f"/home/ubuntus/eSim-Workspace/{filename}") 
+                    shutil.copytree(newFile, f"/home/ubuntus/eSim-Workspace/{filename}", dirs_exist_ok=True)
                     print("File added under the project explorer.")
                 else:
                     # User chose not to add the file
