@@ -293,6 +293,7 @@ class DockArea(QtWidgets.QMainWindow):
         
         # Check if the file is not empty
         if os.path.getsize(file_path) > 0:
+            self.convert_button.setEnabled(False)
             # LTspice convert code should be added
             """
             try:
