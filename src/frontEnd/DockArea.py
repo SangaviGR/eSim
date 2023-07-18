@@ -203,7 +203,7 @@ class DockArea(QtWidgets.QMainWindow):
         button_layout.addWidget(upload_button)
 
         self.convertPs_button = QPushButton("Convert Schematics to eSim")
-        self.convertPs_button.setFixedSize(170, 30)
+        self.convertPs_button.setFixedSize(190, 30)
         self.convertPs_button.setEnabled(False)
         self.convertPs_button.clicked.connect(lambda: self.convert_Pspice(file_path_text_box.text()))
         button_layout.addWidget(self.convertPs_button)
@@ -356,11 +356,18 @@ class DockArea(QtWidgets.QMainWindow):
                 msg_box.exec_()
                 return
             print(file_path)
-            self.convertPs_button.setEnabled(True)
-            #button2.setEnabled(True)
+            
+            # Enable the corresponding conversion button based on the file type
+            if "Pspice" in self.sender().text():
+                self.convertPs_button.setEnabled(True)
+                self.convertPs_button.clicked.connect(lambda: self.convert_Pspice(file_path))
+            elif "LTspice" in self.sender().text():
+                self.convert_LT.setEnabled(True)
+                self.convert_LT.clicked.connect(lambda: self.convert_LTspice(file_path))
         else:
             print("No file selected.")
             self.convertPs_button.setEnabled(False)
+            self.convert_LT.setEnabled(False)
 
             # Message box indicating that no file is selected
             msg_box = QMessageBox()
@@ -369,7 +376,6 @@ class DockArea(QtWidgets.QMainWindow):
             msg_box.setText("Please select a file before uploading.")
             msg_box.setStandardButtons(QMessageBox.Ok)
             msg_box.exec_()
-
 
 
     def modelEditor(self):
