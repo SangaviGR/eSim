@@ -215,10 +215,6 @@ class DockArea(QtWidgets.QMainWindow):
 
         self.eConLayout.addLayout(button_layout)  
 
-        self.eConLayout.addSpacing(170)  # spacing between the two rows of buttons
-
-        self.eConLayout.addStretch(4)  
-
         self.eConWidget.setLayout(self.eConLayout)
         dock[dockName + str(count)] = QtWidgets.QDockWidget(dockName + str(count))
         dock[dockName + str(count)].setWidget(self.eConWidget)
