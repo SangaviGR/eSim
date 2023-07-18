@@ -213,11 +213,11 @@ class DockArea(QtWidgets.QMainWindow):
         self.convert_LT.setEnabled(False)
         button_layout.addWidget(self.convert_LT)
 
-        self.eConLayout.addLayout(button_layout)  # Add button layout to main layout
+        self.eConLayout.addLayout(button_layout)  
 
-        self.eConLayout.addSpacing(170)  # Add spacing between the two rows of buttons
+        self.eConLayout.addSpacing(170)  # spacing between the two rows of buttons
 
-        self.eConLayout.addStretch(1)  # Add stretch to push buttons to the top
+        self.eConLayout.addStretch(4)  
 
         self.eConWidget.setLayout(self.eConLayout)
         dock[dockName + str(count)] = QtWidgets.QDockWidget(dockName + str(count))
