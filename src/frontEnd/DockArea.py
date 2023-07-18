@@ -187,7 +187,7 @@ class DockArea(QtWidgets.QMainWindow):
         self.eConLayout.addWidget(browse_button, 0, 4, 1, 1)
 
         upload_button = QPushButton("Upload Pspice schematics")
-        upload_button.setFixedSize(170, 30) 
+        upload_button.setFixedSize(175, 30) 
         upload_button.clicked.connect(lambda: self.upload_file(file_path_text_box.text()))
         self.eConLayout.addWidget(upload_button, 1, 1, 1, 1)
         
@@ -198,7 +198,7 @@ class DockArea(QtWidgets.QMainWindow):
         self.eConLayout.addWidget(self.convertPs_button, 1, 2, 1, 1)
 
         upload_button = QPushButton("Upload LTspice schematics")
-        upload_button.setFixedSize(170, 30) 
+        upload_button.setFixedSize(175, 30) 
         upload_button.clicked.connect(lambda: self.upload_file(file_path_text_box.text()))
         self.eConLayout.addWidget(upload_button, 1, 3, 1, 1)
 
@@ -208,8 +208,8 @@ class DockArea(QtWidgets.QMainWindow):
         self.eConLayout.addWidget(self.convert_LT, 1, 4, 1, 1)  
 
         self.eConLayout.setColumnStretch(1, 1)  # Set a stretch factor of 1 for column 1
-        self.eConLayout.setColumnStretch(2, 0)  # Set a stretch factor of 0 for column 2
-        self.eConLayout.setColumnStretch(3, 0)  # Set a stretch factor of 0 for column 3
+        self.eConLayout.setColumnStretch(2, 1)  # Set a stretch factor of 0 for column 2
+        self.eConLayout.setColumnStretch(3, 1)  # Set a stretch factor of 0 for column 3
         self.eConLayout.setColumnStretch(4, 1)  # Set a stretch factor of 1 for column 4
 
         # Set alignment for button2 to center horizontally within the layout cell
