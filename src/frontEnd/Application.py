@@ -818,7 +818,7 @@ class Application(QtWidgets.QMainWindow):
     def open_conToeSim(self):
         print("Function : Schematics converter")
         self.obj_appconfig.print_info('Schematics converter is called')
-        self.obj_Mainview.obj_dockarea.eSimConverter()
+        self.obj_Mainview.obj_dockarea.eSimConvertor()
 
 
 # This class initialize the Main View of Application
