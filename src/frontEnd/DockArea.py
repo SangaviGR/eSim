@@ -209,7 +209,7 @@ class DockArea(QtWidgets.QMainWindow):
 
         self.eConLayout.setColumnStretch(1, 1)  # Set a stretch factor of 1 for column 1
         self.eConLayout.setColumnStretch(2, 1)  # Set a stretch factor of 0 for column 2
-        self.eConLayout.setColumnStretch(3, 1)  # Set a stretch factor of 0 for column 3
+        self.eConLayout.setColumnStretch(3, 0)  # Set a stretch factor of 0 for column 3
         self.eConLayout.setColumnStretch(4, 1)  # Set a stretch factor of 1 for column 4
 
         # Set alignment for button2 to center horizontally within the layout cell
