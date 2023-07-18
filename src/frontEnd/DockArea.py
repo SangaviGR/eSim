@@ -223,6 +223,7 @@ class DockArea(QtWidgets.QMainWindow):
                         "and get the PCB layout in KiCad.\n"
                         "LTspice to eSim will convert symbols and schematics from LTspice to Kicad.The goal is to design and"
                         " simulate under LTspice and to automatically transfer the circuit under Kicad to draw the PCB.")
+        text_edit.setReadOnly(True)  # Make the text non-editable
         self.eConLayout.addWidget(text_edit)  # Add QTextEdit widget to main layout
 
         self.eConWidget.setLayout(self.eConLayout)
