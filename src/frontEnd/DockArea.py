@@ -215,6 +215,8 @@ class DockArea(QtWidgets.QMainWindow):
 
         self.eConLayout.addLayout(button_layout)  # Add button layout to main layout
 
+        self.eConLayout.addSpacing(20)  # Add spacing between the two rows of buttons
+
         self.eConLayout.addStretch(1)  # Add stretch to push buttons to the top
 
         self.eConWidget.setLayout(self.eConLayout)
@@ -234,6 +236,7 @@ class DockArea(QtWidgets.QMainWindow):
         dock[dockName + str(count)].raise_()
 
         count = count + 1
+
 
 
     def convert_Pspice(self, file_path):
