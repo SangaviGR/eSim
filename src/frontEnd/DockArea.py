@@ -251,7 +251,7 @@ class DockArea(QtWidgets.QMainWindow):
             
             try:
                 subprocess.run(command, shell=True, check=True)
-                self.convertPs_button.setEnabled(False)
+                self.convert_button.setEnabled(False)
                 # Show a message box with the conversion success message
                 msg_box = QMessageBox()
                 msg_box.setIcon(QMessageBox.Information)
@@ -365,7 +365,7 @@ class DockArea(QtWidgets.QMainWindow):
                 self.convert_button.clicked.connect(lambda: self.convert_LTspice(file_path))
         else:
             print("No file selected.")
-            self.convertPs_button.setEnabled(False)
+            self.convert_button.setEnabled(False)
             self.convert_LT.setEnabled(False)
 
             # Message box indicating that no file is selected
