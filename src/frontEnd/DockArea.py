@@ -171,7 +171,7 @@ class DockArea(QtWidgets.QMainWindow):
         """This function creates a widget for eSimConverter."""
         global count
 
-        dockName = 'Schematics Converter-'
+        dockName = 'Schematics Convert0r-'
 
         self.eConWidget = QtWidgets.QWidget()
         self.eConLayout = QVBoxLayout()  # Use QVBoxLayout instead of QGridLayout
@@ -186,7 +186,7 @@ class DockArea(QtWidgets.QMainWindow):
         browse_button = QPushButton("Browse")
         browse_button.setFixedSize(100, 30)
         browse_button.clicked.connect(lambda: self.browse_path(file_path_text_box))
-        button_layout.addWidget(browse_button)
+        self.eConLayout.addWidget(browse_button)
 
         upload_button = QPushButton("Upload Pspice schematics")
         upload_button.setFixedSize(180, 30)
