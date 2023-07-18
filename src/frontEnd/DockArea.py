@@ -197,21 +197,18 @@ class DockArea(QtWidgets.QMainWindow):
         upload_button.clicked.connect(lambda: self.upload_file(file_path_text_box.text()))
         button_layout.addWidget(upload_button)
 
-        self.convertPs_button = QPushButton("Convert Pspice to eSim")
-        self.convertPs_button.setFixedSize(170, 30)
-        self.convertPs_button.setEnabled(False)
-        self.convertPs_button.clicked.connect(lambda: self.convert_Pspice(file_path_text_box.text()))
-        button_layout.addWidget(self.convertPs_button)
-
         upload_button = QPushButton("Upload LTspice schematics")
         upload_button.setFixedSize(184, 30)
         upload_button.clicked.connect(lambda: self.upload_file(file_path_text_box.text()))
         button_layout.addWidget(upload_button)
 
-        self.convert_LT = QPushButton("Convert LTspice to eSim")
-        self.convert_LT.setFixedSize(170, 30)
-        self.convert_LT.setEnabled(False)
-        button_layout.addWidget(self.convert_LT)
+        self.convertPs_button = QPushButton("Convert Schematics to eSim")
+        self.convertPs_button.setFixedSize(170, 30)
+        self.convertPs_button.setEnabled(False)
+        self.convertPs_button.clicked.connect(lambda: self.convert_Pspice(file_path_text_box.text()))
+        button_layout.addWidget(self.convertPs_button)
+
+        
 
         self.eConLayout.addLayout(button_layout)
 
