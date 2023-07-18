@@ -167,26 +167,30 @@ class DockArea(QtWidgets.QMainWindow):
             )
         count = count + 1
 
-    def eSimConverter(self):
-        """This function creates a widget for eSimConverter."""
+    def eSimConvertor(self):
+        """This function creates a widget for eSimConvertor."""
         global count
 
-        dockName = 'Schematics Convert0r-'
+        dockName = 'Schematics Convertor-'
 
         self.eConWidget = QtWidgets.QWidget()
-        self.eConLayout = QVBoxLayout()  # Use QVBoxLayout instead of QGridLayout
-        
+        self.eConLayout = QVBoxLayout()  # Use QVBoxLayout for the main layout
+
+        file_path_layout = QHBoxLayout()  # Create QHBoxLayout for file path line
+
         file_path_text_box = QLineEdit()
         file_path_text_box.setFixedHeight(30)
         file_path_text_box.setFixedWidth(800)
-        self.eConLayout.addWidget(file_path_text_box)
-        
-        button_layout = QHBoxLayout()  # Create a QHBoxLayout for the buttons
-        
+        file_path_layout.addWidget(file_path_text_box)
+
         browse_button = QPushButton("Browse")
         browse_button.setFixedSize(100, 30)
         browse_button.clicked.connect(lambda: self.browse_path(file_path_text_box))
-        self.eConLayout.addWidget(browse_button)
+        file_path_layout.addWidget(browse_button)
+
+        self.eConLayout.addLayout(file_path_layout)  # Add file path layout to main layout
+
+        button_layout = QHBoxLayout()  # Create QHBoxLayout for the buttons
 
         upload_button = QPushButton("Upload Pspice schematics")
         upload_button.setFixedSize(180, 30)
@@ -209,8 +213,7 @@ class DockArea(QtWidgets.QMainWindow):
         self.convert_LT.setEnabled(False)
         button_layout.addWidget(self.convert_LT)
 
-        # Add the button layout to the main layout
-        self.eConLayout.addLayout(button_layout)
+        self.eConLayout.addLayout(button_layout)  # Add button layout to main layout
 
         self.eConLayout.addStretch(1)  # Add stretch to push buttons to the top
 
