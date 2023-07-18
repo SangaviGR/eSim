@@ -174,9 +174,9 @@ class DockArea(QtWidgets.QMainWindow):
         dockName = 'Schematics Convertor-'
 
         self.eConWidget = QtWidgets.QWidget()
-        self.eConLayout = QVBoxLayout()  # Use QVBoxLayout for the main layout
+        self.eConLayout = QVBoxLayout()  # QVBoxLayout for the main layout
 
-        file_path_layout = QHBoxLayout()  # Create QHBoxLayout for file path line
+        file_path_layout = QHBoxLayout()  # QHBoxLayout for file path line
 
         file_path_text_box = QLineEdit()
         file_path_text_box.setFixedHeight(30)
@@ -190,7 +190,7 @@ class DockArea(QtWidgets.QMainWindow):
 
         self.eConLayout.addLayout(file_path_layout)  # Add file path layout to main layout
 
-        button_layout = QHBoxLayout()  # Create QHBoxLayout for the buttons
+        button_layout = QHBoxLayout()  # QHBoxLayout for the buttons
 
         upload_button = QPushButton("Upload Pspice schematics")
         upload_button.setFixedSize(180, 30)
@@ -215,7 +215,7 @@ class DockArea(QtWidgets.QMainWindow):
 
         self.eConLayout.addLayout(button_layout)  # Add button layout to main layout
 
-        self.eConLayout.addSpacing(20)  # Add spacing between the two rows of buttons
+        self.eConLayout.addSpacing(170)  # Add spacing between the two rows of buttons
 
         self.eConLayout.addStretch(1)  # Add stretch to push buttons to the top
 
