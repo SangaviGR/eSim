@@ -9,7 +9,7 @@ from kicadtoNgspice.KicadtoNgspice import MainWindow
 from browser.Welcome import Welcome
 from browser.UserManual import UserManual
 from ngspicetoModelica.ModelicaUI import OpenModelicaEditor
-from PyQt5.QtWidgets import QFileDialog, QLineEdit, QGridLayout, QPushButton, QMessageBox
+from PyQt5.QtWidgets import QFileDialog, QLineEdit, QGridLayout, QPushButton, QMessageBox, QVBoxLayout, QHBoxLayout
 from PyQt5.QtCore import Qt
 import os
 import subprocess
@@ -174,46 +174,45 @@ class DockArea(QtWidgets.QMainWindow):
         dockName = 'Schematics Converter-'
 
         self.eConWidget = QtWidgets.QWidget()
-        self.eConLayout = QGridLayout()
+        self.eConLayout = QVBoxLayout()  # Use QVBoxLayout instead of QGridLayout
         
         file_path_text_box = QLineEdit()
-        file_path_text_box.setFixedHeight(30)  
+        file_path_text_box.setFixedHeight(30)
         file_path_text_box.setFixedWidth(800)
-        self.eConLayout.addWidget(file_path_text_box, 0, 1, 1, 3)
+        self.eConLayout.addWidget(file_path_text_box)
+        
+        button_layout = QHBoxLayout()  # Create a QHBoxLayout for the buttons
         
         browse_button = QPushButton("Browse")
-        browse_button.setFixedSize(100, 30) 
+        browse_button.setFixedSize(100, 30)
         browse_button.clicked.connect(lambda: self.browse_path(file_path_text_box))
-        self.eConLayout.addWidget(browse_button, 0, 4, 1, 1)
+        button_layout.addWidget(browse_button)
 
         upload_button = QPushButton("Upload Pspice schematics")
-        upload_button.setFixedSize(180, 30) 
+        upload_button.setFixedSize(180, 30)
         upload_button.clicked.connect(lambda: self.upload_file(file_path_text_box.text()))
-        self.eConLayout.addWidget(upload_button, 1, 1, 1, 1)
-        
+        button_layout.addWidget(upload_button)
+
         self.convertPs_button = QPushButton("Convert Pspice to eSim")
-        self.convertPs_button.setFixedSize(170, 30) 
+        self.convertPs_button.setFixedSize(170, 30)
         self.convertPs_button.setEnabled(False)
         self.convertPs_button.clicked.connect(lambda: self.convert_Pspice(file_path_text_box.text()))
-        self.eConLayout.addWidget(self.convertPs_button, 1, 2, 1, 1)
+        button_layout.addWidget(self.convertPs_button)
 
         upload_button = QPushButton("Upload LTspice schematics")
-        upload_button.setFixedSize(184, 30) 
+        upload_button.setFixedSize(184, 30)
         upload_button.clicked.connect(lambda: self.upload_file(file_path_text_box.text()))
-        self.eConLayout.addWidget(upload_button, 1, 3, 1, 1)
+        button_layout.addWidget(upload_button)
 
         self.convert_LT = QPushButton("Convert LTspice to eSim")
-        self.convert_LT.setFixedSize(170, 30) 
+        self.convert_LT.setFixedSize(170, 30)
         self.convert_LT.setEnabled(False)
-        self.eConLayout.addWidget(self.convert_LT, 1, 4, 1, 1)  
+        button_layout.addWidget(self.convert_LT)
 
-        self.eConLayout.setColumnStretch(1, 1)  # Set a stretch factor of 1 for column 1
-        self.eConLayout.setColumnStretch(2, 1)  # Set a stretch factor of 0 for column 2
-        self.eConLayout.setColumnStretch(3, 1)  # Set a stretch factor of 0 for column 3
-        self.eConLayout.setColumnStretch(4, 1)  # Set a stretch factor of 1 for column 4
+        # Add the button layout to the main layout
+        self.eConLayout.addLayout(button_layout)
 
-        # Set alignment for button2 to center horizontally within the layout cell
-        self.eConLayout.setAlignment(self.convertPs_button, Qt.AlignHCenter)
+        self.eConLayout.addStretch(1)  # Add stretch to push buttons to the top
 
         self.eConWidget.setLayout(self.eConLayout)
         dock[dockName + str(count)] = QtWidgets.QDockWidget(dockName + str(count))
@@ -232,6 +231,7 @@ class DockArea(QtWidgets.QMainWindow):
         dock[dockName + str(count)].raise_()
 
         count = count + 1
+
 
     def convert_Pspice(self, file_path):
         # Get the base name of the file without the extension
