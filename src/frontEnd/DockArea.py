@@ -236,7 +236,7 @@ class DockArea(QtWidgets.QMainWindow):
                             margin: 0px;
                             padding: 0px;
                             background-color: #c0c6c9;
-            	            border: 4px solid  #080808;
+            	            border: 4px solid  black;
                         }
 
                         h1{
@@ -247,27 +247,13 @@ class DockArea(QtWidgets.QMainWindow):
                             background-color: #165982;
                             border: 4px outset  #0E324B;
                         }
-
-                        p{
-                            margin: 0px 10px 0px 10px;
-                            font-size: 13pt;
-                            line-height: 125%;
-                        }
-
-                        pre{
-                            margin: 0px 10px 0px 10px;
-                            font-family: monospaced;
-                            font-size: 10pt;
-                        }
-                        #license{
-                            font-size:8pt;
-                        }
                     </style>
                 <head>
 
                 <body>
                     
                     <h1>About eSim Convertor</h1>
+                        <br/>
                         <b>Pspice to eSim </b> will convert the PSpice Schematic and Library files to KiCad Schematic and
                         <br/>
                         Library files respectively with proper mapping of the components and the wiring. By this way one 
