@@ -246,7 +246,6 @@ class DockArea(QtWidgets.QMainWindow):
                             padding: 10px;
                             background-color: #165982;
                             border: 4px outset  #0E324B;
-                            height: 15px;
                         }
                     </style>
                 <head>
