@@ -865,6 +865,9 @@ class MainView(QtWidgets.QWidget):
         self.obj_dockarea = DockArea.DockArea()
         self.obj_projectExplorer = ProjectExplorer.ProjectExplorer()
 
+        # Connect the signal to the slot
+        self.obj_dockarea.convertedFileAdded.connect(self.on_converted_file_added)
+
         # Adding content to vertical middle Split.
         self.middleSplit.setOrientation(QtCore.Qt.Vertical)
         self.middleSplit.addWidget(self.obj_dockarea)
@@ -883,6 +886,19 @@ class MainView(QtWidgets.QWidget):
         self.leftSplit.setSizes([int(self.width() / 4.5), self.height()])
         self.middleSplit.setSizes([self.width(), int(self.height() / 2)])
         self.setLayout(self.mainLayout)
+
+    def on_converted_file_added(self, file_path):
+        # Add the converted file to the project explorer using your custom logic
+        # For example, assuming the project explorer is a QTreeView named projectExplorer:
+
+        # Get the project name from the file path or any other logic to find the current project
+        project_name = "MyProject"
+
+        # Add the converted file to the project explorer
+        self.projectExplorer.addTreeNode(file_path, [file_path], parent=project_name)
+
+        # Optional: Copy the file to the project workspace if needed
+        # shutil.copy(file_path, os.path.join(project_workspace, filename))
 
 
 # It is main function of the module and starts the application
