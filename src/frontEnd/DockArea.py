@@ -241,6 +241,7 @@ class DockArea(QtWidgets.QMainWindow):
         count = count + 1
 
     def convert_Pspice(self, file_path):
+        self.convert_button.clicked.disconnect()
         # Get the base name of the file without the extension
         filename = os.path.splitext(os.path.basename(file_path))[0]
         conPath = os.path.dirname(file_path)
@@ -318,7 +319,6 @@ class DockArea(QtWidgets.QMainWindow):
             
             print("up p")
             self.convert_button.setEnabled(True)
-            self.convert_button.clicked.disconnect()
             self.convert_button.clicked.connect(lambda: self.convert_Pspice(file_path))
             
         else:
