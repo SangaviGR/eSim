@@ -192,9 +192,9 @@ class DockArea(QtWidgets.QMainWindow):
 
         button_layout = QHBoxLayout()  # QHBoxLayout for the buttons
 
-        upload_button = QPushButton("Upload Pspice schematics")
-        upload_button.setFixedSize(180, 30)
-        upload_button.clicked.connect(lambda: self.upload_file_Pspice(file_path_text_box.text()))
+        upload_button1 = QPushButton("Upload Pspice schematics")
+        upload_button1.setFixedSize(180, 30)
+        upload_button1.clicked.connect(lambda: self.upload_file_Pspice(file_path_text_box.text()))
         button_layout.addWidget(upload_button)
 
         upload_button = QPushButton("Upload LTspice schematics")
