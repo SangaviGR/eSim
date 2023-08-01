@@ -194,12 +194,12 @@ class DockArea(QtWidgets.QMainWindow):
 
         upload_button = QPushButton("Upload Pspice schematics")
         upload_button.setFixedSize(180, 30)
-        upload_button.clicked.connect(lambda: self.upload_file(file_path_text_box.text()))
+        upload_button.clicked.connect(lambda: self.upload_file_Pspice(file_path_text_box.text()))
         button_layout.addWidget(upload_button)
 
         upload_button = QPushButton("Upload LTspice schematics")
         upload_button.setFixedSize(184, 30)
-        upload_button.clicked.connect(lambda: self.upload_file(file_path_text_box.text()))
+        upload_button.clicked.connect(lambda: self.upload_file_LTspice(file_path_text_box.text()))
         button_layout.addWidget(upload_button)
 
         self.convert_button = QPushButton("Convert Schematics to eSim")
@@ -317,7 +317,7 @@ class DockArea(QtWidgets.QMainWindow):
         if selected_files:
             text_box.setText(selected_files[0])
 
-    def upload_file(self, file_path):
+    def upload_file_Pspice(self, file_path):
         if file_path:
             # Check if the file path contains spaces
             if ' ' in file_path:
@@ -331,17 +331,40 @@ class DockArea(QtWidgets.QMainWindow):
                 return
             print(file_path)
             
-            # Enable the corresponding conversion button based on the file type
-            if "Pspice" in self.sender().text():
-                print("P")
-                self.convert_button.setEnabled(True)
-                self.convert_button.clicked.connect(lambda: self.convert_Pspice(file_path))
-                self.convert_button.clicked.disconnect()
-            elif "LTspice" in self.sender().text():
-                self.convert_button.setEnabled(True)
-                self.convert_button.clicked.connect(lambda: self.convert_LTspice(file_path))
-                self.convert_button.clicked.disconnect()
-                print("LT")
+           
+            self.convert_button.setEnabled(True)
+            self.convert_button.clicked.connect(lambda: self.convert_Pspice(file_path))
+            
+        else:
+            print("No file selected.")
+            self.convert_button.setEnabled(False)
+
+            # Message box indicating that no file is selected
+            msg_box = QMessageBox()
+            msg_box.setIcon(QMessageBox.Warning)
+            msg_box.setWindowTitle("No File Selected")
+            msg_box.setText("Please select a file before uploading.")
+            msg_box.setStandardButtons(QMessageBox.Ok)
+            msg_box.exec_()
+
+    def upload_file_LTspice(self, file_path):
+        if file_path:
+            # Check if the file path contains spaces
+            if ' ' in file_path:
+                # Show a message box indicating that spaces are not allowed
+                msg_box = QMessageBox()
+                msg_box.setIcon(QMessageBox.Warning)
+                msg_box.setWindowTitle("Invalid File Path")
+                msg_box.setText("Spaces are not allowed in the file path.")
+                msg_box.setStandardButtons(QMessageBox.Ok)
+                msg_box.exec_()
+                return
+            print(file_path)
+            
+           
+            self.convert_button.setEnabled(True)
+            self.convert_button.clicked.connect(lambda: self.convert_LTspice(file_path))
+            
         else:
             print("No file selected.")
             self.convert_button.setEnabled(False)
