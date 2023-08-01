@@ -224,7 +224,7 @@ class DockArea(QtWidgets.QMainWindow):
 
         self.description_label = QLabel()
         self.description_label.setFixedHeight(150)
-        self.description_label.setFixedWidth(900)
+        self.description_label.setFixedWidth(960)
 
         description_html = """
             <html>
