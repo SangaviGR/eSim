@@ -865,9 +865,6 @@ class MainView(QtWidgets.QWidget):
         self.obj_dockarea = DockArea.DockArea()
         self.obj_projectExplorer = ProjectExplorer.ProjectExplorer()
 
-        # Connect the signal to the slot
-        self.obj_dockarea.convertedFileAdded.connect(self.on_converted_file_added)
-
         # Adding content to vertical middle Split.
         self.middleSplit.setOrientation(QtCore.Qt.Vertical)
         self.middleSplit.addWidget(self.obj_dockarea)
