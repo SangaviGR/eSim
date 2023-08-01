@@ -335,9 +335,11 @@ class DockArea(QtWidgets.QMainWindow):
             if "Pspice" in self.sender().text():
                 print("P")
                 self.convert_button.setEnabled(True)
+                self.convert_button.clicked.disconnect()
                 self.convert_button.clicked.connect(lambda: self.convert_Pspice(file_path))
             elif "LTspice" in self.sender().text():
                 self.convert_button.setEnabled(True)
+                self.convert_button.clicked.disconnect()
                 self.convert_button.clicked.connect(lambda: self.convert_LTspice(file_path))
                 print("LT")
         else:
