@@ -9,7 +9,7 @@ from kicadtoNgspice.KicadtoNgspice import MainWindow
 from browser.Welcome import Welcome
 from browser.UserManual import UserManual
 from ngspicetoModelica.ModelicaUI import OpenModelicaEditor
-from PyQt5.QtWidgets import QFileDialog, QLineEdit, QTextEdit, QPushButton, QMessageBox, QVBoxLayout, QHBoxLayout
+from PyQt5.QtWidgets import QFileDialog, QLineEdit, QLabel, QPushButton, QMessageBox, QVBoxLayout, QHBoxLayout
 from PyQt5.QtCore import Qt
 import os
 import subprocess
@@ -211,16 +211,47 @@ class DockArea(QtWidgets.QMainWindow):
 
         self.eConLayout.addLayout(button_layout)
 
-        text_edit = QTextEdit()
-        text_edit.setFixedHeight(100)
-        text_edit.setText("Pspice to eSim will convert the PSpice Schematic and Library files to KiCad "
-                        "Schematic and Library files respectively with proper mapping of the components "
-                        "and the wiring. By this way one will be able to simulate their schematics in PSpice "
-                        "and get the PCB layout in KiCad.\n"
-                        "LTspice to eSim will convert symbols and schematics from LTspice to Kicad.The goal is to design and"
-                        " simulate under LTspice and to automatically transfer the circuit under Kicad to draw the PCB.")
-        text_edit.setReadOnly(True)  # Make the text non-editable
-        self.eConLayout.addWidget(text_edit)  # Add QTextEdit widget to main layout
+        # text_edit = QTextEdit()
+        # text_edit.setFixedHeight(100)
+        # text_edit.setText("Pspice to eSim will convert the PSpice Schematic and Library files to KiCad "
+        #                 "Schematic and Library files respectively with proper mapping of the components "
+        #                 "and the wiring. By this way one will be able to simulate their schematics in PSpice "
+        #                 "and get the PCB layout in KiCad.\n"
+        #                 "LTspice to eSim will convert symbols and schematics from LTspice to Kicad.The goal is to design and"
+        #                 " simulate under LTspice and to automatically transfer the circuit under Kicad to draw the PCB.")
+        # text_edit.setReadOnly(True)  # Make the text non-editable
+        # self.eConLayout.addWidget(text_edit)  # Add QTextEdit widget to main layout
+
+        self.description_label = QLabel()
+        self.description_label.setFixedHeight(100)
+        description_html = """
+            <html>
+                <head>
+                    <style>
+                        body {
+                            font-size: 13pt;
+                            line-height: 125%;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <p>
+                        <b>Pspice to eSim </b> will convert the PSpice Schematic and Library files to KiCad 
+                        Schematic and Library files respectively with proper mapping of the components 
+                        and the wiring. By this way one will be able to simulate their schematics in PSpice 
+                        and get the PCB layout in KiCad.
+                    </p>
+                    <br/>
+                    <p>
+                        <b>LTspice to eSim </b> will convert symbols and schematics from LTspice to Kicad.
+                        The goal is to design and simulate under LTspice and to automatically transfer the
+                        circuit under Kicad to draw the PCB.
+                    </p>
+                </body>
+            </html>
+        """
+        self.description_label.setText(description_html)
+        self.eConLayout.addWidget(self.description_label)
 
         self.eConWidget.setLayout(self.eConLayout)
         dock[dockName + str(count)] = QtWidgets.QDockWidget(dockName + str(count))
