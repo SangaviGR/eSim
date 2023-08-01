@@ -297,36 +297,7 @@ class DockArea(QtWidgets.QMainWindow):
         # Check if the file is not empty
         if os.path.getsize(file_path) > 0:
             self.convert_button.setEnabled(False)
-            # LTspice convert code should be added
-            """
-            try:
-                subprocess.run(command, shell=True, check=True)
-                self.convertLT.setEnabled(False)
-                # Show a message box with the conversion success message
-                msg_box = QMessageBox()
-                msg_box.setIcon(QMessageBox.Information)
-                msg_box.setWindowTitle("Conversion Successful")
-                msg_box.setText("The file has been converted successfully. Do you want to include it under the project explorer?")
-                msg_box.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
-                msg_box.setDefaultButton(QMessageBox.Yes)
-                result = msg_box.exec_()
-                print("Conversion of LTspice to eSim schematic Successful")
-
-                if result == QMessageBox.Yes:
-                    # Add the converted file under the project explorer
-                    newFile = str(conPath + "/" + filename)
-                    print(newFile)
-                    self.app = Application(self)
-                    self.app.obj_Mainview.obj_projectExplorer.addTreeNode(newFile, [newFile])
-                    shutil.copytree(newFile, f"/home/ubuntus/eSim-Workspace/{filename}") 
-                    print("File added under the project explorer.")
-                else:
-                    # User chose not to add the file
-                    print("File not added under the project explorer.")
-            except subprocess.CalledProcessError as e:
-                # Handle any errors that occurred during command execution
-                print("Error:", e) 
-                """
+            
         else:
             print("File is empty. Cannot perform conversion.")
             # A message box indicating that the file is empty
