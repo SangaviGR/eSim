@@ -257,7 +257,7 @@ class DockArea(QtWidgets.QMainWindow):
                         <b>Pspice to eSim </b> will convert the PSpice Schematic and Library files to KiCad Schematic and
                         Library files respectively with proper mapping of the components and the wiring. By this way one 
                         will be able to simulate their schematics in PSpice and get the PCB layout in KiCad.</b> 
-                    <br/>
+                    <br/><br/>
                     <b>LTspice to eSim </b> will convert symbols and schematics from LTspice to Kicad.The goal is to design and
                     simulate under LTspice and to automatically transfer the circuit under Kicad to draw the PCB.</b>
                     </p>
