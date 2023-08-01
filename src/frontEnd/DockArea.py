@@ -291,7 +291,23 @@ class DockArea(QtWidgets.QMainWindow):
             msg_box.exec_()
 
     def convert_LTspice(self, file_path):
-        pass
+        self.convert_button.clicked.disconnect()
+        # Get the base name of the file without the extension
+        filename = os.path.splitext(os.path.basename(file_path))[0]
+        conPath = os.path.dirname(file_path)
+        
+        # Check if the file is not empty
+        if os.path.getsize(file_path) > 0:
+            print("con lt")
+        else:
+            print("File is empty. Cannot perform conversion.")
+            # A message box indicating that the file is empty
+            msg_box = QMessageBox()
+            msg_box.setIcon(QMessageBox.Warning)
+            msg_box.setWindowTitle("Empty File")
+            msg_box.setText("The selected file is empty. Conversion cannot be performed.")
+            msg_box.setStandardButtons(QMessageBox.Ok)
+            msg_box.exec_()
 
     def browse_path(self, text_box):
         file_dialog = QFileDialog()  # a dialog that allows the user to select files or directories
@@ -303,7 +319,6 @@ class DockArea(QtWidgets.QMainWindow):
             text_box.setText(selected_files[0])
 
     def upload_file_Pspice(self, file_path):
-        fileName = os.path.splitext(os.path.basename(file_path))[0]
         if file_path:
             # Check if the file path contains spaces
             if ' ' in file_path:
@@ -316,8 +331,6 @@ class DockArea(QtWidgets.QMainWindow):
                 msg_box.exec_()
                 return
             print(file_path)
-            
-            print("up p")
             self.convert_button.setEnabled(True)
             self.convert_button.clicked.connect(lambda: self.convert_Pspice(file_path))
             
@@ -334,7 +347,32 @@ class DockArea(QtWidgets.QMainWindow):
             msg_box.exec_()
 
     def upload_file_LTspice(self, file_path):
-        pass
+        if file_path:
+            # Check if the file path contains spaces
+            if ' ' in file_path:
+                # Show a message box indicating that spaces are not allowed
+                msg_box = QMessageBox()
+                msg_box.setIcon(QMessageBox.Warning)
+                msg_box.setWindowTitle("Invalid File Path")
+                msg_box.setText("Spaces are not allowed in the file path.")
+                msg_box.setStandardButtons(QMessageBox.Ok)
+                msg_box.exec_()
+                return
+            print(file_path)
+            self.convert_button.setEnabled(True)
+            self.convert_button.clicked.connect(lambda: self.convert_LTspice(file_path))
+            
+        else:
+            print("No file selected.")
+            self.convert_button.setEnabled(False)
+
+            # Message box indicating that no file is selected
+            msg_box = QMessageBox()
+            msg_box.setIcon(QMessageBox.Warning)
+            msg_box.setWindowTitle("No File Selected")
+            msg_box.setText("Please select a file before uploading.")
+            msg_box.setStandardButtons(QMessageBox.Ok)
+            msg_box.exec_()
 
 
     def modelEditor(self):
