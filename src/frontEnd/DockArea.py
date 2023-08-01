@@ -10,9 +10,10 @@ from browser.Welcome import Welcome
 from browser.UserManual import UserManual
 from ngspicetoModelica.ModelicaUI import OpenModelicaEditor
 from PyQt5.QtWidgets import QFileDialog, QLineEdit, QLabel, QPushButton, QMessageBox, QVBoxLayout, QHBoxLayout
+from PyQt5.QtCore import Qt
 import os
 import subprocess
-from Application import MainView
+from Application import Application
 import shutil
 
 dockList = ['Welcome']
@@ -20,7 +21,7 @@ count = 1
 dock = {}
 
 
-class DockArea(QtWidgets.QMainWindow,MainView):
+class DockArea(QtWidgets.QMainWindow):
     """
     This class contains function for designing UI of all the editors
     in dock area part:
@@ -37,8 +38,8 @@ class DockArea(QtWidgets.QMainWindow,MainView):
     def __init__(self):
         """This act as constructor for class DockArea."""
         QtWidgets.QMainWindow.__init__(self)
-        MainView.__init__(self)
         self.obj_appconfig = Appconfig()
+
         for dockName in dockList:
             dock[dockName] = QtWidgets.QDockWidget(dockName)
             self.welcomeWidget = QtWidgets.QWidget()
@@ -314,12 +315,11 @@ class DockArea(QtWidgets.QMainWindow,MainView):
                     # Add the converted file under the project explorer
                     newFile = str(conPath + "/" + filename)
                     print(newFile)
-                    self.on_converted_file_added(newFile)
-                    # self.app = Application(self)
-                    # self.app.obj_Mainview.obj_projectExplorer.addTreeNode(newFile, [newFile])
-                    # #shutil.copytree(newFile, f"/home/ubuntus/eSim-Workspace/{filename}") 
-                    # shutil.rmtree(f"/home/ubuntus/eSim-Workspace/{filename}", ignore_errors=True)
-                    # shutil.copytree(newFile, f"/home/ubuntus/eSim-Workspace/{filename}")
+                    self.app = Application(self)
+                    self.app.obj_Mainview.obj_projectExplorer.addTreeNode(newFile, [newFile])
+                    #shutil.copytree(newFile, f"/home/ubuntus/eSim-Workspace/{filename}") 
+                    shutil.rmtree(f"/home/ubuntus/eSim-Workspace/{filename}", ignore_errors=True)
+                    shutil.copytree(newFile, f"/home/ubuntus/eSim-Workspace/{filename}")
 
                     print("File added under the project explorer.")
                 else:
@@ -346,6 +346,7 @@ class DockArea(QtWidgets.QMainWindow,MainView):
         
         # Check if the file is not empty
         if os.path.getsize(file_path) > 0:
+            print("con lt")
             self.convert_button.setEnabled(False)
         else:
             print("File is empty. Cannot perform conversion.")
