@@ -315,7 +315,7 @@ class DockArea(QtWidgets.QMainWindow):
                     # Add the converted file under the project explorer
                     newFile = str(conPath + "/" + filename)
                     print(newFile)
-                    QtWidgets.QMainWindow.close(self)
+                    
                     self.app = Application(self)
                     self.app.obj_Mainview.obj_projectExplorer.addTreeNode(newFile, [newFile])
                     #shutil.copytree(newFile, f"/home/ubuntus/eSim-Workspace/{filename}") 
@@ -323,6 +323,9 @@ class DockArea(QtWidgets.QMainWindow):
                     shutil.copytree(newFile, f"/home/ubuntus/eSim-Workspace/{filename}")
 
                     print("File added under the project explorer.")
+
+                    QtWidgets.QMainWindow.close(self)
+
                 else:
                     # User chose not to add the file
                     print("File not added under the project explorer.")
