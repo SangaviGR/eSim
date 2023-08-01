@@ -331,7 +331,7 @@ class DockArea(QtWidgets.QMainWindow):
                 return
             print(file_path)
             
-           
+            print("up p")
             self.convert_button.setEnabled(True)
             self.convert_button.clicked.connect(lambda: self.convert_Pspice(file_path))
             
