@@ -9,7 +9,7 @@ from kicadtoNgspice.KicadtoNgspice import MainWindow
 from browser.Welcome import Welcome
 from browser.UserManual import UserManual
 from ngspicetoModelica.ModelicaUI import OpenModelicaEditor
-from PyQt5.QtWidgets import QFileDialog, QLineEdit, QLabel, QPushButton, QMessageBox, QVBoxLayout, QHBoxLayout
+from PyQt5.QtWidgets import QFileDialog, QTreeWidgetItem,  QLineEdit, QLabel, QPushButton, QMessageBox, QVBoxLayout, QHBoxLayout
 from PyQt5.QtCore import Qt
 import os
 import subprocess
@@ -314,12 +314,30 @@ class DockArea(QtWidgets.QMainWindow):
                 if result == QMessageBox.Yes:
                     # Add the converted file under the project explorer
                     newFile = str(conPath + "/" + filename)
-                    print(newFile)
-                    self.app = Application(self)
-                    self.app.obj_Mainview.obj_projectExplorer.addTreeNode(newFile, [newFile])
-                    #shutil.copytree(newFile, f"/home/ubuntus/eSim-Workspace/{filename}") 
-                    shutil.rmtree(f"/home/ubuntus/eSim-Workspace/{filename}", ignore_errors=True)
-                    shutil.copytree(newFile, f"/home/ubuntus/eSim-Workspace/{filename}")
+
+                    # Get the current project in the project explorer
+                    current_project = self.app.obj_Mainview.obj_projectExplorer.getProjectPath()
+                    
+                    # Create a QTreeWidgetItem for the converted file
+                    tree_item = QTreeWidgetItem([os.path.basename(newFile)])
+                    tree_item.setData(0, QtCore.Qt.UserRole, newFile)  # Store the full path as user data
+
+                    # Add the tree item to the project explorer
+                    current_project.addChild(tree_item)
+                    
+                    # Make the converted file item visible in the project explorer
+                    tree_item.setExpanded(True)
+                    
+                    # Optional: Set the icon for the converted file item
+                    # icon_path = 'path/to/your/icon.png'
+                    # icon = QtGui.QIcon(icon_path)
+                    # tree_item.setIcon(0, icon)
+
+                    # Optional: Sort the items in the project explorer
+                    current_project.sortChildren(0, QtCore.Qt.AscendingOrder)
+
+                    # Notify the project explorer that the structure has changed
+                    current_project.emitDataChanged()
 
                     print("File added under the project explorer.")
                 else:
