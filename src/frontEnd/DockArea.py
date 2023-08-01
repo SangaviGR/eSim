@@ -362,11 +362,13 @@ class DockArea(QtWidgets.QMainWindow):
             
             # Enable the corresponding conversion button based on the file type
             if "Pspice" in self.sender().text():
+                print("P")
                 self.convert_button.setEnabled(True)
                 self.convert_button.clicked.connect(lambda: self.convert_Pspice(file_path))
             elif "LTspice" in self.sender().text():
                 self.convert_button.setEnabled(True)
                 self.convert_button.clicked.connect(lambda: self.convert_LTspice(file_path))
+                print("LT")
         else:
             print("No file selected.")
             self.convert_button.setEnabled(False)
