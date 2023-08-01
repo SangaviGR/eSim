@@ -223,8 +223,8 @@ class DockArea(QtWidgets.QMainWindow):
         # self.eConLayout.addWidget(text_edit)  # Add QTextEdit widget to main layout
 
         self.description_label = QLabel()
-        self.description_label.setFixedHeight(300)
-        self.description_label.setFixedWidth(1000)
+        self.description_label.setFixedHeight(500)
+        self.description_label.setFixedWidth(900)
 
         description_html = """
             <html>
@@ -235,7 +235,8 @@ class DockArea(QtWidgets.QMainWindow):
                             font-family: sans-serif;
                             margin: 0px;
                             padding: 0px;
-                            background-color: #efefef;
+                            background-color: #c0c6c9;
+            	            border: 4px solid  #080808;
                         }
 
                         h1{
@@ -270,12 +271,16 @@ class DockArea(QtWidgets.QMainWindow):
                     
                     <p align="justify">
                         <b>Pspice to eSim </b> will convert the PSpice Schematic and Library files to KiCad 
+                        <br/>
                         Schematic and Library files respectively with proper mapping of the components 
+                        <br/>
                         and the wiring. By this way one will be able to simulate their schematics in PSpice 
+                        <br/>
                         and get the PCB layout in KiCad.</b> 
                     </p>
                     <br/>
                     <b>LTspice to eSim </b> will convert symbols and schematics from LTspice to Kicad.The goal is to design and
+                    <br/>
                     simulate under LTspice and to automatically transfer the circuit under Kicad to draw the PCB.</b>
                     <br/>
                 </body>
