@@ -10,10 +10,9 @@ from browser.Welcome import Welcome
 from browser.UserManual import UserManual
 from ngspicetoModelica.ModelicaUI import OpenModelicaEditor
 from PyQt5.QtWidgets import QFileDialog, QLineEdit, QLabel, QPushButton, QMessageBox, QVBoxLayout, QHBoxLayout
-from PyQt5.QtCore import pyqtSignal
 import os
 import subprocess
-from Application import Application
+from Application import MainView
 import shutil
 
 dockList = ['Welcome']
@@ -21,7 +20,7 @@ count = 1
 dock = {}
 
 
-class DockArea(QtWidgets.QMainWindow):
+class DockArea(QtWidgets.QMainWindow,MainView):
     """
     This class contains function for designing UI of all the editors
     in dock area part:
@@ -39,7 +38,6 @@ class DockArea(QtWidgets.QMainWindow):
         """This act as constructor for class DockArea."""
         QtWidgets.QMainWindow.__init__(self)
         self.obj_appconfig = Appconfig()
-        self.convertedFileAdded = pyqtSignal(str)  # Define a signal with a string parameter
         for dockName in dockList:
             dock[dockName] = QtWidgets.QDockWidget(dockName)
             self.welcomeWidget = QtWidgets.QWidget()
@@ -314,9 +312,8 @@ class DockArea(QtWidgets.QMainWindow):
                 if result == QMessageBox.Yes:
                     # Add the converted file under the project explorer
                     newFile = str(conPath + "/" + filename)
-                    # Emit the signal with the path of the newly converted file
-                    self.convertedFileAdded.emit(newFile)
                     print(newFile)
+                    MainView.on_converted_file_added(newFile)
                     # self.app = Application(self)
                     # self.app.obj_Mainview.obj_projectExplorer.addTreeNode(newFile, [newFile])
                     # #shutil.copytree(newFile, f"/home/ubuntus/eSim-Workspace/{filename}") 
