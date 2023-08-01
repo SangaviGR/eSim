@@ -895,7 +895,7 @@ class MainView(QtWidgets.QWidget):
         project_name = "MyProject"
 
         # Add the converted file to the project explorer
-        self.projectExplorer.addTreeNode(file_path, [file_path])
+        self.obj_projectExplorer.addTreeNode(file_path, [file_path])
 
         # Optional: Copy the file to the project workspace if needed
         # shutil.copy(file_path, os.path.join(project_workspace, filename))
