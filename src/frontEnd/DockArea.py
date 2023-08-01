@@ -299,6 +299,7 @@ class DockArea(QtWidgets.QMainWindow):
         # Check if the file is not empty
         if os.path.getsize(file_path) > 0:
             print("con lt")
+            self.convert_button.setEnabled(False)
         else:
             print("File is empty. Cannot perform conversion.")
             # A message box indicating that the file is empty
