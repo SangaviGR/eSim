@@ -281,8 +281,10 @@ class DockArea(QtWidgets.QMainWindow):
         if radio_button.isChecked():
             self.upload_file_check(file_path_text_box)
             if radio_button.text() == "Upload Pspice schematics":
+                print("p")
                 self.convert_button.clicked.connect(lambda: self.convert_Pspice(file_path_text_box))
             elif radio_button.text() == "Upload LTspice schematics":
+                print("l")
                 self.convert_button.clicked.connect(lambda: self.convert_LTspice(file_path_text_box))
 
 
