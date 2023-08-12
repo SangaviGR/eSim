@@ -253,7 +253,7 @@ class DockArea(QtWidgets.QMainWindow):
         self.description_label = QLabel()
         self.description_label.setFixedHeight(160)
         self.description_label.setFixedWidth(950)
-        self.description_label.setAlignment(Qt.AlignBaseline)
+        self.description_label.setAlignment(Qt.AlignBottom)
         self.description_label.setWordWrap(True)
         self.description_label.setText(description_html)
         self.eConLayout.addWidget(self.description_label)  # Add the description label to the layout
