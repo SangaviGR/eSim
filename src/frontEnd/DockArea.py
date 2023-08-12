@@ -278,8 +278,8 @@ class DockArea(QtWidgets.QMainWindow):
 
     def radio_toggled(self, radio_button, file_path_text_box):
         
-        self.upload_file_check(file_path_text_box)
         if radio_button.isChecked():
+            self.upload_file_check(file_path_text_box)
             if radio_button.text() == "Upload Pspice schematics":
                 self.convert_button.setEnabled(True)
                 self.convert_button.clicked.connect(lambda: self.convert_Pspice(file_path_text_box))
