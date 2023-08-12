@@ -223,7 +223,7 @@ class DockArea(QtWidgets.QMainWindow):
                             padding: 0px;
                             background-color: white;
                             border: 4px solid  black;
-                            font-size: 11pt; /* Adjust the font size as needed */
+                            font-size: 10pt; /* Adjust the font size as needed */
                         }
 
                         h1{
