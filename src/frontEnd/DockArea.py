@@ -287,7 +287,7 @@ class DockArea(QtWidgets.QMainWindow):
 
 
     def convert_Pspice(self,radio_button, file_path):
-        radio_button.setChecked(False)
+        radio_button.setCheck(False)
         self.convert_button.clicked.disconnect()
         # Get the base name of the file without the extension
         filename = os.path.splitext(os.path.basename(file_path))[0]
