@@ -181,7 +181,7 @@ class DockArea(QtWidgets.QMainWindow):
         file_path_text_box = QLineEdit()
         file_path_text_box.setFixedHeight(30)
         file_path_text_box.setFixedWidth(800)
-        file_path_layout.setAlignment(Qt.AlignHCenter)
+        file_path_layout.setAlignment(Qt.AlignCenter)
         file_path_layout.addWidget(file_path_text_box)
 
         browse_button = QPushButton("Browse")
@@ -209,7 +209,6 @@ class DockArea(QtWidgets.QMainWindow):
         button_layout.addWidget(self.convert_button)
         self.eConLayout.addLayout(button_layout)
 
-        self.eConLayout.setAlignment(Qt.AlignCenter)
         self.eConWidget.setLayout(self.eConLayout)
 
         # Add the description HTML content
@@ -254,7 +253,7 @@ class DockArea(QtWidgets.QMainWindow):
         self.description_label = QLabel()
         self.description_label.setFixedHeight(160)
         self.description_label.setFixedWidth(950)
-        self.description_label.setAlignment(Qt.AlignBottom)
+        self.description_label.setAlignment(Qt.AlignBaseline)
         self.description_label.setWordWrap(True)
         self.description_label.setText(description_html)
         self.eConLayout.addWidget(self.description_label)  # Add the description label to the layout
