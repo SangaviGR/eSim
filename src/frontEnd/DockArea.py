@@ -236,7 +236,8 @@ class DockArea(QtWidgets.QMainWindow):
                             margin: 0px;
                             padding: 0px;
                             background-color: white;
-            	            border: 4px solid  black;
+                            border: 4px solid  black;
+                            font-size: 14pt; /* Adjust the font size as needed */
                         }
 
                         h1{
@@ -248,24 +249,23 @@ class DockArea(QtWidgets.QMainWindow):
                             border: 4px outset  #0E324B;
                         }
                     </style>
-                <head>
+                </head>
 
                 <body>
-                    
                     <h1>About eSim Convertor</h1>
-                        <p>
+                    <p>
                         <b>Pspice to eSim </b> will convert the PSpice Schematic and Library files to KiCad Schematic and
                         Library files respectively with proper mapping of the components and the wiring. By this way one 
                         will be able to simulate their schematics in PSpice and get the PCB layout in KiCad.</b> 
-                    <br/><br/>
-                    <b>LTspice to eSim </b> will convert symbols and schematics from LTspice to Kicad.The goal is to design and
-                    simulate under LTspice and to automatically transfer the circuit under Kicad to draw the PCB.</b>
+                        <br/><br/>
+                        <b>LTspice to eSim </b> will convert symbols and schematics from LTspice to Kicad.The goal is to design and
+                        simulate under LTspice and to automatically transfer the circuit under Kicad to draw the PCB.</b>
                     </p>
                 </body>
                 
             </html>
-
         """
+
         self.description_label.setWordWrap(True)
         self.description_label.setText(description_html)
         self.eConLayout.addWidget(self.description_label)
