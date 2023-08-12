@@ -174,6 +174,7 @@ class DockArea(QtWidgets.QMainWindow):
         dockName = 'Schematics Convertor-'
 
         self.eConWidget = QtWidgets.QWidget()
+        self.eConWidget.move(1,2)  
         self.eConLayout = QVBoxLayout()  # QVBoxLayout for the main layout
 
         file_path_layout = QHBoxLayout()  # QHBoxLayout for file path line
@@ -182,6 +183,8 @@ class DockArea(QtWidgets.QMainWindow):
         file_path_text_box.setFixedHeight(30)
         file_path_text_box.setFixedWidth(800)
         file_path_layout.addWidget(file_path_text_box)
+        file_path_layout.move(1,2)  
+
 
         browse_button = QPushButton("Browse")
         browse_button.setFixedSize(100, 30)
