@@ -167,11 +167,11 @@ class DockArea(QtWidgets.QMainWindow):
             )
         count = count + 1
 
-    def eSimConvertor(self):
-        """This function creates a widget for eSimConvertor."""
+    def eSimConverter(self):
+        """This function creates a widget for eSimConverter."""
         global count
 
-        dockName = 'Schematics Convertor-'
+        dockName = 'Schematics Converter-'
 
         self.eConWidget = QtWidgets.QWidget()
         self.eConLayout = QVBoxLayout()  # QVBoxLayout for the main layout
@@ -238,7 +238,7 @@ class DockArea(QtWidgets.QMainWindow):
                 </head>
 
                 <body>
-                    <h1>About eSim Convertor</h1>
+                    <h1>About eSim Converter</h1>
                     <p>
                         <b>Pspice to eSim </b> will convert the PSpice Schematic and Library files to KiCad Schematic and
                         Library files respectively with proper mapping of the components and the wiring. By this way one 
