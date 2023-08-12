@@ -193,9 +193,9 @@ class DockArea(QtWidgets.QMainWindow):
 
         # Create a radio button group
         self.upload_radio_group = QButtonGroup()
-
+        self.upload_radio_group.setAlignment(Qt.AlignCenter)
         upload_radio_pspice = QRadioButton("Upload Pspice schematics")
-        upload_radio_pspice.setChecked(True)  # Set the default selection
+        upload_radio_pspice.setChecked(False)  # Set the default selection
         upload_radio_pspice.toggled.connect(lambda: self.radio_toggled(upload_radio_pspice, file_path_text_box))
         self.upload_radio_group.addButton(upload_radio_pspice)
         self.eConLayout.addWidget(upload_radio_pspice)
