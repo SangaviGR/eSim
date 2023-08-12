@@ -223,7 +223,7 @@ class DockArea(QtWidgets.QMainWindow):
         # self.eConLayout.addWidget(text_edit)  # Add QTextEdit widget to main layout
 
         self.description_label = QLabel()
-        self.description_label.setFixedHeight(170)
+        self.description_label.setFixedHeight(160)
         self.description_label.setFixedWidth(960)
 
         description_html = """
@@ -242,7 +242,7 @@ class DockArea(QtWidgets.QMainWindow):
 
                         h1{
                             font-weight: bold;
-                            font-size: 19pt;
+                            font-size: 11pt;
                             color: #eeeeee;
                             padding: 10px;
                             background-color: #165982;
