@@ -194,16 +194,15 @@ class DockArea(QtWidgets.QMainWindow):
         # Create a radio button group
         self.upload_radio_group = QButtonGroup()
         
-        upload_radio_pspice = QRadioButton("Upload Pspice schematics")
-        upload_radio_pspice.setChecked(False)  # Set the default selection
-        upload_radio_pspice.toggled.connect(lambda: self.radio_toggled(upload_radio_pspice, file_path_text_box.text()))
-        self.upload_radio_group.addButton(upload_radio_pspice)
-        self.eConLayout.addWidget(upload_radio_pspice)
+        self.upload_radio_pspice = QRadioButton("Upload Pspice schematics")
+        self.upload_radio_pspice.toggled.connect(lambda: self.radio_toggled(self.upload_radio_pspice, file_path_text_box.text()))
+        self.upload_radio_group.addButton(self.upload_radio_pspice)
+        self.eConLayout.addWidget(self.upload_radio_pspice)
 
-        upload_radio_ltspice = QRadioButton("Upload LTspice schematics")
-        upload_radio_ltspice.toggled.connect(lambda: self.radio_toggled(upload_radio_ltspice, file_path_text_box.text()))
-        self.upload_radio_group.addButton(upload_radio_ltspice)
-        self.eConLayout.addWidget(upload_radio_ltspice)
+        self.upload_radio_ltspice = QRadioButton("Upload LTspice schematics")
+        self.upload_radio_ltspice.toggled.connect(lambda: self.radio_toggled(self.upload_radio_ltspice, file_path_text_box.text()))
+        self.upload_radio_group.addButton(self.upload_radio_ltspice)
+        self.eConLayout.addWidget(self.upload_radio_ltspice)
 
         self.convert_button = QPushButton("Convert Schematics to eSim")
         self.convert_button.setFixedSize(190, 30)
@@ -379,6 +378,7 @@ class DockArea(QtWidgets.QMainWindow):
                 msg_box.setText("Spaces are not allowed in the file path.")
                 msg_box.setStandardButtons(QMessageBox.Ok)
                 msg_box.exec_()
+                self.upload_radio_pspice.setChecked(False)
                 return
             print(file_path)
             self.convert_button.setEnabled(True)
@@ -395,6 +395,7 @@ class DockArea(QtWidgets.QMainWindow):
             msg_box.setText("Please select a file before uploading.")
             msg_box.setStandardButtons(QMessageBox.Ok)
             msg_box.exec_()
+            self.upload_radio_pspice.setChecked(False)
 
     def upload_file_LTspice(self, file_path):
         if file_path:
@@ -407,7 +408,9 @@ class DockArea(QtWidgets.QMainWindow):
                 msg_box.setText("Spaces are not allowed in the file path.")
                 msg_box.setStandardButtons(QMessageBox.Ok)
                 msg_box.exec_()
+                self.upload_radio_ltspice.setChecked(False)
                 return
+            
             print(file_path)
             self.convert_button.setEnabled(True)
             self.convert_button.clicked.connect(lambda: self.convert_LTspice(file_path))
@@ -423,7 +426,7 @@ class DockArea(QtWidgets.QMainWindow):
             msg_box.setText("Please select a file before uploading.")
             msg_box.setStandardButtons(QMessageBox.Ok)
             msg_box.exec_()
-
+            self.upload_radio_ltspice.setChecked(False)
 
     def modelEditor(self):
         """This function defines UI for model editor."""
