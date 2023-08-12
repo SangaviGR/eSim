@@ -9,7 +9,7 @@ from kicadtoNgspice.KicadtoNgspice import MainWindow
 from browser.Welcome import Welcome
 from browser.UserManual import UserManual
 from ngspicetoModelica.ModelicaUI import OpenModelicaEditor
-from PyQt5.QtWidgets import QFileDialog, QLineEdit, QLabel, QPushButton, QMessageBox, QVBoxLayout, QHBoxLayout
+from PyQt5.QtWidgets import QFileDialog, QLineEdit, QLabel, QButtonGroup, QRadioButton, QPushButton, QMessageBox, QVBoxLayout, QHBoxLayout
 from PyQt5.QtCore import Qt
 import os
 import subprocess
@@ -191,30 +191,30 @@ class DockArea(QtWidgets.QMainWindow):
 
         self.eConLayout.addLayout(file_path_layout)  # Add file path layout to main layout
 
-        button_layout = QHBoxLayout()  # QHBoxLayout for the buttons
+        # Create a radio button group
+        self.upload_radio_group = QButtonGroup()
 
-        upload_button1 = QPushButton("Upload Pspice schematics")
-        upload_button1.setFixedSize(180, 30)
-        upload_button1.clicked.connect(lambda: self.upload_file_Pspice(file_path_text_box.text()))
-        button_layout.addWidget(upload_button1)
+        upload_radio_pspice = QRadioButton("Upload Pspice schematics")
+        upload_radio_pspice.setChecked(True)  # Set the default selection
+        upload_radio_pspice.toggled.connect(lambda: self.radio_toggled(upload_radio_pspice, file_path_text_box))
+        self.upload_radio_group.addButton(upload_radio_pspice)
+        self.eConLayout.addWidget(upload_radio_pspice)
 
-        upload_button = QPushButton("Upload LTspice schematics")
-        upload_button.setFixedSize(184, 30)
-        upload_button.clicked.connect(lambda: self.upload_file_LTspice(file_path_text_box.text()))
-        button_layout.addWidget(upload_button)
+        upload_radio_ltspice = QRadioButton("Upload LTspice schematics")
+        upload_radio_ltspice.toggled.connect(lambda: self.radio_toggled(upload_radio_ltspice, file_path_text_box))
+        self.upload_radio_group.addButton(upload_radio_ltspice)
+        self.eConLayout.addWidget(upload_radio_ltspice)
 
         self.convert_button = QPushButton("Convert Schematics to eSim")
         self.convert_button.setFixedSize(190, 30)
         self.convert_button.setEnabled(False)
-        button_layout.addWidget(self.convert_button)
-        self.eConLayout.addLayout(button_layout)
+        self.eConLayout.addWidget(self.convert_button)
 
         self.eConWidget.setLayout(self.eConLayout)
 
         # Add the description HTML content
         description_html = """
-            <html>
-                <head>
+            <html><head>
                     <style>
                         body {
                             font-family: sans-serif;
@@ -247,7 +247,7 @@ class DockArea(QtWidgets.QMainWindow):
                         simulate under LTspice and to automatically transfer the circuit under Kicad to draw the PCB.</b>
                     </p>
                 </body>
-            </html>
+        </html>
         """
 
         self.description_label = QLabel()
@@ -276,6 +276,16 @@ class DockArea(QtWidgets.QMainWindow):
         dock[dockName + str(count)].raise_()
 
         count = count + 1
+
+    def radio_toggled(self, radio_button, file_path_text_box):
+        if radio_button.isChecked():
+            if radio_button.text() == "Upload Pspice schematics":
+                # Handle PSpice schematics upload
+                pass
+            elif radio_button.text() == "Upload LTspice schematics":
+                # Handle LTspice schematics upload
+                pass
+
 
 
     def convert_Pspice(self, file_path):
