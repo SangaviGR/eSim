@@ -280,14 +280,16 @@ class DockArea(QtWidgets.QMainWindow):
         if radio_button.isChecked():
             if radio_button.text() == "Upload Pspice schematics":
                 self.convert_button.setEnabled(True)
-                self.convert_button.clicked.connect(lambda: self.convert_Pspice(radio_button,file_path_text_box))
+                self.upload_file_check(file_path_text_box)
+                self.convert_button.clicked.connect(lambda: self.convert_Pspice(file_path_text_box))
             elif radio_button.text() == "Upload LTspice schematics":
                 self.convert_button.setEnabled(True)
-                self.convert_button.clicked.connect(lambda: self.convert_LTspice(radio_button,file_path_text_box))
+                self.upload_file_check(file_path_text_box)
+                self.convert_button.clicked.connect(lambda: self.convert_LTspice(file_path_text_box))
 
 
-    def convert_Pspice(self,radio_button, file_path):
-        radio_button.setChecked(False)
+    def convert_Pspice(self, file_path):
+       
         self.convert_button.clicked.disconnect()
         # Get the base name of the file without the extension
         filename = os.path.splitext(os.path.basename(file_path))[0]
@@ -370,7 +372,7 @@ class DockArea(QtWidgets.QMainWindow):
         if selected_files:
             text_box.setText(selected_files[0])
 
-    def upload_file_Pspice(self, file_path):
+    def upload_file_check(self, file_path):
         if file_path:
             # Check if the file path contains spaces
             if ' ' in file_path:
@@ -381,7 +383,7 @@ class DockArea(QtWidgets.QMainWindow):
                 msg_box.setText("Spaces are not allowed in the file path.")
                 msg_box.setStandardButtons(QMessageBox.Ok)
                 msg_box.exec_()
-                self.upload_radio_pspice.setCheckable(True)
+                self.convert_button.setEnabled(False)
                 return
             print(file_path)
             self.convert_button.setEnabled(True)
@@ -390,7 +392,6 @@ class DockArea(QtWidgets.QMainWindow):
         else:
             print("No file selected.")
             self.convert_button.setEnabled(False)
-            self.upload_radio_pspice.setChecked(False)
             # Message box indicating that no file is selected
             msg_box = QMessageBox()
             msg_box.setIcon(QMessageBox.Warning)
@@ -399,36 +400,6 @@ class DockArea(QtWidgets.QMainWindow):
             msg_box.setStandardButtons(QMessageBox.Ok)
             msg_box.exec_()
             
-
-    def upload_file_LTspice(self, file_path):
-        if file_path:
-            # Check if the file path contains spaces
-            if ' ' in file_path:
-                # Show a message box indicating that spaces are not allowed
-                msg_box = QMessageBox()
-                msg_box.setIcon(QMessageBox.Warning)
-                msg_box.setWindowTitle("Invalid File Path")
-                msg_box.setText("Spaces are not allowed in the file path.")
-                msg_box.setStandardButtons(QMessageBox.Ok)
-                msg_box.exec_()
-                self.upload_radio_ltspice.setChecked(False)
-                return
-            
-            print(file_path)
-            self.convert_button.setEnabled(True)
-            self.convert_button.clicked.connect(lambda: self.convert_LTspice(file_path))
-            
-        else:
-            print("No file selected.")
-            self.convert_button.setEnabled(False)
-            self.upload_radio_ltspice.setChecked(False)
-            # Message box indicating that no file is selected
-            msg_box = QMessageBox()
-            msg_box.setIcon(QMessageBox.Warning)
-            msg_box.setWindowTitle("No File Selected")
-            msg_box.setText("Please select a file before uploading.")
-            msg_box.setStandardButtons(QMessageBox.Ok)
-            msg_box.exec_()
 
     def modelEditor(self):
         """This function defines UI for model editor."""
