@@ -207,28 +207,13 @@ class DockArea(QtWidgets.QMainWindow):
         self.convert_button.setEnabled(False)
         button_layout.addWidget(self.convert_button)
 
-        
-
         self.eConLayout.addLayout(button_layout)
 
-        # text_edit = QTextEdit()
-        # text_edit.setFixedHeight(100)
-        # text_edit.setText("Pspice to eSim will convert the PSpice Schematic and Library files to KiCad "
-        #                 "Schematic and Library files respectively with proper mapping of the components "
-        #                 "and the wiring. By this way one will be able to simulate their schematics in PSpice "
-        #                 "and get the PCB layout in KiCad.\n"
-        #                 "LTspice to eSim will convert symbols and schematics from LTspice to Kicad.The goal is to design and"
-        #                 " simulate under LTspice and to automatically transfer the circuit under Kicad to draw the PCB.")
-        # text_edit.setReadOnly(True)  # Make the text non-editable
-        # self.eConLayout.addWidget(text_edit)  # Add QTextEdit widget to main layout
+        self.eConWidget.setLayout(self.eConLayout)
 
-        self.description_label = QLabel()
-        self.description_label.setFixedHeight(160)
-        self.description_label.setFixedWidth(960)
-
+        # Add the description HTML content
         description_html = """
             <html>
-
                 <head>
                     <style>
                         body {
@@ -262,15 +247,19 @@ class DockArea(QtWidgets.QMainWindow):
                         simulate under LTspice and to automatically transfer the circuit under Kicad to draw the PCB.</b>
                     </p>
                 </body>
-                
             </html>
         """
 
+        self.description_label = QLabel()
+        self.description_label.setFixedHeight(160)
+        self.description_label.setFixedWidth(960)
+
         self.description_label.setWordWrap(True)
         self.description_label.setText(description_html)
-        self.eConLayout.addWidget(self.description_label)
+        self.eConLayout.addWidget(self.description_label)  # Add the description label to the layout
 
         self.eConWidget.setLayout(self.eConLayout)
+
         dock[dockName + str(count)] = QtWidgets.QDockWidget(dockName + str(count))
         dock[dockName + str(count)].setWidget(self.eConWidget)
         self.addDockWidget(QtCore.Qt.TopDockWidgetArea, dock[dockName + str(count)])
@@ -287,6 +276,7 @@ class DockArea(QtWidgets.QMainWindow):
         dock[dockName + str(count)].raise_()
 
         count = count + 1
+
 
     def convert_Pspice(self, file_path):
         self.convert_button.clicked.disconnect()
