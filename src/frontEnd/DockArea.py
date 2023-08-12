@@ -193,15 +193,15 @@ class DockArea(QtWidgets.QMainWindow):
 
         # Create a radio button group
         self.upload_radio_group = QButtonGroup()
-        self.upload_radio_group.setAlignment(Qt.AlignCenter)
+        
         upload_radio_pspice = QRadioButton("Upload Pspice schematics")
         upload_radio_pspice.setChecked(False)  # Set the default selection
-        upload_radio_pspice.toggled.connect(lambda: self.radio_toggled(upload_radio_pspice, file_path_text_box))
+        upload_radio_pspice.toggled.connect(lambda: self.radio_toggled(upload_radio_pspice, file_path_text_box.text()))
         self.upload_radio_group.addButton(upload_radio_pspice)
         self.eConLayout.addWidget(upload_radio_pspice)
 
         upload_radio_ltspice = QRadioButton("Upload LTspice schematics")
-        upload_radio_ltspice.toggled.connect(lambda: self.radio_toggled(upload_radio_ltspice, file_path_text_box))
+        upload_radio_ltspice.toggled.connect(lambda: self.radio_toggled(upload_radio_ltspice, file_path_text_box.text()))
         self.upload_radio_group.addButton(upload_radio_ltspice)
         self.eConLayout.addWidget(upload_radio_ltspice)
 
@@ -280,12 +280,9 @@ class DockArea(QtWidgets.QMainWindow):
     def radio_toggled(self, radio_button, file_path_text_box):
         if radio_button.isChecked():
             if radio_button.text() == "Upload Pspice schematics":
-                # Handle PSpice schematics upload
-                pass
+                self.upload_file_Pspice(file_path_text_box)
             elif radio_button.text() == "Upload LTspice schematics":
-                # Handle LTspice schematics upload
-                pass
-
+                self.upload_file_LTspice(file_path_text_box)
 
 
     def convert_Pspice(self, file_path):
