@@ -378,7 +378,7 @@ class DockArea(QtWidgets.QMainWindow):
                 msg_box.setText("Spaces are not allowed in the file path.")
                 msg_box.setStandardButtons(QMessageBox.Ok)
                 msg_box.exec_()
-                self.upload_radio_pspice.setChecked(False)
+                self.upload_radio_pspice.setCheckable(True)
                 return
             print(file_path)
             self.convert_button.setEnabled(True)
@@ -387,7 +387,7 @@ class DockArea(QtWidgets.QMainWindow):
         else:
             print("No file selected.")
             self.convert_button.setEnabled(False)
-            self.upload_radio_pspice.setChecked(False)
+            self.upload_radio_pspice.setCheckable(True)
             # Message box indicating that no file is selected
             msg_box = QMessageBox()
             msg_box.setIcon(QMessageBox.Warning)
