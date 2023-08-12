@@ -181,7 +181,7 @@ class DockArea(QtWidgets.QMainWindow):
         file_path_text_box = QLineEdit()
         file_path_text_box.setFixedHeight(30)
         file_path_text_box.setFixedWidth(800)
-        #file_path_layout.setAlignment(Qt.AlignCenter)
+        file_path_layout.setAlignment(Qt.AlignCenter)
         file_path_layout.addWidget(file_path_text_box)
 
         browse_button = QPushButton("Browse")
