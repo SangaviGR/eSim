@@ -344,7 +344,7 @@ class DockArea(QtWidgets.QMainWindow):
             msg_box.exec_()
 
     def convert_LTspice(self, file_path):
-        self.convert_button.clicked.disconnect()
+        #self.convert_button.clicked.disconnect()
         # Get the base name of the file without the extension
         filename = os.path.splitext(os.path.basename(file_path))[0]
         conPath = os.path.dirname(file_path)
