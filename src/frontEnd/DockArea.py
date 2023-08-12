@@ -387,7 +387,7 @@ class DockArea(QtWidgets.QMainWindow):
         else:
             print("No file selected.")
             self.convert_button.setEnabled(False)
-            self.upload_radio_pspice.setCheckable(True)
+            self.upload_radio_pspice.setChecked(False)
             # Message box indicating that no file is selected
             msg_box = QMessageBox()
             msg_box.setIcon(QMessageBox.Warning)
