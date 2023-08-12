@@ -387,7 +387,7 @@ class DockArea(QtWidgets.QMainWindow):
         else:
             print("No file selected.")
             self.convert_button.setEnabled(False)
-
+            self.upload_radio_pspice.setChecked(False)
             # Message box indicating that no file is selected
             msg_box = QMessageBox()
             msg_box.setIcon(QMessageBox.Warning)
@@ -395,7 +395,7 @@ class DockArea(QtWidgets.QMainWindow):
             msg_box.setText("Please select a file before uploading.")
             msg_box.setStandardButtons(QMessageBox.Ok)
             msg_box.exec_()
-            self.upload_radio_pspice.setChecked(False)
+            
 
     def upload_file_LTspice(self, file_path):
         if file_path:
@@ -418,7 +418,7 @@ class DockArea(QtWidgets.QMainWindow):
         else:
             print("No file selected.")
             self.convert_button.setEnabled(False)
-
+            self.upload_radio_ltspice.setChecked(False)
             # Message box indicating that no file is selected
             msg_box = QMessageBox()
             msg_box.setIcon(QMessageBox.Warning)
@@ -426,7 +426,6 @@ class DockArea(QtWidgets.QMainWindow):
             msg_box.setText("Please select a file before uploading.")
             msg_box.setStandardButtons(QMessageBox.Ok)
             msg_box.exec_()
-            self.upload_radio_ltspice.setChecked(False)
 
     def modelEditor(self):
         """This function defines UI for model editor."""
