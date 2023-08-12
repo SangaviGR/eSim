@@ -174,7 +174,6 @@ class DockArea(QtWidgets.QMainWindow):
         dockName = 'Schematics Convertor-'
 
         self.eConWidget = QtWidgets.QWidget()
-        self.eConWidget.move(1,2)  
         self.eConLayout = QVBoxLayout()  # QVBoxLayout for the main layout
 
         file_path_layout = QHBoxLayout()  # QHBoxLayout for file path line
@@ -183,8 +182,6 @@ class DockArea(QtWidgets.QMainWindow):
         file_path_text_box.setFixedHeight(30)
         file_path_text_box.setFixedWidth(800)
         file_path_layout.addWidget(file_path_text_box)
-        file_path_layout.move(1,2)  
-
 
         browse_button = QPushButton("Browse")
         browse_button.setFixedSize(100, 30)
@@ -256,7 +253,7 @@ class DockArea(QtWidgets.QMainWindow):
         self.description_label = QLabel()
         self.description_label.setFixedHeight(160)
         self.description_label.setFixedWidth(950)
-
+        self.description_label.setAlignment(Qt.AlignHCenter)
         self.description_label.setWordWrap(True)
         self.description_label.setText(description_html)
         self.eConLayout.addWidget(self.description_label)  # Add the description label to the layout
