@@ -194,15 +194,19 @@ class DockArea(QtWidgets.QMainWindow):
         # Create a radio button group
         self.upload_radio_group = QButtonGroup()
         
+        radio_layout = QHBoxLayout()  # Create a horizontal layout for radio buttons
+
         self.upload_radio_pspice = QRadioButton("Upload Pspice schematics")
-        self.upload_radio_pspice.toggled.connect(lambda: self.radio_toggled(self.upload_radio_pspice, file_path_text_box.text()))
         self.upload_radio_group.addButton(self.upload_radio_pspice)
-        self.eConLayout.addWidget(self.upload_radio_pspice)
+        radio_layout.addWidget(self.upload_radio_pspice)
 
         self.upload_radio_ltspice = QRadioButton("Upload LTspice schematics")
-        self.upload_radio_ltspice.toggled.connect(lambda: self.radio_toggled(self.upload_radio_ltspice, file_path_text_box.text()))
         self.upload_radio_group.addButton(self.upload_radio_ltspice)
-        self.eConLayout.addWidget(self.upload_radio_ltspice)
+        radio_layout.addWidget(self.upload_radio_ltspice)
+
+        self.eConLayout.addLayout(radio_layout)  # Add the horizontal layout to the main layout
+
+
 
         self.convert_button = QPushButton("Convert Schematics to eSim")
         self.convert_button.setFixedSize(190, 30)
