@@ -291,7 +291,7 @@ class DockArea(QtWidgets.QMainWindow):
             try:
                 subprocess.run(command, shell=True, check=True)
                 self.convert_button.setEnabled(False)
-                # Show a message box with the conversion success message
+                # Message box with the conversion success message
                 msg_box = QMessageBox()
                 msg_box.setIcon(QMessageBox.Information)
                 msg_box.setWindowTitle("Conversion Successful")
@@ -313,7 +313,12 @@ class DockArea(QtWidgets.QMainWindow):
                     shutil.copytree(newFile, f"/home/ubuntus/eSim-Workspace/{filename}")
 
                     print("File added under the project explorer.")
-
+                    # Message box with the conversion success message
+                    msg_box = QMessageBox()
+                    msg_box.setIcon(QMessageBox.Information)
+                    msg_box.setWindowTitle("Added Successfully")
+                    msg_box.setText("File added under the project explorer successfully.")
+                    result = msg_box.exec_()
                     QtWidgets.QMainWindow.close(self)
 
                 else:
