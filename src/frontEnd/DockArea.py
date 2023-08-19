@@ -204,16 +204,12 @@ class DockArea(QtWidgets.QMainWindow):
         self.upload_radio_group.addButton(self.upload_radio_ltspice)
         radio_layout.addWidget(self.upload_radio_ltspice)
 
-        self.eConLayout.addLayout(radio_layout)  # Add the horizontal layout to the main layout
-
-
-
         self.convert_button = QPushButton("Convert Schematics to eSim")
         self.convert_button.setFixedSize(190, 30)
         self.convert_button.setEnabled(False)
-        self.eConLayout.addWidget(self.convert_button)
+        radio_layout.addWidget(self.convert_button)
 
-        self.eConWidget.setLayout(self.eConLayout)
+        self.eConLayout.addLayout(radio_layout)  # Add the horizontal layout to the main layout
 
         # Add the description HTML content
         description_html = """
