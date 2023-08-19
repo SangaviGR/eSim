@@ -197,10 +197,12 @@ class DockArea(QtWidgets.QMainWindow):
         radio_layout = QHBoxLayout()  # Create a horizontal layout for radio buttons
 
         self.upload_radio_pspice = QRadioButton("Upload Pspice schematics")
+        self.upload_radio_pspice.toggled.connect(lambda: self.radio_toggled(self.upload_radio_pspice, file_path_text_box.text()))
         self.upload_radio_group.addButton(self.upload_radio_pspice)
         radio_layout.addWidget(self.upload_radio_pspice)
 
         self.upload_radio_ltspice = QRadioButton("Upload LTspice schematics")
+        self.upload_radio_ltspice.toggled.connect(lambda: self.radio_toggled(self.upload_radio_ltspice, file_path_text_box.text()))
         self.upload_radio_group.addButton(self.upload_radio_ltspice)
         radio_layout.addWidget(self.upload_radio_ltspice)
 
